@@ -14,16 +14,44 @@ X, y = make_classification(
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-layer = Layer(
-    num_forests=4, n_estimators=100, num_classes=3,
-    n_fold=3, layer_index=0, max_depth=10, min_samples_leaf=2
-)
+def test_train():
+    layer = Layer(
+        num_forests=4, n_estimators=100, num_classes=3,
+        n_fold=3, layer_index=0, max_depth=10, min_samples_leaf=2
+    )
 
-val_avg, feature_new = layer.train(X_train, y_train)
+    val_avg, feature_new = layer.train(X_train, y_train)
 
-print("验证集预测结果 (val_avg):")
-print(val_avg[:5])
+    print("验证集预测结果 (val_avg):")
+    print(val_avg[:5])
 
-print("\n新特征表示 (feature_new):")
-print(feature_new[:5])
-print(f"新特征的维度: {feature_new.shape}")
+    print("\n新特征表示 (feature_new):")
+    print(feature_new[:5])
+    print(f"新特征的维度: {feature_new.shape}")
+
+
+def test_train_an_predict():
+    layer = Layer(
+        num_forests=4, n_estimators=100, num_classes=3,
+        n_fold=3, layer_index=0, max_depth=10, min_samples_leaf=2
+    )
+
+    val_avg, feature_new, test_avg, test_feature_new = layer.train_and_predict(X_train, y_train, X_test)
+
+    print("验证集预测结果 (val_avg):")
+    print(val_avg[:5])
+
+    print("\n新特征表示 (feature_new):")
+    print(feature_new[:5])
+    print(f"新特征的维度: {feature_new.shape}")
+
+    print("测试集预测结果 (test_avg):")
+    print(test_avg[:5])
+
+    print("\n新测试特征表示 (test_feature_new):")
+    print(test_feature_new[:5])
+    print(f"新测试特征的维度: {test_feature_new.shape}")
+
+
+#test_train()
+test_train_an_predict()

@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c113d35-ca90-484c-85a3-8696b242ee40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/myDeepForest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deepforest/Layer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deepforest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deepforest/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/testLayer.py" afterDir="false" />
+    <list default="true" id="0c113d35-ca90-484c-85a3-8696b242ee40" name="Changes" comment="complete the &quot;train&quot; method in Layer.py and test it">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deepforest/Layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepforest/Layer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,12 +149,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737104471796</updated>
-      <workItem from="1737104472866" duration="7898000" />
+      <workItem from="1737104472866" duration="10995000" />
     </task>
+    <task id="LOCAL-00001" summary="complete the &quot;train&quot; method in Layer.py and test it">
+      <option name="closed" value="true" />
+      <created>1737115255652</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737115255652</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="complete the &quot;train&quot; method in Layer.py and test it" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete the &quot;train&quot; method in Layer.py and test it" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/myDeepForest$test.coverage" NAME="test Coverage Results" MODIFIED="1737106431888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
