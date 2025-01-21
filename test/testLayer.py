@@ -14,6 +14,7 @@ X, y = make_classification(
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+
 def test_train():
     layer = Layer(
         num_forests=4, n_estimators=100, num_classes=3,
@@ -30,7 +31,7 @@ def test_train():
     print(f"新特征的维度: {feature_new.shape}")
 
 
-def test_train_an_predict():
+def test_train_and_predict():
     layer = Layer(
         num_forests=4, n_estimators=100, num_classes=3,
         n_fold=3, layer_index=0, max_depth=10, min_samples_leaf=2
@@ -52,6 +53,16 @@ def test_train_an_predict():
     print(test_feature_new[:5])
     print(f"新测试特征的维度: {test_feature_new.shape}")
 
+    avg, fea_n = layer.predict(X_test)
+    print("-------------------------")
+    print(avg[:5])
+    print(fea_n[:5])
+    # print(test_avg == avg)
+    # print(test_feature_new == fea_n)
 
-#test_train()
-test_train_an_predict()
+    print(np.allclose(test_avg, avg)) # 消除浮点数精读导致的细微不等问题
+    print(np.allclose(test_feature_new, fea_n))
+
+
+# test_train()
+test_train_and_predict()
