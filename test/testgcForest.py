@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from deepforest.Layer import Layer
 from deepforest.gcForest import gcForest
 
-#np.random.seed(42)
+# np.random.seed(42)
 
 # 使用 sklearn 的 make_classification 生成多分类数据集
 X, y = make_classification(
@@ -22,6 +22,7 @@ def test_train():
     print(val_acc)
     print(best_layer_index)
 
+
 def test_train_and_predict():
     model = gcForest(num_estimator=100, num_forests=4, num_classes=3)
     val_p, val_acc, test_p, test_acc, best_layer_index = model.train_and_predict(X_train, y_train, X_test, y_test)
@@ -33,6 +34,15 @@ def test_train_and_predict():
     print(test_acc)
     print(best_layer_index)
 
+    test_p2, test_acc2, index2 = model.predict(X_test, y_test)
+    print(test_p2[0].shape)
+    print(test_acc2)
+    print(index2)
 
-#test_train()
+    print(np.allclose(test_p,test_p2))
+    print(np.allclose(test_acc,test_acc2))
+    print(index2==best_layer_index)
+
+
+# test_train()
 test_train_and_predict()

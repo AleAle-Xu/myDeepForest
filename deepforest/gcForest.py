@@ -51,7 +51,7 @@ class gcForest:
                 bad = 0
             else:
                 bad += 1
-            layer_index+=1
+            layer_index += 1
             if bad > self.tolerance:
                 break
         self.number_of_layers = layer_index
@@ -115,3 +115,28 @@ class gcForest:
         self.number_of_layers = layer_index
         self.best_layer = best_layer_index
         return [val_p, val_acc, test_p, test_acc, best_layer_index]
+
+    def predict(self, test_data, test_label):
+        """
+        use the trained gcForest to predict the probability on the test data
+        :param test_data:
+        :param test_label:
+        :return:    test_p: a list of every layer's predicted probability on the test data.
+                    test_acc: a list of every layer's test accuracy.
+                    best_layer: index.
+        """
+        test_data_raw = test_data.copy()
+        test_p = []
+        test_acc = []
+
+        for i in range(self.number_of_layers):
+            model = self.layer_list[i]
+            test_avg, test_feature_new = model.predict(test_data)
+            test_p.append(test_avg)
+            accuracy = compute_accuracy(test_label, test_avg)
+            test_acc.append(accuracy)
+            test_data = np.concatenate([test_data_raw, test_feature_new], axis=1)
+            test_data = np.float16(test_data)
+            test_data = np.float64(test_data)
+
+        return [test_p, test_acc, self.best_layer]
