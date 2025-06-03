@@ -4,10 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c113d35-ca90-484c-85a3-8696b242ee40" name="Changes" comment="complete the &quot;train_and_predict&quot; method in gcForest.py and test it">
+    <list default="true" id="0c113d35-ca90-484c-85a3-8696b242ee40" name="Changes" comment="Add LFS tracking for large binary files">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/change.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Adult.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Arrhythmia.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/BankMarketing.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Car.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Covertype.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/CredictCard.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Diabetes.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/DryBean.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Gamma.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/HTRU2.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/HeartDisease.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Letter.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Maternal.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Mushroom.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Rice.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Student.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/Websites.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deepforest_eoh/Layer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deepforest_eoh/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deepforest_eoh/gcForest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deepforest_eoh/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/environment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/dataset_downloader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/df_Adult.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/df_Gamma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/testgcForest_eoh.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deepforest/gcForest.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepforest/gcForest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/testgcForest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/testgcForest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deepforest/Layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepforest/Layer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,30 +62,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testLayer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testgcForest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PythonCode/myDeepForest/deepforest&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.__init__.executor": "Run",
+    "Python.dataset_downloader.executor": "Run",
+    "Python.df_Adult.executor": "Run",
+    "Python.df_Gamma.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.testLayer.executor": "Run",
+    "Python.testgcForest.executor": "Run",
+    "Python.testgcForest_eoh.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/PythonCode/myDeepForest/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PythonCode\myDeepForest\test" />
       <recent name="D:\PythonCode\myDeepForest\deepforest" />
     </key>
   </component>
   <component name="RunManager" selected="Python.testgcForest">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dataset_downloader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="myDeepForest" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,7 +106,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/dataset_downloader.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -81,7 +115,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="df_Adult" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="myDeepForest" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,7 +129,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/df_Adult.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testLayer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="df_Gamma" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="myDeepForest" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,7 +152,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/testLayer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/df_Gamma.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,20 +184,44 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="testgcForest_eoh" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="myDeepForest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/testgcForest_eoh.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.testgcForest" />
-        <item itemvalue="Python.testLayer" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.df_Adult" />
+        <item itemvalue="Python.df_Gamma" />
+        <item itemvalue="Python.dataset_downloader" />
+        <item itemvalue="Python.testgcForest_eoh" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23339.19" />
-        <option value="bundled-python-sdk-0029f7779945-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23339.19" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.26775.22" />
+        <option value="bundled-python-sdk-9f73701ac511-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.26775.22" />
       </set>
     </attachedChunks>
   </component>
@@ -177,7 +235,9 @@
       <updated>1737104471796</updated>
       <workItem from="1737104472866" duration="12281000" />
       <workItem from="1737445476080" duration="15868000" />
-      <workItem from="1737530685899" duration="2727000" />
+      <workItem from="1737530685899" duration="3155000" />
+      <workItem from="1746870342695" duration="20000" />
+      <workItem from="1748912141354" duration="16012000" />
     </task>
     <task id="LOCAL-00001" summary="complete the &quot;train&quot; method in Layer.py and test it">
       <option name="closed" value="true" />
@@ -219,7 +279,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737467511049</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="complete the &quot;predict&quot; method in gcForest.py and test it">
+      <option name="closed" value="true" />
+      <created>1737553301048</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737553301048</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add LFS tracking for large binary files">
+      <option name="closed" value="true" />
+      <created>1748918923136</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748918923136</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,12 +318,18 @@
     <MESSAGE value="complete the &quot;predict&quot; method in Layer.py and test it" />
     <MESSAGE value="complete the &quot;train&quot; method in gcForest.py and test it" />
     <MESSAGE value="complete the &quot;train_and_predict&quot; method in gcForest.py and test it" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete the &quot;train_and_predict&quot; method in gcForest.py and test it" />
+    <MESSAGE value="complete the &quot;predict&quot; method in gcForest.py and test it" />
+    <MESSAGE value="Add LFS tracking for large binary files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add LFS tracking for large binary files" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/myDeepForest$testgcForest.coverage" NAME="testgcForest Coverage Results" MODIFIED="1737531876602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/myDeepForest$testgcForest.coverage" NAME="testgcForest Coverage Results" MODIFIED="1748923481805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/myDeepForest$test.coverage" NAME="test Coverage Results" MODIFIED="1737106431888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/myDeepForest$dataset_downloader.coverage" NAME="dataset_downloader Coverage Results" MODIFIED="1748919910597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/myDeepForest$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1737106293848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/myDeepForest$df_Adult.coverage" NAME="df_Adult Coverage Results" MODIFIED="1748923089285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/myDeepForest$testgcForest_eoh.coverage" NAME="testgcForest_eoh Coverage Results" MODIFIED="1748917769725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/myDeepForest$df_Gamma.coverage" NAME="df_Gamma Coverage Results" MODIFIED="1748922669875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/myDeepForest$testLayer.coverage" NAME="testLayer Coverage Results" MODIFIED="1737449195591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
   </component>
 </project>

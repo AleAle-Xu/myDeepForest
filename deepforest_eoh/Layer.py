@@ -1,6 +1,6 @@
 from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import KFold, StratifiedKFold
+from sklearn.model_selection import StratifiedKFold
 import numpy as np
 
 
@@ -72,9 +72,9 @@ class Layer:
             val_prob[forest_index, :] = val_forest
 
         val_avg = np.sum(val_prob, axis=0) / self.num_forests
-        feature_new = val_prob.transpose((1, 0, 2))
-        feature_new = feature_new.reshape((num_samples, -1))
-        return [val_avg, feature_new]
+        # feature_new = val_prob.transpose((1, 0, 2))
+        # feature_new = feature_new.reshape((num_samples, -1))
+        return [val_avg, val_prob]
 
     def train_and_predict(self, train_data, train_label, test_data):
         """
@@ -143,12 +143,12 @@ class Layer:
             test_prob[forest_index, :] = test_forest
 
         val_avg = np.sum(val_prob, axis=0) / self.num_forests
-        feature_new = val_prob.transpose((1, 0, 2))
-        feature_new = feature_new.reshape((num_samples_train, -1))
+        # feature_new = val_prob.transpose((1, 0, 2))
+        # feature_new = feature_new.reshape((num_samples_train, -1))
         test_avg = np.sum(test_prob, axis=0) / self.num_forests
-        test_feature_new = test_prob.transpose((1, 0, 2))
-        test_feature_new = test_feature_new.reshape((test_data.shape[0], -1))
-        return [val_avg, feature_new, test_avg, test_feature_new]
+        # test_feature_new = test_prob.transpose((1, 0, 2))
+        # test_feature_new = test_feature_new.reshape((test_data.shape[0], -1))
+        return [val_avg, val_prob, test_avg, test_prob]
 
     def predict(self, test_data):
         """
@@ -171,6 +171,6 @@ class Layer:
             test_prob[forest_index, :] = test_prob_forest
 
         test_avg = np.sum(test_prob, axis=0) / self.num_forests
-        test_feature_new = test_prob.transpose((1, 0, 2))
-        test_feature_new = test_feature_new.reshape((num_samples, -1))
-        return [test_avg, test_feature_new]
+        # test_feature_new = test_prob.transpose((1, 0, 2))
+        # test_feature_new = test_feature_new.reshape((num_samples, -1))
+        return [test_avg, test_prob]
