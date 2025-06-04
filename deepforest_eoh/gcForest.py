@@ -31,7 +31,8 @@ class gcForest:
         best_acc = 0
         bad = 0
         best_layer_index = 0
-
+        
+        print("start training")
         while layer_index <= self.max_layer:
             layer = Layer(self.num_forests, self.num_estimator, self.num_classes, self.n_fold, layer_index,
                           self.max_depth, 1)
@@ -58,6 +59,7 @@ class gcForest:
                 break
         self.number_of_layers = layer_index
         self.best_layer = best_layer_index
+        print("training finished")
         return [val_p, val_acc, best_layer_index]
 
     def train_and_predict(self, train_data, train_label, test_data, test_label):
@@ -85,6 +87,7 @@ class gcForest:
         bad = 0
         best_layer_index = 0
 
+        print("start training")
         while layer_index <= self.max_layer:
             layer = Layer(self.num_forests, self.num_estimator, self.num_classes, self.n_fold, layer_index,
                           self.max_depth, 1)
@@ -119,6 +122,7 @@ class gcForest:
                 break
         self.number_of_layers = layer_index
         self.best_layer = best_layer_index
+        print("training finished")
         return [val_p, val_acc, test_p, test_acc, best_layer_index]
 
     def predict(self, test_data, test_label):
@@ -134,6 +138,7 @@ class gcForest:
         test_p = []
         test_acc = []
 
+        print("start testing")
         for i in range(self.number_of_layers):
             model = self.layer_list[i]
             test_avg, test_prob = model.predict(test_data)
@@ -146,4 +151,5 @@ class gcForest:
             test_data = np.float16(test_data)
             test_data = np.float64(test_data)
 
+        print("testing finished")
         return [test_p, test_acc, self.best_layer]

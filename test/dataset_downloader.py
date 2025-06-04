@@ -30,7 +30,7 @@ DATASET_CONFIG = {
 
 }
 
-CACHE_DIR = get_dir_in_root("dataset")
+CACHE_DIR = get_dir_in_root("dataset_raw")
 os.makedirs(CACHE_DIR, exist_ok=True)
 
 

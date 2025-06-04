@@ -57,3 +57,9 @@
 3. test下新增dataset_downloader.py，用于下载数据集。根目录下新增dataset目录，保存原始下载的数据。
 
 4. test下测试了两个数据集，df_Adult和df_Gamma。用的是deepforest_eoh中的df。
+
+
+
+## 截止6/4的commit
+
+1. dataset_raw目录中保存的是从uci下载的原始数据集，dataset_pre_transform目录中是对各个数据集进行预处理的模块，预处理完成后的数据集存在dataset目录下。test目录下的test_dataset目录测试数据集的可用性。Diabetes数据集较大可能会出现内存不够的情况。

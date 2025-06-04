@@ -51,7 +51,7 @@ def data_partition(X_train, X_label, n_minibatches, fraction = 2):
         idx_tmp = np.arange(idx_base, idx_base + n_points_per_minibatch)
         cumulative_list.append(idx_base)
         if is_last_minibatch:
-            # including the last (dataset['n_train'] % settings.n_minibatches) indices along with indices in idx_tmp
+            # including the last (dataset_raw['n_train'] % settings.n_minibatches) indices along with indices in idx_tmp
             idx_tmp = np.arange(idx_base, n_samples)
             cumulative_list.append(n_samples) # = current_index + 1
         # np.int(idx_tmp)
