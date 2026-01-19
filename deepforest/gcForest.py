@@ -14,6 +14,7 @@ class gcForest:
         self.number_of_layers = max_layer
         self.best_layer = -1
         self.tolerance = tolerance  # times allowed that current layer's accuracy is lower than the previous best layer
+        self.val_acc_list = []  # stores validation accuracy for each layer during training
 
     def train(self, train_data, train_label):
         """
@@ -57,6 +58,7 @@ class gcForest:
                 break
         self.number_of_layers = layer_index
         self.best_layer = best_layer_index
+        self.val_acc_list = val_acc  # save validation accuracy list to member variable
         print("training finished")
         return [val_p, val_acc, best_layer_index]
 
@@ -117,6 +119,7 @@ class gcForest:
                 break
         self.number_of_layers = layer_index
         self.best_layer = best_layer_index
+        self.val_acc_list = val_acc  # save validation accuracy list to member variable
         print("training finished")
         return [val_p, val_acc, test_p, test_acc, best_layer_index]
 
