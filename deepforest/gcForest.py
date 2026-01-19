@@ -15,6 +15,7 @@ class gcForest:
         self.best_layer = -1
         self.tolerance = tolerance  # times allowed that current layer's accuracy is lower than the previous best layer
         self.val_acc_list = []  # stores validation accuracy for each layer during training
+        self.v_info_dict = {}  # stores v-information metrics for each layer during training
 
     def train(self, train_data, train_label):
         """
@@ -32,16 +33,26 @@ class gcForest:
         best_acc = 0
         bad = 0
         best_layer_index = 0
+        
+        # v-information metrics lists for all layers
+        layer_v_info_list = []
+        layer_hv_empty_list = []
+        layer_hv_cond_list = []
 
         print("start training")
         while layer_index <= self.max_layer:
             layer = Layer(self.num_forests, self.num_estimator, self.num_classes, self.n_fold, layer_index,
                           self.max_depth, 1)
-            val_prob, feature_new = layer.train(train_data, train_label)
+            val_prob, feature_new, layer_v_info, layer_hv_empty, layer_hv_cond = layer.train(train_data, train_label)
             self.layer_list.append(layer)
             accuracy = compute_accuracy(train_label, val_prob)
             val_acc.append(accuracy)
             val_p.append(val_prob)
+            
+            # collect v-information metrics for this layer
+            layer_v_info_list.append(layer_v_info)
+            layer_hv_empty_list.append(layer_hv_empty)
+            layer_hv_cond_list.append(layer_hv_cond)
 
             train_data = np.concatenate([train_data_raw, feature_new], axis=1)
             train_data = np.float16(train_data)
@@ -55,10 +66,16 @@ class gcForest:
                 bad += 1
             layer_index += 1
             if bad > self.tolerance:
-                break
+                pass
+                # break
         self.number_of_layers = layer_index
         self.best_layer = best_layer_index
         self.val_acc_list = val_acc  # save validation accuracy list to member variable
+        self.v_info_dict = {
+            'v_info': layer_v_info_list,
+            'hv_empty': layer_hv_empty_list,
+            'hv_cond': layer_hv_cond_list
+        }  # save v-information metrics dict to member variable
         print("training finished")
         return [val_p, val_acc, best_layer_index]
 
@@ -131,20 +148,38 @@ class gcForest:
         :return:    test_p: a list of every layer's predicted probability on the test data.
                     test_acc: a list of every layer's test accuracy.
                     best_layer: index.
+                    test_v_info_dict: a dict containing v-information metrics for each layer.
         """
         test_data_raw = test_data.copy()
         test_p = []
         test_acc = []
+        
+        # v-information metrics lists for all layers
+        layer_v_info_list = []
+        layer_hv_empty_list = []
+        layer_hv_cond_list = []
 
         print("start testing")
         for i in range(self.number_of_layers):
             model = self.layer_list[i]
-            test_avg, test_feature_new = model.predict(test_data)
+            test_avg, test_feature_new, layer_v_info, layer_hv_empty, layer_hv_cond = model.predict(test_data, test_label)
             test_p.append(test_avg)
             accuracy = compute_accuracy(test_label, test_avg)
             test_acc.append(accuracy)
+            
+            # collect v-information metrics for this layer
+            layer_v_info_list.append(layer_v_info)
+            layer_hv_empty_list.append(layer_hv_empty)
+            layer_hv_cond_list.append(layer_hv_cond)
+            
             test_data = np.concatenate([test_data_raw, test_feature_new], axis=1)
             test_data = np.float16(test_data)
             test_data = np.float64(test_data)
         print("testing finished")
-        return [test_p, test_acc, self.best_layer]
+        
+        test_v_info_dict = {
+            'v_info': layer_v_info_list,
+            'hv_empty': layer_hv_empty_list,
+            'hv_cond': layer_hv_cond_list
+        }
+        return [test_p, test_acc, self.best_layer, test_v_info_dict]

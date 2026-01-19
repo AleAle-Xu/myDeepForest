@@ -4,6 +4,52 @@ import numpy as np
 import math
 from sklearn.datasets import load_svmlight_file
 
+
+def calculate_v_information(y_train, y_val, probs_val):
+    """
+    计算 V-information 以及相关的熵项。
+    
+    参数:
+        y_train (ndarray): 训练集标签，形状为 (N_train,)，类型为整数。
+        y_val (ndarray): 验证集(或测试集)标签，形状为 (N_val,)，类型为整数。
+        probs_val (ndarray): 模型在验证集上的预测概率，形状为 (N_val, num_classes)。
+    返回:
+        tuple: (v_info, hv_empty, hv_cond)
+    """  
+    # 0. 基础设置与数据校验
+    epsilon = 1e-12  # 防止 log(0) 的数值稳定项
+    num_classes = probs_val.shape[1]
+    
+    # 确保标签是整数类型
+    y_train = y_train.astype(int)
+    y_val = y_val.astype(int)
+    
+    assert len(y_val) == len(probs_val), "验证集标签数量与预测概率数量不匹配"
+
+    # 1. 计算训练集先验分布 q_train (Prior)
+    train_counts = np.bincount(y_train, minlength=num_classes)
+    q_train = train_counts / np.sum(train_counts)
+    
+    # 平滑处理：防止训练集某类样本为0导致后续 log 报错
+    q_train = np.clip(q_train, epsilon, 1.0)
+    
+    # 2. 计算验证/测试集分布 p_test
+    val_counts = np.bincount(y_val, minlength=num_classes)
+    p_test = val_counts / np.sum(val_counts)
+    
+    # 3. 计算 Hv_empty (基线熵)
+    hv_empty = -np.sum(p_test * np.log(q_train))
+    
+    # 4. 计算 Hv_condition (条件熵 / 模型实际 Loss)
+    correct_probs = probs_val[np.arange(len(y_val)), y_val]
+    hv_cond = -np.mean(np.log(correct_probs + epsilon))
+
+    # 5. 计算 V-information
+    v_info = hv_empty - hv_cond
+
+    return v_info, hv_empty, hv_cond
+
+
 def compute_accuracy(label, predict):
     if len(predict.shape) > 1:
         test = np.argmax(predict, axis=1)  #if the array shape is (num,typenum),get the final predict result
