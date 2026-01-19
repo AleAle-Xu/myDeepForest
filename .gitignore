@@ -70,5 +70,5 @@ venv.bak/
 *.swo
 
 # Experiment results and figures
-experiment/results/
-experiment/figures/
+# experiment/results/
+# experiment/figures/
