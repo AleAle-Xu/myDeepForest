@@ -50,54 +50,33 @@ class Layer:
             fold_hv_empty_list = []
             fold_hv_cond_list = []
 
-            if forest_index % 2 == 0:  # train a RandomForestClassifier
-                for train_index, val_index in kfold_indexes:
-                    train_data_k = train_data[train_index, :]
-                    train_label_k = train_label[train_index]
-                    val_data_k = train_data[val_index, :]
-                    val_label_k = train_label[val_index]
-                    
-                    # save training labels for this fold
-                    fold_train_labels_list.append(train_label_k)
+            for train_index, val_index in kfold_indexes:
+                train_data_k = train_data[train_index, :]
+                train_label_k = train_label[train_index]
+                val_data_k = train_data[val_index, :]
+                val_label_k = train_label[val_index]
+                
+                # save training labels for this fold
+                fold_train_labels_list.append(train_label_k)
 
+                if forest_index % 2 == 0:
                     model = RandomForestClassifier(n_estimators=self.n_estimators, max_depth=self.max_depth,
                                                    min_samples_leaf=self.min_samples_leaf, n_jobs=-1,
                                                    max_features="sqrt")
-                    model.fit(train_data_k, train_label_k)
-                    model_list.append(model)
-                    val_predict_proba = model.predict_proba(val_data_k)
-                    val_forest[val_index,
-                    :] = val_predict_proba  # every loop gets one fold's data's prediction probability
-                    
-                    # calculate v-information for this fold
-                    v_info, hv_empty, hv_cond = calculate_v_information(train_label_k, val_label_k, val_predict_proba)
-                    fold_v_info_list.append(v_info)
-                    fold_hv_empty_list.append(hv_empty)
-                    fold_hv_cond_list.append(hv_cond)
-
-            else:
-                for train_index, val_index in kfold_indexes:
-                    train_data_k = train_data[train_index, :]
-                    train_label_k = train_label[train_index]
-                    val_data_k = train_data[val_index, :]
-                    val_label_k = train_label[val_index]
-                    
-                    # save training labels for this fold
-                    fold_train_labels_list.append(train_label_k)
-
+                else:
                     model = ExtraTreesClassifier(n_estimators=self.n_estimators, max_depth=self.max_depth,
                                                  min_samples_leaf=self.min_samples_leaf, n_jobs=-1,
                                                  max_features=1)
-                    model.fit(train_data_k, train_label_k)
-                    model_list.append(model)
-                    val_predict_proba = model.predict_proba(val_data_k)
-                    val_forest[val_index, :] = val_predict_proba
-                    
-                    # calculate v-information for this fold
-                    v_info, hv_empty, hv_cond = calculate_v_information(train_label_k, val_label_k, val_predict_proba)
-                    fold_v_info_list.append(v_info)
-                    fold_hv_empty_list.append(hv_empty)
-                    fold_hv_cond_list.append(hv_cond)
+                model.fit(train_data_k, train_label_k)
+                model_list.append(model)
+                val_predict_proba = model.predict_proba(val_data_k)
+                val_forest[val_index, :] = val_predict_proba
+                
+                # calculate v-information for this fold
+                v_info, hv_empty, hv_cond = calculate_v_information(train_label_k, val_label_k, val_predict_proba)
+                fold_v_info_list.append(v_info)
+                fold_hv_empty_list.append(hv_empty)
+                fold_hv_cond_list.append(hv_cond)
 
             self.forest_list.append(model_list)
             val_prob[forest_index, :] = val_forest
@@ -149,38 +128,24 @@ class Layer:
 
             model_list = []  # one forest corresponding to k models
 
-            if forest_index % 2 == 0:  # train a RandomForestClassifier
-                for train_index, val_index in kfold_indexes:
-                    train_data_k = train_data[train_index, :]
-                    train_label_k = train_label[train_index]
-                    val_data_k = train_data[val_index, :]
-                    val_label_k = train_label[val_index]
+            for train_index, val_index in kfold_indexes:
+                train_data_k = train_data[train_index, :]
+                train_label_k = train_label[train_index]
+                val_data_k = train_data[val_index, :]
 
+                if forest_index % 2 == 0:
                     model = RandomForestClassifier(n_estimators=self.n_estimators, max_depth=self.max_depth,
                                                    min_samples_leaf=self.min_samples_leaf, n_jobs=-1,
                                                    max_features="sqrt")
-                    model.fit(train_data_k, train_label_k)
-                    model_list.append(model)
-
-                    val_predict_proba = model.predict_proba(val_data_k)
-                    val_forest[val_index,
-                    :] = val_predict_proba  # every loop gets one fold's data's prediction probability
-                    test_forest += model.predict_proba(test_data)
-            else:
-                for train_index, val_index in kfold_indexes:
-                    train_data_k = train_data[train_index, :]
-                    train_label_k = train_label[train_index]
-                    val_data_k = train_data[val_index, :]
-                    val_label_k = train_label[val_index]
-
+                else:
                     model = ExtraTreesClassifier(n_estimators=self.n_estimators, max_depth=self.max_depth,
                                                  min_samples_leaf=self.min_samples_leaf, n_jobs=-1,
                                                  max_features=1)
-                    model.fit(train_data_k, train_label_k)
-                    model_list.append(model)
-                    val_predict_proba = model.predict_proba(val_data_k)
-                    val_forest[val_index, :] = val_predict_proba
-                    test_forest += model.predict_proba(test_data)
+                model.fit(train_data_k, train_label_k)
+                model_list.append(model)
+                val_predict_proba = model.predict_proba(val_data_k)
+                val_forest[val_index, :] = val_predict_proba
+                test_forest += model.predict_proba(test_data)
 
             self.forest_list.append(model_list)
             val_prob[forest_index, :] = val_forest
