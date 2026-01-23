@@ -1,8 +1,30 @@
 #!/usr/bin/env python
 
+import os
 import numpy as np
 import math
 from sklearn.datasets import load_svmlight_file
+
+
+def get_dir_in_root(dir_name):
+    """
+    Get the absolute path of a directory under the project root.
+    Creates the directory if it doesn't exist.
+    
+    Args:
+        dir_name (str): Directory name or relative path under project root.
+        
+    Returns:
+        str: Absolute path to the directory.
+    """
+    # Get project root (parent of deepforest package)
+    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    dir_path = os.path.join(project_root, dir_name)
+    
+    if not os.path.exists(dir_path):
+        os.makedirs(dir_path)
+    
+    return dir_path
 
 
 def calculate_v_information(y_train, y_val, probs_val):

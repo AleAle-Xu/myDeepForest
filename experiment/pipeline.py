@@ -28,6 +28,16 @@ GCFOREST_CONFIG = {
 NUM_RUNS = 10
 TEST_SIZE = 0.3
 
+# Model class name
+MODEL_NAME = 'gcForest'
+
+
+def generate_result_filename(model_name, dataset_name, config):
+    """Generate result filename: ModelName_DatasetName_param1_param2_..."""
+    params = [f"{k}{v}" for k, v in config.items()]
+    param_str = '_'.join(params)
+    return f"{model_name}_{dataset_name}_{param_str}.csv"
+
 
 def load_dataset(dataset_name):
     """Load dataset from csv file."""
@@ -136,7 +146,7 @@ def main():
             df_results = run_experiments_on_dataset(dataset_name)
             
             # Save results to CSV
-            output_file = os.path.join(results_dir, f'{dataset_name}_results.csv')
+            output_file = os.path.join(results_dir, generate_result_filename(MODEL_NAME, dataset_name, GCFOREST_CONFIG))
             df_results.to_csv(output_file, index=False)
             print(f"\nResults saved to {output_file}")
             
