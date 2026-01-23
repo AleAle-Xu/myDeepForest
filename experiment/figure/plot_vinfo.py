@@ -77,7 +77,7 @@ def main():
     """
 
     # 'v_info', 'hv_empty', 'hv_cond'
-    metric_type='hv_cond'
+    metric_type='hv_empty'
     if metric_type not in METRIC_TYPES:
         raise ValueError(f"metric_type must be one of {METRIC_TYPES}")
     
