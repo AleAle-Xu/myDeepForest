@@ -1,0 +1,63 @@
+\begin{algorithm}[t]
+\caption{Deep Forest with V-Information Guided Evolutionary Ensemble Selection}
+\label{alg:dfvinfo}
+\begin{algorithmic}[1]
+\Require Training data $\mathcal{D} = \{(x_i, y_i)\}_{i=1}^{n}$, forests $M$, folds $K$, estimators $N$, target size $T^*$, max layers $L_{\max}$, tolerance $\tau$
+\Ensure Layer set $\mathcal{L}$, best layer $\ell^*$
+\State $Z^{(0)} \leftarrow \emptyset$, $\ell \leftarrow 0$, $I_V^* \leftarrow -\infty$, $t \leftarrow 0$, $\mathcal{L} \leftarrow \emptyset$ \hfill {\color{gray}// Initialize}
+
+\While{$\ell < L_{\max}$ \textbf{and} $t < \tau$} \hfill
+    \State $U^{(\ell)} \leftarrow (X, Z^{(\ell-1)})$ \hfill {\color{gray}// concatenate new features}
+    \For{$m = 1$ \textbf{to} $M$} \hfill
+        \State $\hat{Y}_m^{(\ell)} \leftarrow \mathbf{0}_{n \times C}$, $I_{V,m}^{(\ell)} \leftarrow 0$ \hfill {\color{gray}// Initialize}
+        \State Partition $\mathcal{D}$ into $K$ folds: $\{\mathcal{D}_1, \ldots, \mathcal{D}_K\}$
+        \For{$k = 1$ \textbf{to} $K$} \hfill {\color{gray}// $K$-fold CV}
+            \State $\mathcal{D}_{\text{tr}}^{(k)} \leftarrow \mathcal{D} \setminus \mathcal{D}_k$, \quad $\mathcal{D}_{\text{val}}^{(k)} \leftarrow \mathcal{D}_k$
+            \State $\mathcal{H}_{m,k}^{(\ell)} \leftarrow \textsc{TrainForest}(\mathcal{D}_{\text{tr}}^{(k)}, N)$ \hfill {\color{gray}// Train $N$ trees}
+            \State $\mathcal{S}_{m,k}^{(\ell)} \leftarrow \textsc{EvoSelect}(\mathcal{H}_{m,k}^{(\ell)}, \mathcal{D}_{\text{val}}^{(k)}, T^*)$ \hfill {\color{gray}// Alg.~\ref{alg:evoselect}}
+            \State $\mathcal{S}_m^{(\ell)} \leftarrow \mathcal{S}_m^{(\ell)} \cup \mathcal{S}_{m,k}^{(\ell)}$ \hfill 
+            \State $\hat{Y}_m^{(\ell)}[\mathcal{D}_{\text{val}}^{(k)}] \leftarrow \textsc{Predict}(\mathcal{S}_{m,k}^{(\ell)}, \mathcal{D}_{\text{val}}^{(k)})$ \hfill {\color{gray}// Predict $k$-th fold}
+            \State $I_{V,m,k}^{(\ell)} \leftarrow I_V(\mathcal{D}_{\text{val}}^{(k)}; \hat{Y}_m^{(\ell)}[\mathcal{D}_{\text{val}}^{(k)}])$ \hfill {\color{gray}// V-info for fold $k$}
+        \EndFor
+        \State $I_{V,m}^{(\ell)} \leftarrow \frac{1}{K} \sum_{k=1}^{K} I_{V,m,k}^{(\ell)}$ \hfill {\color{gray}// Average V-info for forest $m$}
+        \State $\mathcal{S}^{(\ell)} \leftarrow \mathcal{S}^{(\ell)} \cup \mathcal{S}_m^{(\ell)}$ \hfill 
+    \EndFor
+    \State $Z^{(\ell)} \leftarrow \textsc{Concat}(\hat{Y}_1^{(\ell)}, \ldots, \hat{Y}_M^{(\ell)}), \quad \hat{Y}^{(\ell)} \leftarrow \frac{1}{M} \sum_{m=1}^{M} \hat{Y}_m^{(\ell)}$ \hfill 
+    \State $I_V^{(\ell)} \leftarrow \frac{1}{M} \sum_{m=1}^{M} I_{V,m}^{(\ell)}$ \hfill {\color{gray}// Average V-info for layer}
+    \If{$I_V^{(\ell)} > I_V^*$} \hfill {\color{gray}// Early stopping based on V-info}
+        \State $I_V^* \leftarrow I_V^{(\ell)}$, $\ell^* \leftarrow \ell$, $t \leftarrow 0$ \hfill 
+    \Else
+        \State $t \leftarrow t + 1$ \hfill 
+    \EndIf
+    \State $\mathcal{L} \leftarrow \mathcal{L} \cup \{\mathcal{S}^{(\ell)}\}$ \hfill {\color{gray}// Add layer to model} 
+    \State $\ell \leftarrow \ell + 1$
+\EndWhile
+\State \Return $\mathcal{L}$, $\ell^*$
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[t]
+\caption{Evolutionary Ensemble Selection via NSGA-II}
+\label{alg:evoselect}
+\begin{algorithmic}[1]
+\Require Base learners $\mathcal{H} = \{h_1, \ldots, h_N\}$, validation data $\mathcal{D}_{\text{val}}$, target size $T^*$, population size $P$, generations $G$
+\Ensure Selected ensemble $\mathcal{S} \subseteq \mathcal{H}$
+
+\State Initialize $\mathcal{P} \leftarrow \{s_1, \ldots, s_P\}$ where $s_i \in \{0,1\}^N$ \hfill {\color{gray}// Binary encoding}
+
+\For{$g = 1$ \textbf{to} $G$} \hfill {\color{gray}// Evolutionary iterations}
+    \For{each individual $s \in \mathcal{P}$} \hfill 
+        \State $\hat{Y}(s) \leftarrow \frac{1}{|s|} \sum_{j \mid s_j=1} h_j(X_{\text{val}})$ \hfill {\color{gray}// Ensemble prediction}
+        \State $f_1(s) \leftarrow I_V(\mathcal{D}_{\text{val}}; \hat{Y}(s))$ \hfill {\color{gray}// Obj 1: V-information (max)}
+        \State $f_2(s) \leftarrow \left| |s| - T^* \right|$ \hfill {\color{gray}// Obj 2: deviation from target size (min)}
+    \EndFor
+    \State $\mathcal{P} \leftarrow \textsc{NSGA-II-Update}(\mathcal{P}, f_1, f_2)$ \hfill {\color{gray}// Non-dominated sorting}
+\EndFor
+\Statex
+\State $\mathcal{F} \leftarrow \textsc{ParetoFront}(\mathcal{P})$ \hfill {\color{gray}// Extract Pareto-optimal solutions}
+\State $s^* \leftarrow \arg\max_{s \in \mathcal{F}} f_1(s)$ \hfill {\color{gray}// Select solution with maximum V-info}
+\State $\mathcal{S} \leftarrow \{h_j \mid s^*_j = 1\}$ \hfill {\color{gray}// Build selected ensemble}
+\Statex
+\State \Return $\mathcal{S}$
+\end{algorithmic}
+\end{algorithm}
