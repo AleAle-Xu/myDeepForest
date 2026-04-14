@@ -2,6 +2,7 @@
 CascadeForest with evolutionary selective ensemble.
 Early stopping based on V-information change.
 """
+import time
 import numpy as np
 from sklearn.metrics import accuracy_score
 from deepforest.LayerVinfo import LayerVinfo
@@ -32,6 +33,7 @@ class CascadeForestVinfo:
         # Metrics storage
         self.val_acc_list = []
         self.v_info_dict = {'v_info': [], 'hv_empty': [], 'hv_cond': []}
+        self.early_stop_training_time = None  # wall-clock seconds until early stopping would have triggered
 
     def train(self, train_data, train_label):
         """
@@ -40,10 +42,12 @@ class CascadeForestVinfo:
         """
         X_train = train_data.copy()
         X_train_raw = train_data.copy()
-        
+
         best_v_info = -np.inf
         bad_count = 0
         layer_index = 0
+        self.early_stop_training_time = None  # reset each call
+        _train_start = time.time()
 
         while layer_index < self.max_layer:
             print(f"\n=== Layer {layer_index} ===")
@@ -85,14 +89,18 @@ class CascadeForestVinfo:
                 bad_count += 1
             
             if bad_count >= self.tolerance:
-                print(f"Early stopping at layer {layer_index}: V-info not improving for {self.tolerance} layers")
-                break
-            
+                if self.early_stop_training_time is None:
+                    self.early_stop_training_time = time.time() - _train_start
+                print(f"Early stopping triggered at layer {layer_index}: V-info not improving for {self.tolerance} layers, but continuing to max_layer")
+
             # Prepare features for next layer
             X_train = np.concatenate([X_train_raw, feature_new], axis=1)
             layer_index += 1
 
         print(f"\nTraining completed. Best layer: {self.best_layer}")
+        # If early stopping never triggered, early_stop_training_time = total training time
+        if self.early_stop_training_time is None:
+            self.early_stop_training_time = time.time() - _train_start
         return self.best_layer
 
     def test(self, test_data, test_label):
@@ -102,14 +110,16 @@ class CascadeForestVinfo:
         """
         X_test = test_data.copy()
         X_test_raw = test_data.copy()
-        
+
         test_acc_list = []
         test_v_info_dict = {'v_info': [], 'hv_empty': [], 'hv_cond': []}
         best_layer_pred = None
+        self.best_layer_testing_time = None  # time to test up to and including best_layer
 
+        _test_start = time.time()
         for layer_index, layer in enumerate(self.layer_list):
             result = layer.predict(X_test, test_label)
-            
+
             if test_label is not None:
                 test_avg, test_feature_new, layer_v_info, layer_hv_empty, layer_hv_cond = result
                 test_v_info_dict['v_info'].append(layer_v_info)
@@ -117,18 +127,19 @@ class CascadeForestVinfo:
                 test_v_info_dict['hv_cond'].append(layer_hv_cond)
             else:
                 test_avg, test_feature_new = result
-            
+
             # Calculate accuracy
             test_pred = np.argmax(test_avg, axis=1)
             if test_label is not None:
                 test_acc = accuracy_score(test_label, test_pred) * 100
                 test_acc_list.append(test_acc)
                 print(f"Layer {layer_index}: Test Acc = {test_acc:.2f}%")
-            
-            # Save best layer prediction
+
+            # Save best layer prediction and record elapsed time
             if layer_index == self.best_layer:
                 best_layer_pred = test_pred.copy()
-            
+                self.best_layer_testing_time = time.time() - _test_start
+
             # Prepare features for next layer
             X_test = np.concatenate([X_test_raw, test_feature_new], axis=1)
 
@@ -137,5 +148,5 @@ class CascadeForestVinfo:
             best_acc = accuracy_score(test_label, best_layer_pred) * 100
             print(f"\nBest layer ({self.best_layer}) Test Acc: {best_acc:.2f}%")
             return best_acc, test_acc_list, test_v_info_dict
-        
+
         return best_layer_pred

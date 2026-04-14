@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\caption{Comparison of methods on accuracy (\%)}
+\label{tab:comparison}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l|cccccc}
+\toprule
+Dataset & Deepforest & VIDF & Random Forest & Extra Trees & XGBoost & TabNet \\
+\midrule
+Adult & \underline{85.4255$\pm$0.2167} & \textbf{85.8664$\pm$0.1509} & $\times$ & $\times$ & $\times$ & $\times$ \\
+BankMarketing & \underline{90.2315$\pm$0.1299} & \textbf{90.4954$\pm$0.0828} & $\times$ & $\times$ & $\times$ & $\times$ \\
+Car & \textbf{98.1503$\pm$0.5664} & \underline{97.8035$\pm$0.8754} & $\times$ & $\times$ & $\times$ & $\times$ \\
+Covertype & \textbf{86.2321$\pm$0.1510} & $\times$ & $\times$ & $\times$ & $\times$ & $\times$ \\
+CredictCard & \textbf{81.8844$\pm$0.1338} & \underline{81.7422$\pm$0.2004} & $\times$ & $\times$ & $\times$ & $\times$ \\
+Diabetes & \underline{86.6249$\pm$0.0592} & \textbf{86.6680$\pm$0.0644} & $\times$ & $\times$ & $\times$ & $\times$ \\
+DryBean & \textbf{92.3800$\pm$0.4433} & \underline{92.3751$\pm$0.5226} & $\times$ & $\times$ & $\times$ & $\times$ \\
+Gamma & \underline{87.6691$\pm$0.5125} & \textbf{87.8444$\pm$0.5017} & $\times$ & $\times$ & $\times$ & $\times$ \\
+HTRU2 & \textbf{97.9479$\pm$0.2239} & \underline{97.9069$\pm$0.1733} & $\times$ & $\times$ & $\times$ & $\times$ \\
+HeartDisease & \textbf{58.0000$\pm$3.3993} & \underline{52.8889$\pm$2.1773} & $\times$ & $\times$ & $\times$ & $\times$ \\
+Letter & \underline{87.0200$\pm$0.3814} & \textbf{88.6033$\pm$0.3961} & $\times$ & $\times$ & $\times$ & $\times$ \\
+Maternal & \textbf{81.0492$\pm$2.8159} & \underline{80.9180$\pm$2.6507} & $\times$ & $\times$ & $\times$ & $\times$ \\
+Mushroom & \textbf{100.0000$\pm$0.0000} & \underline{100.0000$\pm$0.0000} & $\times$ & $\times$ & $\times$ & $\times$ \\
+Rice & \textbf{92.4584$\pm$0.5734} & \underline{91.2336$\pm$0.8808} & $\times$ & $\times$ & $\times$ & $\times$ \\
+Student & \underline{77.6205$\pm$0.3347} & \textbf{77.7108$\pm$0.5986} & $\times$ & $\times$ & $\times$ & $\times$ \\
+Websites & \textbf{96.3943$\pm$0.1122} & \underline{96.3461$\pm$0.2338} & $\times$ & $\times$ & $\times$ & $\times$ \\
+\midrule
+Avg. Rank & 1.38 & 1.60 & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+% Significance markers (Wilcoxon, α=0.05): $^{\bullet}$ VIDF significantly better; $^{\circ}$ VIDF significantly worse

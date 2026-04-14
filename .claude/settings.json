@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(conda create:*)",
+      "Bash(conda run:*)",
+      "Bash(pip show:*)",
+      "Bash(pip3 show:*)",
+      "Bash(python3 -c \"import geatpy; print\\(geatpy.__version__\\)\")",
+      "Bash(conda list:*)",
+      "Read(//home/**)",
+      "Bash(conda env:*)",
+      "Bash(/home/xujiale/anaconda3/envs/vinfo/bin/pip install:*)",
+      "Bash(ls /home/xujiale/anaconda3/envs/vinfo/lib/python*/site-packages/)",
+      "Bash(ls /home/xujiale/anaconda3/envs/vinfo/bin/python*)",
+      "Bash(/home/xujiale/anaconda3/envs/vinfo/bin/python3.10 -c \"import geatpy; print\\('geatpy ok:', geatpy.__version__\\)\")",
+      "Bash(/home/xujiale/anaconda3/envs/vinfo/bin/python3.10 -c \"import sklearn, pandas, xgboost; from pytorch_tabnet.tab_model import TabNetClassifier; print\\('all imports ok'\\)\")",
+      "Bash(/home/xujiale/anaconda3/envs/vinfo/bin/python3.10 -c ':*)",
+      "Bash(/home/xujiale/anaconda3/envs/vinfo/bin/python3.10 experiment/latex/comparison.py)",
+      "Bash(ls /home/xujiale/pythoncode/myDeepForest/dataset/*.csv)",
+      "Bash(xargs -I{} basename {})",
+      "Bash(ls /home/xujiale/pythoncode/myDeepForest/dataset_pre_transform/*.py)",
+      "Bash(ls /home/xujiale/pythoncode/myDeepForest/experiment/*.py)",
+      "Bash(chmod +x /home/xujiale/pythoncode/myDeepForest/run_all.sh)"
+    ]
+  }
+}

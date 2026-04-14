@@ -1,3 +1,5 @@
+import time
+
 from deepforest.utils import *
 from deepforest.Layer import *
 
@@ -16,6 +18,7 @@ class gcForest:
         self.tolerance = tolerance  # times allowed that current layer's accuracy is lower than the previous best layer
         self.val_acc_list = []  # stores validation accuracy for each layer during training
         self.v_info_dict = {}  # stores v-information metrics for each layer during training
+        self.early_stop_training_time = None  # wall-clock seconds until early stopping would have triggered
 
     def train(self, train_data, train_label):
         """
@@ -33,14 +36,16 @@ class gcForest:
         best_acc = 0
         bad = 0
         best_layer_index = 0
-        
+        self.early_stop_training_time = None  # reset each call
+        _train_start = time.time()
+
         # v-information metrics lists for all layers
         layer_v_info_list = []
         layer_hv_empty_list = []
         layer_hv_cond_list = []
 
         print("start training")
-        while layer_index <= self.max_layer:
+        while layer_index < self.max_layer:
             layer = Layer(self.num_forests, self.num_estimator, self.num_classes, self.n_fold, layer_index,
                           self.max_depth, 1)
             val_prob, feature_new, layer_v_info, layer_hv_empty, layer_hv_cond = layer.train(train_data, train_label)
@@ -66,11 +71,15 @@ class gcForest:
                 bad += 1
             layer_index += 1
             if bad > self.tolerance:
-                pass
-                # break
+                if self.early_stop_training_time is None:
+                    self.early_stop_training_time = time.time() - _train_start
+                # continue training to max_layer for recording full layer curves
         self.number_of_layers = layer_index
         self.best_layer = best_layer_index
-        self.val_acc_list = val_acc  # save validation accuracy list to member variable
+        self.val_acc_list = val_acc
+        # If early stopping never triggered, early_stop_training_time = total training time
+        if self.early_stop_training_time is None:
+            self.early_stop_training_time = time.time() - _train_start
         self.v_info_dict = {
             'v_info': layer_v_info_list,
             'hv_empty': layer_hv_empty_list,
@@ -153,30 +162,36 @@ class gcForest:
         test_data_raw = test_data.copy()
         test_p = []
         test_acc = []
-        
+        self.best_layer_testing_time = None  # time to test up to and including best_layer
+
         # v-information metrics lists for all layers
         layer_v_info_list = []
         layer_hv_empty_list = []
         layer_hv_cond_list = []
 
         print("start testing")
+        _test_start = time.time()
         for i in range(self.number_of_layers):
             model = self.layer_list[i]
             test_avg, test_feature_new, layer_v_info, layer_hv_empty, layer_hv_cond = model.predict(test_data, test_label)
             test_p.append(test_avg)
             accuracy = compute_accuracy(test_label, test_avg)
             test_acc.append(accuracy)
-            
+
             # collect v-information metrics for this layer
             layer_v_info_list.append(layer_v_info)
             layer_hv_empty_list.append(layer_hv_empty)
             layer_hv_cond_list.append(layer_hv_cond)
-            
+
+            # record testing time up to best_layer
+            if i == self.best_layer:
+                self.best_layer_testing_time = time.time() - _test_start
+
             test_data = np.concatenate([test_data_raw, test_feature_new], axis=1)
             test_data = np.float16(test_data)
             test_data = np.float64(test_data)
         print("testing finished")
-        
+
         test_v_info_dict = {
             'v_info': layer_v_info_list,
             'hv_empty': layer_hv_empty_list,

@@ -12,174 +12,221 @@ sys.path.insert(0, project_root)
 from deepforest.utils import get_dir_in_root
 
 root = get_dir_in_root("result")
-# 配置参数
-result_dirs = [
-    f"{root}/DF_test_vinfo",
-    f"{root}/DF_Vinfo",
 
+# =====================================================================
+# Configuration
+# =====================================================================
+# Each entry: (result_dir_name, method_file_prefix, display_name)
+# method_file_prefix is used to match files: {prefix}_{dataset}_*.csv
+METHOD_CONFIG = [
+    ("DF",        "gcForest",            "Deepforest"),
+    ("DF_Vinfo",  "CascadeForestVinfo",  "VIDF"),
+    ("RF",        "RF",                  "Random Forest"),
+    ("ExtraTrees","ExtraTrees",          "Extra Trees"),
+    ("XGBoost",   "XGBoost",             "XGBoost"),
+    ("TabNet",    "TabNet",              "TabNet"),
 ]
 
+# Metric to compare (column name in csv files)
+query = "accuracy"   # or "macro_f1"
 
+# Name of our proposed method (display_name in METHOD_CONFIG)
+# Significance markers are added to OTHER methods' cells,
+# indicating whether VIDF is significantly better (bullet) or worse (circ).
+OUR_METHOD_NAME = "VIDF"
 
-method_name = ["gcForest", "CascadeForestVinfo"]
-column_names = ["DF", "DF_Vinfo"]
+# Whether to run significance tests (Wilcoxon signed-rank, alpha=0.05)
+ENABLE_SIGNIFICANCE_TEST = True
 
-query = "accuracy"  # 要提取的指标列
+# Significance level
+ALPHA = 0.05
 
-# 自动获取所有数据集名称（通过扫描第一个文件夹中的文件）
-# 只匹配以方法名开头的文件，避免匹配到其他文件如final_layers_summary.csv
-sample_files = glob.glob(f"{result_dirs[0]}/{method_name[0]}_*.csv")
-s = set([os.path.basename(f).split('_')[1] for f in sample_files])
-# s.remove("DryBean")
-# s.remove("Nursery")
-# s.remove("Letter")
-dataset_list = sorted(list(s))
+# =====================================================================
+# Discover datasets from DF results (reference method)
+# =====================================================================
+ref_dir = os.path.join(root, "DF")
+ref_prefix = "gcForest"
+sample_files = glob.glob(f"{ref_dir}/{ref_prefix}_*.csv")
+dataset_list = sorted(set(
+    os.path.basename(f).split('_')[1]
+    for f in sample_files
+))
 
-# 初始化结果存储
-results = {dataset: {version: [] for version in column_names} for dataset in dataset_list}
-raw_results = {dataset: {version: [] for version in column_names} for dataset in dataset_list}
+if not dataset_list:
+    print(f"Warning: No result files found in {ref_dir}. Run pipeline.py first.")
+    dataset_list = []
 
-# 读取所有数据
-for id, path in enumerate(result_dirs):
-    version_name = column_names[id]
-    method = method_name[id]  # 获取对应的算法名称
+column_names = [cfg[2] for cfg in METHOD_CONFIG]
+
+# =====================================================================
+# Read all results
+# =====================================================================
+results     = {dataset: {name: None for name in column_names} for dataset in dataset_list}
+raw_results = {dataset: {name: None for name in column_names} for dataset in dataset_list}
+
+for dir_name, prefix, display_name in METHOD_CONFIG:
+    path = os.path.join(root, dir_name)
+    if not os.path.exists(path):
+        print(f"Warning: Result directory {path} does not exist, skipping {display_name}.")
+        continue
 
     for dataset in dataset_list:
-        file_pattern = f"{path}/{method}_{dataset}_*.csv"
+        file_pattern = f"{path}/{prefix}_{dataset}_*.csv"
         matching_files = glob.glob(file_pattern)
+
+        # Fallback: exact name without wildcard suffix (baseline models)
         if not matching_files:
-            print(f"Warning: No files found for {dataset} in {path}")
+            matching_files = glob.glob(f"{path}/{prefix}_{dataset}.csv")
+
+        if not matching_files:
             continue
 
-        # 读取第一个匹配的文件（假设每个数据集在每个版本只有一个文件）
         try:
             df = pd.read_csv(matching_files[0])
             if query in df.columns:
-                mean = df[query].mean()
-                std = df[query].std()
-                results[dataset][version_name] = (mean, std)
-                raw_results[dataset][version_name] = df[query].values
+                vals = df[query].values
+                results[dataset][display_name]     = (vals.mean(), vals.std())
+                raw_results[dataset][display_name] = vals
             else:
-                print(f"Warning: {query} column not found in {matching_files[0]}")
+                print(f"Warning: '{query}' column not found in {matching_files[0]}")
         except Exception as e:
             print(f"Error reading {matching_files[0]}: {e}")
 
-# 计算每个算法的平均排名
-method_ranks = {version: [] for version in column_names}
+# =====================================================================
+# Significance test helper
+# =====================================================================
+def significance_marker(our_scores, their_scores):
+    """
+    Paired Wilcoxon signed-rank test between VIDF and another method.
+    Returns:
+        '$^{\\bullet}$'  if VIDF is significantly BETTER  (p < ALPHA, VIDF mean > other mean)
+        '$^{\\circ}$'    if VIDF is significantly WORSE   (p < ALPHA, VIDF mean < other mean)
+        ''               otherwise (not significant, or unequal run counts)
+    """
+    if our_scores is None or their_scores is None:
+        return ""
+    if len(our_scores) != len(their_scores):
+        return ""
+    differences = our_scores - their_scores
+    # Wilcoxon requires at least one nonzero difference
+    if np.all(differences == 0):
+        return ""
+    try:
+        _, p_value = wilcoxon(differences, alternative='two-sided')
+    except ValueError:
+        return ""
+    if p_value < ALPHA:
+        return r" $^{\bullet}$" if np.mean(our_scores) > np.mean(their_scores) else r" $^{\circ}$"
+    return ""
+
+# =====================================================================
+# Compute average rank per method
+# =====================================================================
+method_ranks = {name: [] for name in column_names}
 for dataset in dataset_list:
-    # 获取当前数据集所有算法的指标值
-    metric_values = []
-    for version in column_names:
-        if results[dataset][version]:
-            metric_values.append(results[dataset][version][0])
-        else:
-            metric_values.append(-np.inf)
-
-    # 计算排名（从1开始）
+    metric_values = [
+        results[dataset][name][0] if results[dataset][name] is not None else -np.inf
+        for name in column_names
+    ]
     ranks = np.argsort(np.argsort(-np.array(metric_values))) + 1
-
-    # 记录每个算法的排名
-    for i, version in enumerate(column_names):
+    for i, name in enumerate(column_names):
         if metric_values[i] != -np.inf:
-            method_ranks[version].append(ranks[i])
+            method_ranks[name].append(ranks[i])
 
-# 计算平均排名
-avg_ranks = {version: np.mean(ranks) for version, ranks in method_ranks.items()}
+avg_ranks = {
+    name: np.mean(r) if r else float('nan')
+    for name, r in method_ranks.items()
+}
 
-# 生成LaTeX表格
+# =====================================================================
+# Generate LaTeX table
+# =====================================================================
 latex_output = []
+latex_output.append("\\begin{table}[htbp]")
+latex_output.append("\\centering")
+latex_output.append(f"\\caption{{Comparison of methods on {query} (\\%)}}")
+latex_output.append("\\label{tab:comparison}")
+latex_output.append("\\resizebox{\\textwidth}{!}{")
 latex_output.append("\\begin{tabular}{l|" + "c" * len(column_names) + "}")
 latex_output.append("\\toprule")
 
-# 表头
+# Header
 header = "Dataset" + "".join([f" & {name}" for name in column_names]) + " \\\\"
 latex_output.append(header)
 latex_output.append("\\midrule")
 
-# 表格内容
+# Rows
 for dataset in dataset_list:
-    line = dataset.replace("_", "\\_")  # 处理LaTeX特殊字符
+    line = dataset.replace("_", "\\_")
 
-    # 收集当前数据集的所有版本数据
-    version_data = []
-    for version in column_names:
-        if results[dataset][version]:
-            version_data.append(results[dataset][version])
-        else:
-            version_data.append(None)
+    version_data   = [results[dataset][name]     for name in column_names]
+    version_raw    = [raw_results[dataset][name] for name in column_names]
+    means          = [d[0] if d is not None else -np.inf for d in version_data]
 
-    # 确定最佳版本和第二佳版本（均值最大和第二大）
-    means = [data[0] if data is not None else -np.inf for data in version_data]
+    our_idx        = column_names.index(OUR_METHOD_NAME) if OUR_METHOD_NAME in column_names else -1
+    our_scores_arr = version_raw[our_idx] if our_idx >= 0 else None
+
+    # Determine best / second-best indices
     if any(m > -np.inf for m in means):
-        # 获取最佳索引
-        best_idx = np.argmax(means)
-        # 将最佳值设为负无穷大，然后找第二大的
-        temp_means = means.copy()
-        temp_means[best_idx] = -np.inf
-        second_best_idx = np.argmax(temp_means)
+        best_idx = int(np.argmax(means))
+        temp = means.copy()
+        temp[best_idx] = -np.inf
+        second_best_idx = int(np.argmax(temp))
     else:
-        best_idx = -1
-        second_best_idx = -1
+        best_idx = second_best_idx = -1
 
-    # 生成表格行
-    for i, version in enumerate(column_names):
+    for i, name in enumerate(column_names):
         data = version_data[i]
         if data is None:
             line += " & $\\times$"
+            continue
+
+        mean, std = data
+
+        # Bold best, underline second-best
+        if i == best_idx:
+            cell = f"\\textbf{{{mean:.4f}$\\pm${std:.4f}}}"
+        elif i == second_best_idx:
+            cell = f"\\underline{{{mean:.4f}$\\pm${std:.4f}}}"
         else:
-            mean, std = data
-            if i == best_idx:
-                line += f" & \\textbf{{{mean:.4f}$\\pm${std:.4f}}}"
-            # elif i == second_best_idx:
-            #     line += f" & \\underline{{{mean:.4f}$\\pm${std:.4f}}}"
-            else:
-                line += f" & {mean:.4f}$\\pm${std:.4f}"
-            
-            # 添加显著性检验标记（与SSDF比较）
-            # if version != "SSDF":  # 跳过SSDF自身
-            #     ssdf_idx = column_names.index("SSDF")
-            #     if raw_results[dataset]["SSDF"] is not None and raw_results[dataset][version] is not None:
-            #         # 进行配对Wilcoxon符号秩检验
-            #         ssdf_scores = np.array(raw_results[dataset]["SSDF"])
-            #         current_scores = np.array(raw_results[dataset][version])
-                    
-            #         # 计算差值（SSDF - 当前算法）
-            #         differences = ssdf_scores - current_scores
-                    
-            #         # 只有当差值不全为0时才进行检验
-            #         if not np.all(differences == 0):
-            #             try:
-            #                 # 进行双侧检验
-            #                 statistics, pvalue = wilcoxon(differences, alternative='two-sided')
-                            
-            #                 if pvalue < 0.05:  # 显著性水平为0.05
-            #                     # 判断SSDF是显著优于还是劣于当前算法
-            #                     if np.median(differences) > 0:
-            #                         line += "$\\bullet$"  # 表示SSDF显著优于当前算法
-            #                     else:
-            #                         line += "$\\circ$"  # 表示SSDF显著劣于当前算法
-            #             except ValueError:
-            #                 # 如果所有差值都相同，wilcoxon会抛出异常，此时不添加标记
-            #                 pass
+            cell = f"{mean:.4f}$\\pm${std:.4f}"
+
+        # Append significance marker on non-VIDF columns
+        if ENABLE_SIGNIFICANCE_TEST and name != OUR_METHOD_NAME:
+            marker = significance_marker(our_scores_arr, version_raw[i])
+            cell += marker
+
+        line += f" & {cell}"
 
     line += " \\\\"
     latex_output.append(line)
 
-# 添加平均排名行
+# Average rank row
 latex_output.append("\\midrule")
 rank_line = "Avg. Rank"
-for version in column_names:
-    rank_line += f" & {avg_ranks[version]:.2f}"
+for name in column_names:
+    r = avg_ranks[name]
+    rank_line += f" & {r:.2f}" if not np.isnan(r) else " & --"
 rank_line += " \\\\"
 latex_output.append(rank_line)
 
-# 表格结尾
 latex_output.append("\\bottomrule")
 latex_output.append("\\end{tabular}")
+latex_output.append("}")  # close \resizebox
+latex_output.append("\\end{table}")
+
+# Legend note
+if ENABLE_SIGNIFICANCE_TEST:
+    latex_output.append(
+        f"% Significance markers (Wilcoxon, α={ALPHA}): "
+        r"$^{\bullet}$ VIDF significantly better; "
+        r"$^{\circ}$ VIDF significantly worse"
+    )
 
 print("\n".join(latex_output))
-# # 输出到文件
-# with open("ssdf_comparison_table.tex", "w") as f:
-#     f.write("\n".join(latex_output))
-#
-# print("LaTeX table generated successfully: ssdf_comparison_table.tex")
+
+# Save to file
+output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "comparison_table.tex")
+with open(output_path, "w") as f:
+    f.write("\n".join(latex_output))
+print(f"\n% Saved to {output_path}")
