@@ -13435,3 +13435,111 @@ Run 2/5
   Forest 1, Fold: selected 27/100 trees, V-info: 0.3311
   Forest 1, Fold: selected 28/100 trees, V-info: 0.3455
   Forest 2, Fold: selected 22/100 trees, V-info: 0.6146
+  Forest 2, Fold: selected 22/100 trees, V-info: 0.6051
+  Forest 2, Fold: selected 25/100 trees, V-info: 0.6159
+  Forest 3, Fold: selected 29/100 trees, V-info: 0.3468
+  Forest 3, Fold: selected 23/100 trees, V-info: 0.3452
+  Forest 3, Fold: selected 23/100 trees, V-info: 0.3451
+Layer 0: Val Acc = 74.69%, V-info = 0.4761
+
+=== Layer 1 ===
+  Forest 0, Fold: selected 35/100 trees, V-info: 0.7587
+  Forest 0, Fold: selected 31/100 trees, V-info: 0.7575
+  Forest 0, Fold: selected 31/100 trees, V-info: 0.7585
+  Forest 1, Fold: selected 21/100 trees, V-info: 0.5402
+  Forest 1, Fold: selected 24/100 trees, V-info: 0.5317
+  Forest 1, Fold: selected 22/100 trees, V-info: 0.5390
+  Forest 2, Fold: selected 32/100 trees, V-info: 0.7571
+  Forest 2, Fold: selected 33/100 trees, V-info: 0.7582
+  Forest 2, Fold: selected 31/100 trees, V-info: 0.7601
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.5313
+  Forest 3, Fold: selected 24/100 trees, V-info: 0.5293
+  Forest 3, Fold: selected 22/100 trees, V-info: 0.5308
+Layer 1: Val Acc = 80.31%, V-info = 0.6460
+
+=== Layer 2 ===
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.7902
+  Forest 0, Fold: selected 33/100 trees, V-info: 0.7947
+  Forest 0, Fold: selected 30/100 trees, V-info: 0.7936
+  Forest 1, Fold: selected 26/100 trees, V-info: 0.6075
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.6276
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.6235
+  Forest 2, Fold: selected 33/100 trees, V-info: 0.7907
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.7933
+  Forest 2, Fold: selected 31/100 trees, V-info: 0.7943
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.6142
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.6174
+  Forest 3, Fold: selected 30/100 trees, V-info: 0.6248
+Layer 2: Val Acc = 82.39%, V-info = 0.7060
+
+=== Layer 3 ===
+  Forest 0, Fold: selected 32/100 trees, V-info: 0.8085
+  Forest 0, Fold: selected 38/100 trees, V-info: 0.8052
+  Forest 0, Fold: selected 38/100 trees, V-info: 0.8096
+  Forest 1, Fold: selected 32/100 trees, V-info: 0.6543
+  Forest 1, Fold: selected 28/100 trees, V-info: 0.6548
+  Forest 1, Fold: selected 23/100 trees, V-info: 0.6524
+  Forest 2, Fold: selected 37/100 trees, V-info: 0.8088
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8061
+  Forest 2, Fold: selected 42/100 trees, V-info: 0.8081
+  Forest 3, Fold: selected 31/100 trees, V-info: 0.6667
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.6433
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.6637
+Layer 3: Val Acc = 83.52%, V-info = 0.7318
+
+=== Layer 4 ===
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8151
+  Forest 0, Fold: selected 36/100 trees, V-info: 0.8142
+  Forest 0, Fold: selected 41/100 trees, V-info: 0.8159
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.6715
+  Forest 1, Fold: selected 28/100 trees, V-info: 0.6737
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.6669
+  Forest 2, Fold: selected 37/100 trees, V-info: 0.8124
+  Forest 2, Fold: selected 44/100 trees, V-info: 0.8163
+  Forest 2, Fold: selected 38/100 trees, V-info: 0.8158
+  Forest 3, Fold: selected 20/100 trees, V-info: 0.6887
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.6776
+  Forest 3, Fold: selected 28/100 trees, V-info: 0.6663
+Layer 4: Val Acc = 84.07%, V-info = 0.7445
+
+=== Layer 5 ===
+  Forest 0, Fold: selected 42/100 trees, V-info: 0.8199
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8180
+  Forest 0, Fold: selected 41/100 trees, V-info: 0.8175
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.6782
+  Forest 1, Fold: selected 25/100 trees, V-info: 0.6858
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.6829
+  Forest 2, Fold: selected 42/100 trees, V-info: 0.8202
+  Forest 2, Fold: selected 37/100 trees, V-info: 0.8192
+  Forest 2, Fold: selected 40/100 trees, V-info: 0.8164
+  Forest 3, Fold: selected 28/100 trees, V-info: 0.6867
+  Forest 3, Fold: selected 24/100 trees, V-info: 0.6854
+  Forest 3, Fold: selected 23/100 trees, V-info: 0.7035
+Layer 5: Val Acc = 84.40%, V-info = 0.7528
+
+=== Layer 6 ===
+  Forest 0, Fold: selected 42/100 trees, V-info: 0.8207
+  Forest 0, Fold: selected 42/100 trees, V-info: 0.8193
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8218
+  Forest 1, Fold: selected 25/100 trees, V-info: 0.6883
+  Forest 1, Fold: selected 37/100 trees, V-info: 0.6940
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.6969
+  Forest 2, Fold: selected 39/100 trees, V-info: 0.8223
+  Forest 2, Fold: selected 43/100 trees, V-info: 0.8177
+  Forest 2, Fold: selected 43/100 trees, V-info: 0.8225
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.6895
+  Forest 3, Fold: selected 23/100 trees, V-info: 0.6834
+  Forest 3, Fold: selected 28/100 trees, V-info: 0.6912
+Layer 6: Val Acc = 84.54%, V-info = 0.7556
+
+=== Layer 7 ===
+  Forest 0, Fold: selected 44/100 trees, V-info: 0.8222
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8218
+  Forest 0, Fold: selected 47/100 trees, V-info: 0.8227
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.7022
+  Forest 1, Fold: selected 25/100 trees, V-info: 0.6980
+  Forest 1, Fold: selected 32/100 trees, V-info: 0.6861
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8244
+  Forest 2, Fold: selected 45/100 trees, V-info: 0.8201
+  Forest 2, Fold: selected 46/100 trees, V-info: 0.8219
+  Forest 3, Fold: selected 31/100 trees, V-info: 0.6867
