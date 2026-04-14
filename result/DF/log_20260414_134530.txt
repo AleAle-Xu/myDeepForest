@@ -1,0 +1,1175 @@
+Experiment started at 20260414_134530
+Log file: /home/xjl/pythoncode/myDeepForest/result/DF/log_20260414_134530.txt
+
+
+============================================================
+Running experiments on Gamma
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 88.08%
+  Macro-F1: 86.52%
+  Best Layer: 2
+  Training Time (total): 18.29s
+  Training Time (early-stop): 12.84s
+  Testing Time: 5.24s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 87.52%
+  Macro-F1: 86.01%
+  Best Layer: 5
+  Training Time (total): 18.17s
+  Training Time (early-stop): 18.16s
+  Testing Time: 5.26s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 87.12%
+  Macro-F1: 85.52%
+  Best Layer: 2
+  Training Time (total): 18.43s
+  Training Time (early-stop): 13.06s
+  Testing Time: 5.27s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 87.70%
+  Macro-F1: 85.99%
+  Best Layer: 4
+  Training Time (total): 17.85s
+  Training Time (early-stop): 15.97s
+  Testing Time: 5.23s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 87.56%
+  Macro-F1: 85.88%
+  Best Layer: 6
+  Training Time (total): 18.44s
+  Training Time (early-stop): 11.12s
+  Testing Time: 5.24s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Gamma_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Gamma:
+  Mean Accuracy: 87.60% ± 0.35%
+  Mean Macro-F1: 85.98% ± 0.36%
+  Mean Best Layer: 3.80
+  Mean Training Time: 18.23s
+  Mean Testing Time: 5.25s
+
+============================================================
+Running experiments on DryBean
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 92.12%
+  Macro-F1: 93.37%
+  Best Layer: 1
+  Training Time (total): 18.01s
+  Training Time (early-stop): 10.77s
+  Testing Time: 5.08s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 92.61%
+  Macro-F1: 93.53%
+  Best Layer: 1
+  Training Time (total): 17.65s
+  Training Time (early-stop): 10.56s
+  Testing Time: 5.27s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 92.87%
+  Macro-F1: 94.05%
+  Best Layer: 2
+  Training Time (total): 17.78s
+  Training Time (early-stop): 12.24s
+  Testing Time: 5.29s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 91.80%
+  Macro-F1: 92.95%
+  Best Layer: 4
+  Training Time (total): 17.81s
+  Training Time (early-stop): 16.10s
+  Testing Time: 5.23s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 92.24%
+  Macro-F1: 93.37%
+  Best Layer: 1
+  Training Time (total): 17.76s
+  Training Time (early-stop): 10.70s
+  Testing Time: 5.27s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_DryBean_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for DryBean:
+  Mean Accuracy: 92.33% ± 0.42%
+  Mean Macro-F1: 93.46% ± 0.40%
+  Mean Best Layer: 1.80
+  Mean Training Time: 17.80s
+  Mean Testing Time: 5.23s
+
+============================================================
+Running experiments on CredictCard
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 81.92%
+  Macro-F1: 66.97%
+  Best Layer: 4
+  Training Time (total): 19.53s
+  Training Time (early-stop): 17.56s
+  Testing Time: 5.06s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 81.94%
+  Macro-F1: 67.92%
+  Best Layer: 4
+  Training Time (total): 19.33s
+  Training Time (early-stop): 17.43s
+  Testing Time: 5.27s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 81.90%
+  Macro-F1: 65.82%
+  Best Layer: 8
+  Training Time (total): 19.26s
+  Training Time (early-stop): 19.26s
+  Testing Time: 5.29s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 81.79%
+  Macro-F1: 66.98%
+  Best Layer: 2
+  Training Time (total): 19.22s
+  Training Time (early-stop): 13.50s
+  Testing Time: 5.21s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 81.76%
+  Macro-F1: 66.89%
+  Best Layer: 5
+  Training Time (total): 19.56s
+  Training Time (early-stop): 19.56s
+  Testing Time: 5.31s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_CredictCard_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for CredictCard:
+  Mean Accuracy: 81.86% ± 0.08%
+  Mean Macro-F1: 66.92% ± 0.74%
+  Mean Best Layer: 4.60
+  Mean Training Time: 19.38s
+  Mean Testing Time: 5.23s
+
+============================================================
+Running experiments on BankMarketing
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 90.14%
+  Macro-F1: 68.23%
+  Best Layer: 2
+  Training Time (total): 18.49s
+  Training Time (early-stop): 13.05s
+  Testing Time: 5.20s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 90.25%
+  Macro-F1: 69.71%
+  Best Layer: 5
+  Training Time (total): 18.90s
+  Training Time (early-stop): 18.90s
+  Testing Time: 5.30s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 90.22%
+  Macro-F1: 67.26%
+  Best Layer: 5
+  Training Time (total): 19.16s
+  Training Time (early-stop): 19.16s
+  Testing Time: 5.32s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 90.19%
+  Macro-F1: 68.43%
+  Best Layer: 3
+  Training Time (total): 19.60s
+  Training Time (early-stop): 15.60s
+  Testing Time: 5.40s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 90.43%
+  Macro-F1: 68.62%
+  Best Layer: 2
+  Training Time (total): 19.26s
+  Training Time (early-stop): 13.47s
+  Testing Time: 5.24s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_BankMarketing_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for BankMarketing:
+  Mean Accuracy: 90.25% ± 0.11%
+  Mean Macro-F1: 68.45% ± 0.88%
+  Mean Best Layer: 3.40
+  Mean Training Time: 19.08s
+  Mean Testing Time: 5.29s
+
+============================================================
+Running experiments on Adult
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 85.29%
+  Macro-F1: 76.56%
+  Best Layer: 6
+  Training Time (total): 19.39s
+  Training Time (early-stop): 19.39s
+  Testing Time: 5.60s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 85.59%
+  Macro-F1: 77.22%
+  Best Layer: 5
+  Training Time (total): 19.29s
+  Training Time (early-stop): 19.28s
+  Testing Time: 5.02s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 85.04%
+  Macro-F1: 76.08%
+  Best Layer: 3
+  Training Time (total): 19.32s
+  Training Time (early-stop): 15.70s
+  Testing Time: 5.01s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 85.46%
+  Macro-F1: 77.63%
+  Best Layer: 7
+  Training Time (total): 19.03s
+  Training Time (early-stop): 19.02s
+  Testing Time: 5.23s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 85.31%
+  Macro-F1: 76.47%
+  Best Layer: 5
+  Training Time (total): 19.07s
+  Training Time (early-stop): 19.06s
+  Testing Time: 4.64s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Adult_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Adult:
+  Mean Accuracy: 85.34% ± 0.21%
+  Mean Macro-F1: 76.79% ± 0.62%
+  Mean Best Layer: 5.20
+  Mean Training Time: 19.22s
+  Mean Testing Time: 5.10s
+
+============================================================
+Running experiments on Diabetes
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.74%
+  Macro-F1: 57.21%
+  Best Layer: 4
+  Training Time (total): 32.45s
+  Training Time (early-stop): 29.16s
+  Testing Time: 7.72s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.54%
+  Macro-F1: 53.86%
+  Best Layer: 6
+  Training Time (total): 32.31s
+  Training Time (early-stop): 32.30s
+  Testing Time: 7.64s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.56%
+  Macro-F1: 55.54%
+  Best Layer: 2
+  Training Time (total): 32.94s
+  Training Time (early-stop): 22.83s
+  Testing Time: 7.91s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.63%
+  Macro-F1: 55.87%
+  Best Layer: 3
+  Training Time (total): 32.13s
+  Training Time (early-stop): 25.53s
+  Testing Time: 7.90s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.66%
+  Macro-F1: 55.61%
+  Best Layer: 5
+  Training Time (total): 32.41s
+  Training Time (early-stop): 32.41s
+  Testing Time: 7.53s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Diabetes_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Diabetes:
+  Mean Accuracy: 86.63% ± 0.08%
+  Mean Macro-F1: 55.62% ± 1.20%
+  Mean Best Layer: 4.00
+  Mean Training Time: 32.45s
+  Mean Testing Time: 7.74s
+
+============================================================
+Running experiments on HTRU2
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 97.82%
+  Macro-F1: 93.20%
+  Best Layer: 3
+  Training Time (total): 18.36s
+  Training Time (early-stop): 14.70s
+  Testing Time: 5.31s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 98.18%
+  Macro-F1: 94.27%
+  Best Layer: 7
+  Training Time (total): 18.55s
+  Training Time (early-stop): 11.08s
+  Testing Time: 5.22s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 97.67%
+  Macro-F1: 92.72%
+  Best Layer: 1
+  Training Time (total): 18.87s
+  Training Time (early-stop): 11.14s
+  Testing Time: 5.27s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 98.04%
+  Macro-F1: 93.98%
+  Best Layer: 7
+  Training Time (total): 18.67s
+  Training Time (early-stop): 11.15s
+  Testing Time: 5.23s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 97.91%
+  Macro-F1: 93.75%
+  Best Layer: 5
+  Training Time (total): 17.93s
+  Training Time (early-stop): 17.93s
+  Testing Time: 5.27s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_HTRU2_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for HTRU2:
+  Mean Accuracy: 97.93% ± 0.19%
+  Mean Macro-F1: 93.58% ± 0.62%
+  Mean Best Layer: 4.60
+  Mean Training Time: 18.48s
+  Mean Testing Time: 5.26s
+
+============================================================
+Running experiments on Rice
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 92.13%
+  Macro-F1: 91.92%
+  Best Layer: 8
+  Training Time (total): 22.35s
+  Training Time (early-stop): 15.54s
+  Testing Time: 4.92s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 91.78%
+  Macro-F1: 91.58%
+  Best Layer: 6
+  Training Time (total): 22.70s
+  Training Time (early-stop): 22.70s
+  Testing Time: 4.76s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 92.13%
+  Macro-F1: 91.93%
+  Best Layer: 6
+  Training Time (total): 22.00s
+  Training Time (early-stop): 13.24s
+  Testing Time: 4.67s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 92.56%
+  Macro-F1: 92.37%
+  Best Layer: 4
+  Training Time (total): 21.85s
+  Training Time (early-stop): 19.66s
+  Testing Time: 5.00s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 93.26%
+  Macro-F1: 93.13%
+  Best Layer: 9
+  Training Time (total): 21.60s
+  Training Time (early-stop): 10.50s
+  Testing Time: 4.66s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Rice_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Rice:
+  Mean Accuracy: 92.37% ± 0.57%
+  Mean Macro-F1: 92.19% ± 0.59%
+  Mean Best Layer: 6.60
+  Mean Training Time: 22.10s
+  Mean Testing Time: 4.80s
+
+============================================================
+Running experiments on Mushroom
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Best Layer: 0
+  Training Time (total): 23.29s
+  Training Time (early-stop): 11.62s
+  Testing Time: 5.20s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Best Layer: 0
+  Training Time (total): 23.04s
+  Training Time (early-stop): 11.29s
+  Testing Time: 5.19s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Best Layer: 0
+  Training Time (total): 23.40s
+  Training Time (early-stop): 11.79s
+  Testing Time: 5.21s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Best Layer: 0
+  Training Time (total): 22.77s
+  Training Time (early-stop): 11.15s
+  Testing Time: 5.26s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Best Layer: 0
+  Training Time (total): 23.41s
+  Training Time (early-stop): 11.73s
+  Testing Time: 5.21s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Mushroom_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Mushroom:
+  Mean Accuracy: 100.00% ± 0.00%
+  Mean Macro-F1: 100.00% ± 0.00%
+  Mean Best Layer: 0.00
+  Mean Training Time: 23.18s
+  Mean Testing Time: 5.21s
+
+============================================================
+Running experiments on Websites
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 96.38%
+  Macro-F1: 96.33%
+  Best Layer: 4
+  Training Time (total): 21.82s
+  Training Time (early-stop): 19.65s
+  Testing Time: 5.24s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 96.32%
+  Macro-F1: 96.27%
+  Best Layer: 7
+  Training Time (total): 21.78s
+  Training Time (early-stop): 21.78s
+  Testing Time: 5.22s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 96.29%
+  Macro-F1: 96.24%
+  Best Layer: 5
+  Training Time (total): 21.43s
+  Training Time (early-stop): 21.43s
+  Testing Time: 5.15s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 96.29%
+  Macro-F1: 96.25%
+  Best Layer: 7
+  Training Time (total): 22.04s
+  Training Time (early-stop): 22.04s
+  Testing Time: 4.93s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 96.50%
+  Macro-F1: 96.46%
+  Best Layer: 4
+  Training Time (total): 22.17s
+  Training Time (early-stop): 20.04s
+  Testing Time: 5.25s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Websites_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Websites:
+  Mean Accuracy: 96.36% ± 0.09%
+  Mean Macro-F1: 96.31% ± 0.09%
+  Mean Best Layer: 5.40
+  Mean Training Time: 21.85s
+  Mean Testing Time: 5.16s
+
+============================================================
+Running experiments on Letter
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 87.28%
+  Macro-F1: 87.53%
+  Best Layer: 0
+  Training Time (total): 20.29s
+  Training Time (early-stop): 10.46s
+  Testing Time: 7.50s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.63%
+  Macro-F1: 86.90%
+  Best Layer: 0
+  Training Time (total): 20.76s
+  Training Time (early-stop): 10.57s
+  Testing Time: 7.26s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.10%
+  Macro-F1: 86.31%
+  Best Layer: 0
+  Training Time (total): 20.03s
+  Training Time (early-stop): 9.83s
+  Testing Time: 7.60s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 87.35%
+  Macro-F1: 87.58%
+  Best Layer: 0
+  Training Time (total): 20.62s
+  Training Time (early-stop): 10.50s
+  Testing Time: 7.32s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 87.12%
+  Macro-F1: 87.31%
+  Best Layer: 0
+  Training Time (total): 20.49s
+  Training Time (early-stop): 10.08s
+  Testing Time: 7.37s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Letter_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Letter:
+  Mean Accuracy: 86.90% ± 0.53%
+  Mean Macro-F1: 87.13% ± 0.53%
+  Mean Best Layer: 0.00
+  Mean Training Time: 20.44s
+  Mean Testing Time: 7.41s
+
+============================================================
+Running experiments on Car
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 97.50%
+  Macro-F1: 93.61%
+  Best Layer: 3
+  Training Time (total): 22.99s
+  Training Time (early-stop): 18.41s
+  Testing Time: 5.01s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 98.65%
+  Macro-F1: 95.35%
+  Best Layer: 2
+  Training Time (total): 22.09s
+  Training Time (early-stop): 15.28s
+  Testing Time: 5.10s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 98.65%
+  Macro-F1: 95.83%
+  Best Layer: 3
+  Training Time (total): 23.01s
+  Training Time (early-stop): 18.37s
+  Testing Time: 5.09s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 97.11%
+  Macro-F1: 89.33%
+  Best Layer: 3
+  Training Time (total): 22.84s
+  Training Time (early-stop): 18.42s
+  Testing Time: 5.08s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 98.46%
+  Macro-F1: 97.19%
+  Best Layer: 3
+  Training Time (total): 22.67s
+  Training Time (early-stop): 18.12s
+  Testing Time: 5.20s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Car_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Car:
+  Mean Accuracy: 98.07% ± 0.72%
+  Mean Macro-F1: 94.26% ± 3.04%
+  Mean Best Layer: 2.80
+  Mean Training Time: 22.72s
+  Mean Testing Time: 5.10s
+
+============================================================
+Running experiments on Maternal
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 84.59%
+  Macro-F1: 84.57%
+  Best Layer: 3
+  Training Time (total): 20.62s
+  Training Time (early-stop): 16.59s
+  Testing Time: 4.15s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 81.31%
+  Macro-F1: 81.40%
+  Best Layer: 2
+  Training Time (total): 20.72s
+  Training Time (early-stop): 14.58s
+  Testing Time: 4.88s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 80.66%
+  Macro-F1: 80.66%
+  Best Layer: 2
+  Training Time (total): 20.67s
+  Training Time (early-stop): 14.42s
+  Testing Time: 4.82s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 80.00%
+  Macro-F1: 80.43%
+  Best Layer: 8
+  Training Time (total): 20.32s
+  Training Time (early-stop): 20.32s
+  Testing Time: 4.78s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 82.95%
+  Macro-F1: 83.30%
+  Best Layer: 1
+  Training Time (total): 20.66s
+  Training Time (early-stop): 12.49s
+  Testing Time: 4.76s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Maternal_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Maternal:
+  Mean Accuracy: 81.90% ± 1.86%
+  Mean Macro-F1: 82.07% ± 1.79%
+  Mean Best Layer: 3.20
+  Mean Training Time: 20.60s
+  Mean Testing Time: 4.68s
+
+============================================================
+Running experiments on Student
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 77.26%
+  Macro-F1: 67.88%
+  Best Layer: 1
+  Training Time (total): 20.43s
+  Training Time (early-stop): 12.60s
+  Testing Time: 5.23s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 77.48%
+  Macro-F1: 69.05%
+  Best Layer: 2
+  Training Time (total): 21.24s
+  Training Time (early-stop): 14.71s
+  Testing Time: 5.19s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 77.86%
+  Macro-F1: 69.28%
+  Best Layer: 2
+  Training Time (total): 21.10s
+  Training Time (early-stop): 14.83s
+  Testing Time: 5.09s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 77.03%
+  Macro-F1: 67.12%
+  Best Layer: 2
+  Training Time (total): 20.93s
+  Training Time (early-stop): 14.76s
+  Testing Time: 5.19s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 78.09%
+  Macro-F1: 68.92%
+  Best Layer: 1
+  Training Time (total): 20.64s
+  Training Time (early-stop): 12.49s
+  Testing Time: 5.24s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Student_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Student:
+  Mean Accuracy: 77.55% ± 0.43%
+  Mean Macro-F1: 68.45% ± 0.92%
+  Mean Best Layer: 1.60
+  Mean Training Time: 20.87s
+  Mean Testing Time: 5.19s
+
+============================================================
+Running experiments on HeartDisease
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 58.89%
+  Macro-F1: 28.32%
+  Best Layer: 5
+  Training Time (total): 18.75s
+  Training Time (early-stop): 18.75s
+  Testing Time: 3.92s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 58.89%
+  Macro-F1: 25.98%
+  Best Layer: 1
+  Training Time (total): 19.09s
+  Training Time (early-stop): 11.27s
+  Testing Time: 3.95s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 58.89%
+  Macro-F1: 33.97%
+  Best Layer: 7
+  Training Time (total): 19.82s
+  Training Time (early-stop): 19.82s
+  Testing Time: 3.85s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 56.67%
+  Macro-F1: 30.80%
+  Best Layer: 6
+  Training Time (total): 19.37s
+  Training Time (early-stop): 19.37s
+  Testing Time: 3.94s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 54.44%
+  Macro-F1: 26.24%
+  Best Layer: 8
+  Training Time (total): 19.19s
+  Training Time (early-stop): 19.19s
+  Testing Time: 3.95s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_HeartDisease_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for HeartDisease:
+  Mean Accuracy: 57.56% ± 1.99%
+  Mean Macro-F1: 29.06% ± 3.36%
+  Mean Best Layer: 5.40
+  Mean Training Time: 19.24s
+  Mean Testing Time: 3.92s
+
+============================================================
+Running experiments on Covertype
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.17%
+  Macro-F1: 82.17%
+  Best Layer: 9
+  Training Time (total): 131.63s
+  Training Time (early-stop): 131.60s
+  Testing Time: 15.66s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.33%
+  Macro-F1: 82.13%
+  Best Layer: 9
+  Training Time (total): 131.05s
+  Training Time (early-stop): 131.03s
+  Testing Time: 15.46s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.38%
+  Macro-F1: 82.18%
+  Best Layer: 9
+  Training Time (total): 131.82s
+  Training Time (early-stop): 131.80s
+  Testing Time: 15.54s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.14%
+  Macro-F1: 82.10%
+  Best Layer: 9
+  Training Time (total): 131.57s
+  Training Time (early-stop): 131.55s
+  Testing Time: 15.32s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 86.21%
+  Macro-F1: 81.73%
+  Best Layer: 9
+  Training Time (total): 132.42s
+  Training Time (early-stop): 132.40s
+  Testing Time: 15.40s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Covertype_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Covertype:
+  Mean Accuracy: 86.25% ± 0.11%
+  Mean Macro-F1: 82.06% ± 0.19%
+  Mean Best Layer: 9.00
+  Mean Training Time: 131.70s
+  Mean Testing Time: 15.48s
+
+============================================================
+Successful datasets: ['Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes', 'HTRU2', 'Rice', 'Mushroom', 'Websites', 'Letter', 'Car', 'Maternal', 'Student', 'HeartDisease', 'Covertype']
+============================================================
