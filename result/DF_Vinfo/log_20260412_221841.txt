@@ -13543,3 +13543,589 @@ Layer 6: Val Acc = 84.54%, V-info = 0.7556
   Forest 2, Fold: selected 45/100 trees, V-info: 0.8201
   Forest 2, Fold: selected 46/100 trees, V-info: 0.8219
   Forest 3, Fold: selected 31/100 trees, V-info: 0.6867
+  Forest 3, Fold: selected 30/100 trees, V-info: 0.7117
+  Forest 3, Fold: selected 22/100 trees, V-info: 0.6930
+Layer 7: Val Acc = 84.67%, V-info = 0.7592
+
+=== Layer 8 ===
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8213
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.8238
+  Forest 0, Fold: selected 47/100 trees, V-info: 0.8236
+  Forest 1, Fold: selected 31/100 trees, V-info: 0.7038
+  Forest 1, Fold: selected 23/100 trees, V-info: 0.7214
+  Forest 1, Fold: selected 23/100 trees, V-info: 0.7100
+  Forest 2, Fold: selected 44/100 trees, V-info: 0.8218
+  Forest 2, Fold: selected 43/100 trees, V-info: 0.8217
+  Forest 2, Fold: selected 43/100 trees, V-info: 0.8252
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.7131
+  Forest 3, Fold: selected 29/100 trees, V-info: 0.7097
+  Forest 3, Fold: selected 28/100 trees, V-info: 0.7062
+Layer 8: Val Acc = 84.74%, V-info = 0.7668
+
+=== Layer 9 ===
+  Forest 0, Fold: selected 43/100 trees, V-info: 0.8222
+  Forest 0, Fold: selected 41/100 trees, V-info: 0.8255
+  Forest 0, Fold: selected 41/100 trees, V-info: 0.8225
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.6936
+  Forest 1, Fold: selected 32/100 trees, V-info: 0.7068
+  Forest 1, Fold: selected 32/100 trees, V-info: 0.6915
+  Forest 2, Fold: selected 50/100 trees, V-info: 0.8231
+  Forest 2, Fold: selected 49/100 trees, V-info: 0.8232
+  Forest 2, Fold: selected 44/100 trees, V-info: 0.8229
+  Forest 3, Fold: selected 21/100 trees, V-info: 0.7057
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.6995
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.7088
+Layer 9: Val Acc = 84.79%, V-info = 0.7621
+
+Training completed. Best layer: 8
+Layer 0: Test Acc = 74.79%
+Layer 1: Test Acc = 80.91%
+Layer 2: Test Acc = 82.94%
+Layer 3: Test Acc = 84.21%
+Layer 4: Test Acc = 84.91%
+Layer 5: Test Acc = 85.34%
+Layer 6: Test Acc = 85.60%
+Layer 7: Test Acc = 85.79%
+Layer 8: Test Acc = 85.93%
+Layer 9: Test Acc = 86.02%
+
+Best layer (8) Test Acc: 85.93%
+  Accuracy: 85.93%
+  Macro-F1: 81.20%
+  Best Layer: 8
+  Training Time (total): 19688.44s
+  Training Time (early-stop): 19688.40s
+  Testing Time: 71.59s
+  Layer Avg Ensemble Sizes: [25.583333333333332, 27.583333333333332, 30.833333333333332, 33.0, 33.0, 33.5, 34.583333333333336, 35.833333333333336, 34.666666666666664, 36.25]
+
+Run 3/5
+
+=== Layer 0 ===
+  Forest 0, Fold: selected 31/100 trees, V-info: 0.6165
+  Forest 0, Fold: selected 29/100 trees, V-info: 0.6125
+  Forest 0, Fold: selected 22/100 trees, V-info: 0.6130
+  Forest 1, Fold: selected 22/100 trees, V-info: 0.3709
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.3318
+  Forest 1, Fold: selected 19/100 trees, V-info: 0.3612
+  Forest 2, Fold: selected 25/100 trees, V-info: 0.6119
+  Forest 2, Fold: selected 35/100 trees, V-info: 0.5999
+  Forest 2, Fold: selected 23/100 trees, V-info: 0.6136
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.3328
+  Forest 3, Fold: selected 23/100 trees, V-info: 0.3507
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.3579
+Layer 0: Val Acc = 74.90%, V-info = 0.4811
+
+=== Layer 1 ===
+  Forest 0, Fold: selected 32/100 trees, V-info: 0.7611
+  Forest 0, Fold: selected 35/100 trees, V-info: 0.7560
+  Forest 0, Fold: selected 31/100 trees, V-info: 0.7614
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.5196
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.5261
+  Forest 1, Fold: selected 25/100 trees, V-info: 0.5142
+  Forest 2, Fold: selected 35/100 trees, V-info: 0.7585
+  Forest 2, Fold: selected 28/100 trees, V-info: 0.7627
+  Forest 2, Fold: selected 32/100 trees, V-info: 0.7599
+  Forest 3, Fold: selected 19/100 trees, V-info: 0.5360
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.5112
+  Forest 3, Fold: selected 22/100 trees, V-info: 0.5352
+Layer 1: Val Acc = 80.20%, V-info = 0.6418
+
+=== Layer 2 ===
+  Forest 0, Fold: selected 33/100 trees, V-info: 0.7962
+  Forest 0, Fold: selected 35/100 trees, V-info: 0.7953
+  Forest 0, Fold: selected 35/100 trees, V-info: 0.7972
+  Forest 1, Fold: selected 24/100 trees, V-info: 0.6177
+  Forest 1, Fold: selected 31/100 trees, V-info: 0.6178
+  Forest 1, Fold: selected 22/100 trees, V-info: 0.6273
+  Forest 2, Fold: selected 36/100 trees, V-info: 0.7979
+  Forest 2, Fold: selected 34/100 trees, V-info: 0.7943
+  Forest 2, Fold: selected 31/100 trees, V-info: 0.7965
+  Forest 3, Fold: selected 24/100 trees, V-info: 0.6167
+  Forest 3, Fold: selected 29/100 trees, V-info: 0.6169
+  Forest 3, Fold: selected 29/100 trees, V-info: 0.6314
+Layer 2: Val Acc = 82.55%, V-info = 0.7088
+
+=== Layer 3 ===
+  Forest 0, Fold: selected 38/100 trees, V-info: 0.8105
+  Forest 0, Fold: selected 37/100 trees, V-info: 0.8107
+  Forest 0, Fold: selected 32/100 trees, V-info: 0.8107
+  Forest 1, Fold: selected 35/100 trees, V-info: 0.6514
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.6616
+  Forest 1, Fold: selected 25/100 trees, V-info: 0.6632
+  Forest 2, Fold: selected 34/100 trees, V-info: 0.8094
+  Forest 2, Fold: selected 38/100 trees, V-info: 0.8105
+  Forest 2, Fold: selected 34/100 trees, V-info: 0.8112
+  Forest 3, Fold: selected 33/100 trees, V-info: 0.6489
+  Forest 3, Fold: selected 31/100 trees, V-info: 0.6279
+  Forest 3, Fold: selected 33/100 trees, V-info: 0.6764
+Layer 3: Val Acc = 83.66%, V-info = 0.7327
+
+=== Layer 4 ===
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8178
+  Forest 0, Fold: selected 35/100 trees, V-info: 0.8172
+  Forest 0, Fold: selected 41/100 trees, V-info: 0.8176
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.6767
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.6879
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.6696
+  Forest 2, Fold: selected 31/100 trees, V-info: 0.8158
+  Forest 2, Fold: selected 34/100 trees, V-info: 0.8170
+  Forest 2, Fold: selected 38/100 trees, V-info: 0.8196
+  Forest 3, Fold: selected 29/100 trees, V-info: 0.6638
+  Forest 3, Fold: selected 23/100 trees, V-info: 0.6835
+  Forest 3, Fold: selected 18/100 trees, V-info: 0.6505
+Layer 4: Val Acc = 84.15%, V-info = 0.7447
+
+=== Layer 5 ===
+  Forest 0, Fold: selected 37/100 trees, V-info: 0.8192
+  Forest 0, Fold: selected 42/100 trees, V-info: 0.8239
+  Forest 0, Fold: selected 38/100 trees, V-info: 0.8206
+  Forest 1, Fold: selected 33/100 trees, V-info: 0.6845
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.6976
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.6884
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8230
+  Forest 2, Fold: selected 44/100 trees, V-info: 0.8213
+  Forest 2, Fold: selected 43/100 trees, V-info: 0.8184
+  Forest 3, Fold: selected 32/100 trees, V-info: 0.6835
+  Forest 3, Fold: selected 22/100 trees, V-info: 0.6858
+  Forest 3, Fold: selected 28/100 trees, V-info: 0.6908
+Layer 5: Val Acc = 84.39%, V-info = 0.7547
+
+=== Layer 6 ===
+  Forest 0, Fold: selected 43/100 trees, V-info: 0.8227
+  Forest 0, Fold: selected 32/100 trees, V-info: 0.8240
+  Forest 0, Fold: selected 37/100 trees, V-info: 0.8233
+  Forest 1, Fold: selected 26/100 trees, V-info: 0.6876
+  Forest 1, Fold: selected 31/100 trees, V-info: 0.6984
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.6754
+  Forest 2, Fold: selected 34/100 trees, V-info: 0.8235
+  Forest 2, Fold: selected 39/100 trees, V-info: 0.8248
+  Forest 2, Fold: selected 40/100 trees, V-info: 0.8214
+  Forest 3, Fold: selected 24/100 trees, V-info: 0.7108
+  Forest 3, Fold: selected 29/100 trees, V-info: 0.6979
+  Forest 3, Fold: selected 30/100 trees, V-info: 0.6919
+Layer 6: Val Acc = 84.64%, V-info = 0.7585
+
+=== Layer 7 ===
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.8270
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8223
+  Forest 0, Fold: selected 41/100 trees, V-info: 0.8247
+  Forest 1, Fold: selected 35/100 trees, V-info: 0.6847
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.7019
+  Forest 1, Fold: selected 31/100 trees, V-info: 0.7020
+  Forest 2, Fold: selected 43/100 trees, V-info: 0.8231
+  Forest 2, Fold: selected 43/100 trees, V-info: 0.8241
+  Forest 2, Fold: selected 47/100 trees, V-info: 0.8258
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.7177
+  Forest 3, Fold: selected 22/100 trees, V-info: 0.6946
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.6922
+Layer 7: Val Acc = 84.72%, V-info = 0.7617
+
+=== Layer 8 ===
+  Forest 0, Fold: selected 48/100 trees, V-info: 0.8272
+  Forest 0, Fold: selected 47/100 trees, V-info: 0.8246
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.8233
+  Forest 1, Fold: selected 22/100 trees, V-info: 0.7015
+  Forest 1, Fold: selected 23/100 trees, V-info: 0.6998
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.6963
+  Forest 2, Fold: selected 38/100 trees, V-info: 0.8298
+  Forest 2, Fold: selected 38/100 trees, V-info: 0.8260
+  Forest 2, Fold: selected 43/100 trees, V-info: 0.8202
+  Forest 3, Fold: selected 28/100 trees, V-info: 0.7176
+  Forest 3, Fold: selected 24/100 trees, V-info: 0.7131
+  Forest 3, Fold: selected 23/100 trees, V-info: 0.6950
+Layer 8: Val Acc = 84.81%, V-info = 0.7645
+
+=== Layer 9 ===
+  Forest 0, Fold: selected 45/100 trees, V-info: 0.8247
+  Forest 0, Fold: selected 42/100 trees, V-info: 0.8271
+  Forest 0, Fold: selected 47/100 trees, V-info: 0.8261
+  Forest 1, Fold: selected 28/100 trees, V-info: 0.7174
+  Forest 1, Fold: selected 23/100 trees, V-info: 0.6913
+  Forest 1, Fold: selected 24/100 trees, V-info: 0.7145
+  Forest 2, Fold: selected 39/100 trees, V-info: 0.8255
+  Forest 2, Fold: selected 43/100 trees, V-info: 0.8263
+  Forest 2, Fold: selected 44/100 trees, V-info: 0.8256
+  Forest 3, Fold: selected 29/100 trees, V-info: 0.7137
+  Forest 3, Fold: selected 30/100 trees, V-info: 0.6875
+  Forest 3, Fold: selected 32/100 trees, V-info: 0.6931
+Layer 9: Val Acc = 84.89%, V-info = 0.7644
+
+Training completed. Best layer: 8
+Layer 0: Test Acc = 75.18%
+Layer 1: Test Acc = 80.80%
+Layer 2: Test Acc = 83.24%
+Layer 3: Test Acc = 84.40%
+Layer 4: Test Acc = 85.01%
+Layer 5: Test Acc = 85.42%
+Layer 6: Test Acc = 85.80%
+Layer 7: Test Acc = 85.94%
+Layer 8: Test Acc = 86.08%
+Layer 9: Test Acc = 86.15%
+
+Best layer (8) Test Acc: 86.08%
+  Accuracy: 86.08%
+  Macro-F1: 81.40%
+  Best Layer: 8
+  Training Time (total): 18496.16s
+  Training Time (early-stop): 18496.12s
+  Testing Time: 67.76s
+  Layer Avg Ensemble Sizes: [25.916666666666668, 28.416666666666668, 30.25, 33.333333333333336, 31.25, 34.916666666666664, 32.916666666666664, 35.333333333333336, 33.333333333333336, 35.5]
+
+Run 4/5
+
+=== Layer 0 ===
+  Forest 0, Fold: selected 33/100 trees, V-info: 0.6111
+  Forest 0, Fold: selected 27/100 trees, V-info: 0.6048
+  Forest 0, Fold: selected 26/100 trees, V-info: 0.6128
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.3554
+  Forest 1, Fold: selected 26/100 trees, V-info: 0.3361
+  Forest 1, Fold: selected 25/100 trees, V-info: 0.3483
+  Forest 2, Fold: selected 29/100 trees, V-info: 0.6136
+  Forest 2, Fold: selected 33/100 trees, V-info: 0.6104
+  Forest 2, Fold: selected 26/100 trees, V-info: 0.6046
+  Forest 3, Fold: selected 20/100 trees, V-info: 0.3661
+  Forest 3, Fold: selected 22/100 trees, V-info: 0.3542
+  Forest 3, Fold: selected 18/100 trees, V-info: 0.3455
+Layer 0: Val Acc = 74.68%, V-info = 0.4803
+
+=== Layer 1 ===
+  Forest 0, Fold: selected 33/100 trees, V-info: 0.7572
+  Forest 0, Fold: selected 32/100 trees, V-info: 0.7586
+  Forest 0, Fold: selected 35/100 trees, V-info: 0.7568
+  Forest 1, Fold: selected 18/100 trees, V-info: 0.5417
+  Forest 1, Fold: selected 25/100 trees, V-info: 0.5369
+  Forest 1, Fold: selected 19/100 trees, V-info: 0.5400
+  Forest 2, Fold: selected 27/100 trees, V-info: 0.7558
+  Forest 2, Fold: selected 29/100 trees, V-info: 0.7586
+  Forest 2, Fold: selected 34/100 trees, V-info: 0.7609
+  Forest 3, Fold: selected 24/100 trees, V-info: 0.5296
+  Forest 3, Fold: selected 23/100 trees, V-info: 0.5296
+  Forest 3, Fold: selected 28/100 trees, V-info: 0.5208
+Layer 1: Val Acc = 80.31%, V-info = 0.6455
+
+=== Layer 2 ===
+  Forest 0, Fold: selected 31/100 trees, V-info: 0.7933
+  Forest 0, Fold: selected 30/100 trees, V-info: 0.7937
+  Forest 0, Fold: selected 28/100 trees, V-info: 0.7923
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.6255
+  Forest 1, Fold: selected 35/100 trees, V-info: 0.5920
+  Forest 1, Fold: selected 23/100 trees, V-info: 0.6182
+  Forest 2, Fold: selected 36/100 trees, V-info: 0.7918
+  Forest 2, Fold: selected 36/100 trees, V-info: 0.7929
+  Forest 2, Fold: selected 32/100 trees, V-info: 0.7947
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.6072
+  Forest 3, Fold: selected 29/100 trees, V-info: 0.6077
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.6271
+Layer 2: Val Acc = 82.50%, V-info = 0.7030
+
+=== Layer 3 ===
+  Forest 0, Fold: selected 37/100 trees, V-info: 0.8068
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8079
+  Forest 0, Fold: selected 36/100 trees, V-info: 0.8090
+  Forest 1, Fold: selected 21/100 trees, V-info: 0.6483
+  Forest 1, Fold: selected 28/100 trees, V-info: 0.6624
+  Forest 1, Fold: selected 18/100 trees, V-info: 0.6601
+  Forest 2, Fold: selected 39/100 trees, V-info: 0.8104
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8064
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8074
+  Forest 3, Fold: selected 28/100 trees, V-info: 0.6426
+  Forest 3, Fold: selected 31/100 trees, V-info: 0.6289
+  Forest 3, Fold: selected 24/100 trees, V-info: 0.6632
+Layer 3: Val Acc = 83.49%, V-info = 0.7295
+
+=== Layer 4 ===
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.8120
+  Forest 0, Fold: selected 35/100 trees, V-info: 0.8175
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.8168
+  Forest 1, Fold: selected 28/100 trees, V-info: 0.6588
+  Forest 1, Fold: selected 22/100 trees, V-info: 0.6743
+  Forest 1, Fold: selected 24/100 trees, V-info: 0.6805
+  Forest 2, Fold: selected 40/100 trees, V-info: 0.8135
+  Forest 2, Fold: selected 43/100 trees, V-info: 0.8176
+  Forest 2, Fold: selected 40/100 trees, V-info: 0.8154
+  Forest 3, Fold: selected 21/100 trees, V-info: 0.6788
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.6951
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.6683
+Layer 4: Val Acc = 84.07%, V-info = 0.7457
+
+=== Layer 5 ===
+  Forest 0, Fold: selected 42/100 trees, V-info: 0.8197
+  Forest 0, Fold: selected 42/100 trees, V-info: 0.8193
+  Forest 0, Fold: selected 41/100 trees, V-info: 0.8205
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.6885
+  Forest 1, Fold: selected 31/100 trees, V-info: 0.6816
+  Forest 1, Fold: selected 24/100 trees, V-info: 0.7023
+  Forest 2, Fold: selected 40/100 trees, V-info: 0.8190
+  Forest 2, Fold: selected 45/100 trees, V-info: 0.8199
+  Forest 2, Fold: selected 38/100 trees, V-info: 0.8193
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.6834
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.6904
+  Forest 3, Fold: selected 30/100 trees, V-info: 0.6911
+Layer 5: Val Acc = 84.40%, V-info = 0.7546
+
+=== Layer 6 ===
+  Forest 0, Fold: selected 43/100 trees, V-info: 0.8223
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8228
+  Forest 0, Fold: selected 43/100 trees, V-info: 0.8196
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.6971
+  Forest 1, Fold: selected 26/100 trees, V-info: 0.7118
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.6908
+  Forest 2, Fold: selected 42/100 trees, V-info: 0.8227
+  Forest 2, Fold: selected 39/100 trees, V-info: 0.8205
+  Forest 2, Fold: selected 40/100 trees, V-info: 0.8224
+  Forest 3, Fold: selected 21/100 trees, V-info: 0.7031
+  Forest 3, Fold: selected 31/100 trees, V-info: 0.6907
+  Forest 3, Fold: selected 30/100 trees, V-info: 0.6868
+Layer 6: Val Acc = 84.59%, V-info = 0.7592
+
+=== Layer 7 ===
+  Forest 0, Fold: selected 42/100 trees, V-info: 0.8222
+  Forest 0, Fold: selected 37/100 trees, V-info: 0.8232
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.8244
+  Forest 1, Fold: selected 35/100 trees, V-info: 0.6984
+  Forest 1, Fold: selected 31/100 trees, V-info: 0.7025
+  Forest 1, Fold: selected 24/100 trees, V-info: 0.7003
+  Forest 2, Fold: selected 40/100 trees, V-info: 0.8245
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8221
+  Forest 2, Fold: selected 42/100 trees, V-info: 0.8231
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.6915
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.7052
+  Forest 3, Fold: selected 32/100 trees, V-info: 0.7111
+Layer 7: Val Acc = 84.67%, V-info = 0.7624
+
+=== Layer 8 ===
+  Forest 0, Fold: selected 43/100 trees, V-info: 0.8229
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8244
+  Forest 0, Fold: selected 37/100 trees, V-info: 0.8249
+  Forest 1, Fold: selected 26/100 trees, V-info: 0.7021
+  Forest 1, Fold: selected 24/100 trees, V-info: 0.7148
+  Forest 1, Fold: selected 25/100 trees, V-info: 0.7058
+  Forest 2, Fold: selected 45/100 trees, V-info: 0.8255
+  Forest 2, Fold: selected 47/100 trees, V-info: 0.8218
+  Forest 2, Fold: selected 45/100 trees, V-info: 0.8248
+  Forest 3, Fold: selected 23/100 trees, V-info: 0.7097
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.7143
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.7034
+Layer 8: Val Acc = 84.76%, V-info = 0.7662
+
+=== Layer 9 ===
+  Forest 0, Fold: selected 41/100 trees, V-info: 0.8265
+  Forest 0, Fold: selected 43/100 trees, V-info: 0.8233
+  Forest 0, Fold: selected 41/100 trees, V-info: 0.8245
+  Forest 1, Fold: selected 25/100 trees, V-info: 0.7092
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.7051
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.7054
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8241
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8266
+  Forest 2, Fold: selected 43/100 trees, V-info: 0.8238
+  Forest 3, Fold: selected 31/100 trees, V-info: 0.6879
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.6907
+  Forest 3, Fold: selected 21/100 trees, V-info: 0.7101
+Layer 9: Val Acc = 84.81%, V-info = 0.7631
+
+Training completed. Best layer: 8
+Layer 0: Test Acc = 74.82%
+Layer 1: Test Acc = 80.57%
+Layer 2: Test Acc = 82.90%
+Layer 3: Test Acc = 84.08%
+Layer 4: Test Acc = 84.76%
+Layer 5: Test Acc = 85.27%
+Layer 6: Test Acc = 85.56%
+Layer 7: Test Acc = 85.68%
+Layer 8: Test Acc = 85.85%
+Layer 9: Test Acc = 85.97%
+
+Best layer (8) Test Acc: 85.85%
+  Accuracy: 85.85%
+  Macro-F1: 80.95%
+  Best Layer: 8
+  Training Time (total): 18569.41s
+  Training Time (early-stop): 18569.37s
+  Testing Time: 66.48s
+  Layer Avg Ensemble Sizes: [26.166666666666668, 27.25, 30.333333333333332, 32.0, 32.0, 34.25, 34.416666666666664, 34.666666666666664, 33.833333333333336, 34.333333333333336]
+
+Run 5/5
+
+=== Layer 0 ===
+  Forest 0, Fold: selected 27/100 trees, V-info: 0.6113
+  Forest 0, Fold: selected 25/100 trees, V-info: 0.6145
+  Forest 0, Fold: selected 32/100 trees, V-info: 0.6098
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.3617
+  Forest 1, Fold: selected 24/100 trees, V-info: 0.3369
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.3552
+  Forest 2, Fold: selected 19/100 trees, V-info: 0.6123
+  Forest 2, Fold: selected 30/100 trees, V-info: 0.6165
+  Forest 2, Fold: selected 28/100 trees, V-info: 0.6094
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.3334
+  Forest 3, Fold: selected 23/100 trees, V-info: 0.3484
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.3486
+Layer 0: Val Acc = 74.88%, V-info = 0.4798
+
+=== Layer 1 ===
+  Forest 0, Fold: selected 34/100 trees, V-info: 0.7629
+  Forest 0, Fold: selected 35/100 trees, V-info: 0.7629
+  Forest 0, Fold: selected 35/100 trees, V-info: 0.7618
+  Forest 1, Fold: selected 23/100 trees, V-info: 0.5307
+  Forest 1, Fold: selected 19/100 trees, V-info: 0.5503
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.5175
+  Forest 2, Fold: selected 36/100 trees, V-info: 0.7608
+  Forest 2, Fold: selected 31/100 trees, V-info: 0.7636
+  Forest 2, Fold: selected 37/100 trees, V-info: 0.7621
+  Forest 3, Fold: selected 20/100 trees, V-info: 0.5275
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.5339
+  Forest 3, Fold: selected 20/100 trees, V-info: 0.5316
+Layer 1: Val Acc = 80.60%, V-info = 0.6472
+
+=== Layer 2 ===
+  Forest 0, Fold: selected 34/100 trees, V-info: 0.8005
+  Forest 0, Fold: selected 25/100 trees, V-info: 0.7998
+  Forest 0, Fold: selected 35/100 trees, V-info: 0.7982
+  Forest 1, Fold: selected 26/100 trees, V-info: 0.6198
+  Forest 1, Fold: selected 26/100 trees, V-info: 0.6060
+  Forest 1, Fold: selected 25/100 trees, V-info: 0.6283
+  Forest 2, Fold: selected 36/100 trees, V-info: 0.8006
+  Forest 2, Fold: selected 36/100 trees, V-info: 0.8003
+  Forest 2, Fold: selected 31/100 trees, V-info: 0.7980
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.6206
+  Forest 3, Fold: selected 32/100 trees, V-info: 0.6094
+  Forest 3, Fold: selected 30/100 trees, V-info: 0.6242
+Layer 2: Val Acc = 82.69%, V-info = 0.7088
+
+=== Layer 3 ===
+  Forest 0, Fold: selected 36/100 trees, V-info: 0.8129
+  Forest 0, Fold: selected 37/100 trees, V-info: 0.8150
+  Forest 0, Fold: selected 35/100 trees, V-info: 0.8144
+  Forest 1, Fold: selected 33/100 trees, V-info: 0.6682
+  Forest 1, Fold: selected 22/100 trees, V-info: 0.6553
+  Forest 1, Fold: selected 33/100 trees, V-info: 0.6547
+  Forest 2, Fold: selected 37/100 trees, V-info: 0.8150
+  Forest 2, Fold: selected 34/100 trees, V-info: 0.8136
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8129
+  Forest 3, Fold: selected 31/100 trees, V-info: 0.6554
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.6592
+  Forest 3, Fold: selected 29/100 trees, V-info: 0.6515
+Layer 3: Val Acc = 83.82%, V-info = 0.7357
+
+=== Layer 4 ===
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8188
+  Forest 0, Fold: selected 33/100 trees, V-info: 0.8201
+  Forest 0, Fold: selected 44/100 trees, V-info: 0.8219
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.6723
+  Forest 1, Fold: selected 26/100 trees, V-info: 0.6778
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.6764
+  Forest 2, Fold: selected 35/100 trees, V-info: 0.8206
+  Forest 2, Fold: selected 46/100 trees, V-info: 0.8202
+  Forest 2, Fold: selected 42/100 trees, V-info: 0.8202
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.6896
+  Forest 3, Fold: selected 23/100 trees, V-info: 0.6869
+  Forest 3, Fold: selected 32/100 trees, V-info: 0.6571
+Layer 4: Val Acc = 84.31%, V-info = 0.7485
+
+=== Layer 5 ===
+  Forest 0, Fold: selected 46/100 trees, V-info: 0.8242
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.8230
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.8234
+  Forest 1, Fold: selected 24/100 trees, V-info: 0.6905
+  Forest 1, Fold: selected 26/100 trees, V-info: 0.7017
+  Forest 1, Fold: selected 29/100 trees, V-info: 0.6989
+  Forest 2, Fold: selected 38/100 trees, V-info: 0.8241
+  Forest 2, Fold: selected 37/100 trees, V-info: 0.8228
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8242
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.6918
+  Forest 3, Fold: selected 21/100 trees, V-info: 0.6852
+  Forest 3, Fold: selected 31/100 trees, V-info: 0.6924
+Layer 5: Val Acc = 84.62%, V-info = 0.7585
+
+=== Layer 6 ===
+  Forest 0, Fold: selected 45/100 trees, V-info: 0.8265
+  Forest 0, Fold: selected 46/100 trees, V-info: 0.8259
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.8239
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.6895
+  Forest 1, Fold: selected 32/100 trees, V-info: 0.7037
+  Forest 1, Fold: selected 24/100 trees, V-info: 0.7013
+  Forest 2, Fold: selected 42/100 trees, V-info: 0.8247
+  Forest 2, Fold: selected 44/100 trees, V-info: 0.8253
+  Forest 2, Fold: selected 45/100 trees, V-info: 0.8264
+  Forest 3, Fold: selected 28/100 trees, V-info: 0.7018
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.6889
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.7017
+Layer 6: Val Acc = 84.78%, V-info = 0.7616
+
+=== Layer 7 ===
+  Forest 0, Fold: selected 37/100 trees, V-info: 0.8274
+  Forest 0, Fold: selected 44/100 trees, V-info: 0.8250
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.8278
+  Forest 1, Fold: selected 26/100 trees, V-info: 0.6991
+  Forest 1, Fold: selected 32/100 trees, V-info: 0.7016
+  Forest 1, Fold: selected 20/100 trees, V-info: 0.7202
+  Forest 2, Fold: selected 40/100 trees, V-info: 0.8257
+  Forest 2, Fold: selected 46/100 trees, V-info: 0.8278
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8270
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.6949
+  Forest 3, Fold: selected 20/100 trees, V-info: 0.7085
+  Forest 3, Fold: selected 27/100 trees, V-info: 0.6896
+Layer 7: Val Acc = 84.85%, V-info = 0.7645
+
+=== Layer 8 ===
+  Forest 0, Fold: selected 42/100 trees, V-info: 0.8244
+  Forest 0, Fold: selected 44/100 trees, V-info: 0.8275
+  Forest 0, Fold: selected 40/100 trees, V-info: 0.8297
+  Forest 1, Fold: selected 30/100 trees, V-info: 0.6977
+  Forest 1, Fold: selected 24/100 trees, V-info: 0.7093
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.6932
+  Forest 2, Fold: selected 45/100 trees, V-info: 0.8281
+  Forest 2, Fold: selected 41/100 trees, V-info: 0.8247
+  Forest 2, Fold: selected 39/100 trees, V-info: 0.8291
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.7156
+  Forest 3, Fold: selected 25/100 trees, V-info: 0.7258
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.7065
+Layer 8: Val Acc = 84.94%, V-info = 0.7676
+
+=== Layer 9 ===
+  Forest 0, Fold: selected 39/100 trees, V-info: 0.8289
+  Forest 0, Fold: selected 42/100 trees, V-info: 0.8268
+  Forest 0, Fold: selected 48/100 trees, V-info: 0.8282
+  Forest 1, Fold: selected 31/100 trees, V-info: 0.7004
+  Forest 1, Fold: selected 27/100 trees, V-info: 0.7176
+  Forest 1, Fold: selected 20/100 trees, V-info: 0.7296
+  Forest 2, Fold: selected 45/100 trees, V-info: 0.8267
+  Forest 2, Fold: selected 47/100 trees, V-info: 0.8298
+  Forest 2, Fold: selected 42/100 trees, V-info: 0.8278
+  Forest 3, Fold: selected 24/100 trees, V-info: 0.7108
+  Forest 3, Fold: selected 31/100 trees, V-info: 0.7092
+  Forest 3, Fold: selected 26/100 trees, V-info: 0.7113
+Layer 9: Val Acc = 84.96%, V-info = 0.7706
+
+Training completed. Best layer: 9
+Layer 0: Test Acc = 75.06%
+Layer 1: Test Acc = 81.00%
+Layer 2: Test Acc = 83.18%
+Layer 3: Test Acc = 84.37%
+Layer 4: Test Acc = 84.96%
+Layer 5: Test Acc = 85.54%
+Layer 6: Test Acc = 85.73%
+Layer 7: Test Acc = 85.92%
+Layer 8: Test Acc = 86.00%
+Layer 9: Test Acc = 86.08%
+
+Best layer (9) Test Acc: 86.08%
+  Accuracy: 86.08%
+  Macro-F1: 81.30%
+  Best Layer: 9
+  Training Time (total): 18589.87s
+  Training Time (early-stop): 18589.83s
+  Testing Time: 67.13s
+  Layer Avg Ensemble Sizes: [26.083333333333332, 28.666666666666668, 30.083333333333332, 32.833333333333336, 33.666666666666664, 33.0, 35.75, 33.083333333333336, 34.083333333333336, 35.166666666666664]
+
+Results saved to /home/xujiale/pythoncode/myDeepForest/result/DF_Vinfo/CascadeForestVinfo_Covertype_num_estimator100_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3_pop_size100_max_gen100_target_size50.csv
+
+Summary for Covertype:
+  Mean Accuracy: 86.00% ± 0.11%
+  Mean Macro-F1: 81.23% ± 0.17%
+  Mean Best Layer: 8.40
+  Mean Training Time: 18725.04s
+  Mean Testing Time: 68.64s
+
+============================================================
+Successful datasets: ['Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes', 'HTRU2', 'Rice', 'Mushroom', 'Websites', 'Letter', 'Car', 'Maternal', 'Student', 'HeartDisease', 'Covertype']
+============================================================

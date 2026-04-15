@@ -34,19 +34,19 @@ MODELS = ['RF', 'ExtraTrees', 'XGBoost', 'TabNet']
 # Model hyperparameters
 MODEL_CONFIGS = {
     'RF': {
-        'n_estimators': 100,
+        'n_estimators': 50,
         'max_depth': 10,
         'n_jobs': -1,
         'random_state': None,   # set per run
     },
     'ExtraTrees': {
-        'n_estimators': 100,
+        'n_estimators': 50,
         'max_depth': 10,
         'n_jobs': -1,
         'random_state': None,
     },
     'XGBoost': {
-        'n_estimators': 100,
+        'n_estimators': 50,
         'max_depth': 10,
         'learning_rate': 0.1,
         'use_label_encoder': False,
