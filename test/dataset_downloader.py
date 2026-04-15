@@ -15,7 +15,7 @@ DATASET_CONFIG = {
     "BankMarketing": {"source": "ucirepo", "id": 222},
     "Car": {"source": "ucirepo", "id": 19},
     # "Covertype": {"source": "ucirepo", "id": 31},
-    "CredictCard": {"source": "ucirepo", "id": 350},
+    "CreditCard": {"source": "ucirepo", "id": 350},
     "Diabetes": {"source": "ucirepo", "id": 891},
     "DryBean": {"source": "ucirepo", "id": 602},
     "Gamma": {"source": "ucirepo", "id": 159},

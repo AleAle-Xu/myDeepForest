@@ -18,7 +18,7 @@ from deepforest.CascadeForestVinfo import CascadeForestVinfo
 
 # Dataset list - all datasets that can be run
 DATASETS = [
-    'Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes',
+    'Gamma', 'DryBean', 'CreditCard', 'BankMarketing', 'Adult', 'Diabetes',
     'HTRU2', 'Rice', 'Mushroom', 'Websites', 'Letter', 'Car',
     'Maternal', 'Student', 'HeartDisease', 'Covertype'
 ]

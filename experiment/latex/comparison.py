@@ -39,7 +39,7 @@ OUR_METHOD_NAME = "VIDF"
 ENABLE_SIGNIFICANCE_TEST = True
 
 # Significance level
-ALPHA = 0.05
+ALPHA = 0.5
 
 # =====================================================================
 # Discover datasets from DF results (reference method)
@@ -58,6 +58,7 @@ if not dataset_list:
 
 column_names = [cfg[2] for cfg in METHOD_CONFIG]
 
+dataset_list = ["Adult", "BankMarketing", "Diabetes", "Gamma", "Student", "Websites"]
 # =====================================================================
 # Read all results
 # =====================================================================

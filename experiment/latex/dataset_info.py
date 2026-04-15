@@ -22,7 +22,7 @@ dataset_dir = get_dir_in_root("dataset")
 # All datasets (sorted)
 DATASETS = sorted([
     'Adult', 'Arrhythmia', 'BankMarketing', 'Car', 'Covertype',
-    'CredictCard', 'Diabetes', 'DryBean', 'Gamma', 'HeartDisease',
+    'CreditCard', 'Diabetes', 'DryBean', 'Gamma', 'HeartDisease',
     'HTRU2', 'Letter', 'Maternal', 'Mushroom', 'Rice', 'Student', 'Websites'
 ])
 

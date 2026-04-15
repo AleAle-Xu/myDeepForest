@@ -8,7 +8,7 @@ project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, project_root)
 
 # Dataset list
-DATASETS = ['Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes']
+DATASETS = ['Gamma', 'DryBean', 'CreditCard', 'BankMarketing', 'Adult', 'Diabetes']
 
 
 def check_class_balance(dataset_name):

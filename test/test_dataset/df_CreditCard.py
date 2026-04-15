@@ -8,7 +8,7 @@ from deepforest_eoh.gcForest import gcForest
 from deepforest_eoh.utils import get_dir_in_root
 
 path = get_dir_in_root("dataset")
-path = os.path.join(path,"CredictCard.csv")
+path = os.path.join(path,"CreditCard.csv")
 dataset = pd.read_csv(path)
 X = dataset.drop(columns=["target"])
 y = dataset["target"]

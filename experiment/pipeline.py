@@ -15,7 +15,7 @@ from deepforest.gcForest import gcForest
 
 # Dataset list - all datasets that can be run
 DATASETS = [
-    'Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes',
+    'Gamma', 'DryBean', 'CreditCard', 'BankMarketing', 'Adult', 'Diabetes',
     'HTRU2', 'Rice', 'Mushroom', 'Websites', 'Letter', 'Car',
     'Maternal', 'Student', 'HeartDisease', 'Covertype'
 ]

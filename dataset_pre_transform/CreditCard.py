@@ -11,7 +11,7 @@ from deepforest_eoh.utils import get_dir_in_root
 pd.set_option('display.max_columns', None)
 
 path = get_dir_in_root("dataset_raw")
-path = os.path.join(path, "CredictCard.pkl")
+path = os.path.join(path, "CreditCard.pkl")
 with open(path, "rb") as f:
     dataset = pickle.load(f)
 
@@ -41,5 +41,5 @@ data = pd.concat([X_df, y_series], axis=1)
 
 # 保存为CSV文件
 path = get_dir_in_root("dataset")
-path = os.path.join(path,"CredictCard.csv")
+path = os.path.join(path,"CreditCard.csv")
 data.to_csv(path, index=False)

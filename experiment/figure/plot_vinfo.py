@@ -8,7 +8,7 @@ import ast
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Dataset list
-DATASETS = ['Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes']
+DATASETS = ['Gamma', 'DryBean', 'CreditCard', 'BankMarketing', 'Adult', 'Diabetes']
 
 # V-info metric types
 METRIC_TYPES = ['v_info', 'hv_empty', 'hv_cond']

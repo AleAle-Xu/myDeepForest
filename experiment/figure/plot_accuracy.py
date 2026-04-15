@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Dataset list
-DATASETS = ['Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes']
+DATASETS = ['Gamma', 'DryBean', 'CreditCard', 'BankMarketing', 'Adult', 'Diabetes']
 
 
 def load_results(dataset_name):

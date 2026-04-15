@@ -23,7 +23,7 @@ sys.path.insert(0, project_root)
 # For safety we use the same full list as pipeline.py; skipped datasets from DF
 # will be excluded by checking if DF result files exist.
 DATASETS = [
-    'Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes',
+    'Gamma', 'DryBean', 'CreditCard', 'BankMarketing', 'Adult', 'Diabetes',
     'HTRU2', 'Rice', 'Mushroom', 'Websites', 'Letter', 'Car',
     'Maternal', 'Student', 'HeartDisease', 'Covertype'
 ]
