@@ -1,0 +1,2876 @@
+Baseline experiment started at 20260415_091900
+Log file: /home/xjl/pythoncode/myDeepForest/result/baseline_log_20260415_091900.txt
+
+Models: ['RF', 'ExtraTrees', 'XGBoost', 'TabNet']
+Datasets: ['Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes', 'HTRU2', 'Rice', 'Mushroom', 'Websites', 'Letter', 'Car', 'Maternal', 'Student', 'HeartDisease', 'Covertype']
+
+
+############################################################
+# Model: RF
+############################################################
+
+============================================================
+[RF] Running experiments on Gamma
+============================================================
+
+Run 1/5
+  Accuracy: 87.52%
+  Macro-F1: 85.68%
+  Training Time: 0.11s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 86.63%
+  Macro-F1: 84.63%
+  Training Time: 0.10s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 86.65%
+  Macro-F1: 84.70%
+  Training Time: 0.10s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 87.31%
+  Macro-F1: 85.36%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 87.10%
+  Macro-F1: 85.11%
+  Training Time: 0.11s
+  Testing Time: 0.05s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Gamma.csv
+
+Summary for Gamma [RF]:
+  Mean Accuracy: 87.04% ± 0.40%
+  Mean Macro-F1: 85.09% ± 0.44%
+  Mean Training Time: 0.10s
+  Mean Testing Time: 0.02s
+
+============================================================
+[RF] Running experiments on DryBean
+============================================================
+
+Run 1/5
+  Accuracy: 91.87%
+  Macro-F1: 93.10%
+  Training Time: 0.10s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 92.51%
+  Macro-F1: 93.46%
+  Training Time: 0.08s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 92.87%
+  Macro-F1: 94.10%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 91.77%
+  Macro-F1: 92.90%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 92.34%
+  Macro-F1: 93.40%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_DryBean.csv
+
+Summary for DryBean [RF]:
+  Mean Accuracy: 92.27% ± 0.46%
+  Mean Macro-F1: 93.39% ± 0.45%
+  Mean Training Time: 0.09s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on CredictCard
+============================================================
+
+Run 1/5
+  Accuracy: 81.82%
+  Macro-F1: 67.30%
+  Training Time: 0.11s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 81.82%
+  Macro-F1: 67.76%
+  Training Time: 0.11s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 81.97%
+  Macro-F1: 67.50%
+  Training Time: 0.10s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 81.68%
+  Macro-F1: 67.43%
+  Training Time: 0.10s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 81.52%
+  Macro-F1: 66.92%
+  Training Time: 0.11s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_CredictCard.csv
+
+Summary for CredictCard [RF]:
+  Mean Accuracy: 81.76% ± 0.17%
+  Mean Macro-F1: 67.38% ± 0.31%
+  Mean Training Time: 0.10s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on BankMarketing
+============================================================
+
+Run 1/5
+  Accuracy: 90.08%
+  Macro-F1: 65.45%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 89.73%
+  Macro-F1: 62.86%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 89.69%
+  Macro-F1: 63.24%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 89.72%
+  Macro-F1: 62.61%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 90.13%
+  Macro-F1: 65.06%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_BankMarketing.csv
+
+Summary for BankMarketing [RF]:
+  Mean Accuracy: 89.87% ± 0.22%
+  Mean Macro-F1: 63.85% ± 1.32%
+  Mean Training Time: 0.09s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Adult
+============================================================
+
+Run 1/5
+  Accuracy: 84.77%
+  Macro-F1: 76.12%
+  Training Time: 0.10s
+  Testing Time: 0.02s
+
+Run 2/5
+  Accuracy: 85.15%
+  Macro-F1: 76.81%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 84.65%
+  Macro-F1: 75.85%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 84.66%
+  Macro-F1: 76.21%
+  Training Time: 0.09s
+  Testing Time: 0.02s
+
+Run 5/5
+  Accuracy: 84.84%
+  Macro-F1: 76.58%
+  Training Time: 0.09s
+  Testing Time: 0.02s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Adult.csv
+
+Summary for Adult [RF]:
+  Mean Accuracy: 84.81% ± 0.20%
+  Mean Macro-F1: 76.31% ± 0.38%
+  Mean Training Time: 0.09s
+  Mean Testing Time: 0.02s
+
+============================================================
+[RF] Running experiments on Diabetes
+============================================================
+
+Run 1/5
+  Accuracy: 86.64%
+  Macro-F1: 54.71%
+  Training Time: 0.29s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 86.57%
+  Macro-F1: 54.11%
+  Training Time: 0.27s
+  Testing Time: 0.02s
+
+Run 3/5
+  Accuracy: 86.49%
+  Macro-F1: 54.00%
+  Training Time: 0.30s
+  Testing Time: 0.02s
+
+Run 4/5
+  Accuracy: 86.57%
+  Macro-F1: 54.45%
+  Training Time: 0.28s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 86.59%
+  Macro-F1: 54.40%
+  Training Time: 0.28s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Diabetes.csv
+
+Summary for Diabetes [RF]:
+  Mean Accuracy: 86.57% ± 0.06%
+  Mean Macro-F1: 54.33% ± 0.28%
+  Mean Training Time: 0.28s
+  Mean Testing Time: 0.03s
+
+============================================================
+[RF] Running experiments on HTRU2
+============================================================
+
+Run 1/5
+  Accuracy: 97.73%
+  Macro-F1: 92.79%
+  Training Time: 0.07s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 98.12%
+  Macro-F1: 94.04%
+  Training Time: 0.07s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 97.84%
+  Macro-F1: 93.20%
+  Training Time: 0.08s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 98.18%
+  Macro-F1: 94.35%
+  Training Time: 0.08s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 98.10%
+  Macro-F1: 94.17%
+  Training Time: 0.08s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_HTRU2.csv
+
+Summary for HTRU2 [RF]:
+  Mean Accuracy: 97.99% ± 0.20%
+  Mean Macro-F1: 93.71% ± 0.68%
+  Mean Training Time: 0.08s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Rice
+============================================================
+
+Run 1/5
+  Accuracy: 91.51%
+  Macro-F1: 91.30%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 91.95%
+  Macro-F1: 91.77%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 92.39%
+  Macro-F1: 92.21%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 92.74%
+  Macro-F1: 92.55%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 92.83%
+  Macro-F1: 92.67%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Rice.csv
+
+Summary for Rice [RF]:
+  Mean Accuracy: 92.28% ± 0.55%
+  Mean Macro-F1: 92.10% ± 0.57%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Mushroom
+============================================================
+
+Run 1/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Mushroom.csv
+
+Summary for Mushroom [RF]:
+  Mean Accuracy: 100.00% ± 0.00%
+  Mean Macro-F1: 100.00% ± 0.00%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Websites
+============================================================
+
+Run 1/5
+  Accuracy: 96.26%
+  Macro-F1: 96.21%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 95.72%
+  Macro-F1: 95.64%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 95.30%
+  Macro-F1: 95.22%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 95.75%
+  Macro-F1: 95.69%
+  Training Time: 0.08s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 95.66%
+  Macro-F1: 95.59%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Websites.csv
+
+Summary for Websites [RF]:
+  Mean Accuracy: 95.74% ± 0.34%
+  Mean Macro-F1: 95.67% ± 0.35%
+  Mean Training Time: 0.06s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Letter
+============================================================
+
+Run 1/5
+  Accuracy: 85.58%
+  Macro-F1: 85.87%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 86.33%
+  Macro-F1: 86.59%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 85.03%
+  Macro-F1: 85.38%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 85.55%
+  Macro-F1: 85.88%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 86.45%
+  Macro-F1: 86.74%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Letter.csv
+
+Summary for Letter [RF]:
+  Mean Accuracy: 85.79% ± 0.59%
+  Mean Macro-F1: 86.09% ± 0.57%
+  Mean Training Time: 0.06s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Car
+============================================================
+
+Run 1/5
+  Accuracy: 92.87%
+  Macro-F1: 82.46%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 95.95%
+  Macro-F1: 87.55%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 93.83%
+  Macro-F1: 80.88%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 95.38%
+  Macro-F1: 84.21%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 95.18%
+  Macro-F1: 88.88%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Car.csv
+
+Summary for Car [RF]:
+  Mean Accuracy: 94.64% ± 1.26%
+  Mean Macro-F1: 84.80% ± 3.37%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Maternal
+============================================================
+
+Run 1/5
+  Accuracy: 86.23%
+  Macro-F1: 86.47%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 82.62%
+  Macro-F1: 82.97%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 84.92%
+  Macro-F1: 85.13%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 80.33%
+  Macro-F1: 80.57%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 82.62%
+  Macro-F1: 83.01%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Maternal.csv
+
+Summary for Maternal [RF]:
+  Mean Accuracy: 83.34% ± 2.29%
+  Mean Macro-F1: 83.63% ± 2.26%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Student
+============================================================
+
+Run 1/5
+  Accuracy: 75.90%
+  Macro-F1: 65.88%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 77.33%
+  Macro-F1: 68.53%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 76.51%
+  Macro-F1: 67.87%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 77.48%
+  Macro-F1: 69.31%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 76.81%
+  Macro-F1: 68.38%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Student.csv
+
+Summary for Student [RF]:
+  Mean Accuracy: 76.81% ± 0.64%
+  Mean Macro-F1: 67.99% ± 1.29%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on HeartDisease
+============================================================
+
+Run 1/5
+  Accuracy: 57.78%
+  Macro-F1: 29.21%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 58.89%
+  Macro-F1: 26.79%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 55.56%
+  Macro-F1: 29.80%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 57.78%
+  Macro-F1: 30.47%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 51.11%
+  Macro-F1: 20.62%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_HeartDisease.csv
+
+Summary for HeartDisease [RF]:
+  Mean Accuracy: 56.22% ± 3.10%
+  Mean Macro-F1: 27.38% ± 4.03%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Covertype
+============================================================
+
+Run 1/5
+  Accuracy: 74.67%
+  Macro-F1: 53.96%
+  Training Time: 1.86s
+  Testing Time: 0.10s
+
+Run 2/5
+  Accuracy: 75.60%
+  Macro-F1: 55.11%
+  Training Time: 1.83s
+  Testing Time: 0.10s
+
+Run 3/5
+  Accuracy: 75.60%
+  Macro-F1: 55.25%
+  Training Time: 1.73s
+  Testing Time: 0.10s
+
+Run 4/5
+  Accuracy: 75.03%
+  Macro-F1: 53.85%
+  Training Time: 1.82s
+  Testing Time: 0.10s
+
+Run 5/5
+  Accuracy: 74.72%
+  Macro-F1: 53.83%
+  Training Time: 1.93s
+  Testing Time: 0.10s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Covertype.csv
+
+Summary for Covertype [RF]:
+  Mean Accuracy: 75.13% ± 0.45%
+  Mean Macro-F1: 54.40% ± 0.71%
+  Mean Training Time: 1.83s
+  Mean Testing Time: 0.10s
+
+[RF] Successful datasets: ['Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes', 'HTRU2', 'Rice', 'Mushroom', 'Websites', 'Letter', 'Car', 'Maternal', 'Student', 'HeartDisease', 'Covertype']
+
+############################################################
+# Model: ExtraTrees
+############################################################
+
+============================================================
+[ExtraTrees] Running experiments on Gamma
+============================================================
+
+Run 1/5
+  Accuracy: 83.40%
+  Macro-F1: 79.84%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 84.30%
+  Macro-F1: 81.23%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 83.79%
+  Macro-F1: 80.59%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 84.12%
+  Macro-F1: 81.05%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 83.30%
+  Macro-F1: 79.99%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Gamma.csv
+
+Summary for Gamma [ExtraTrees]:
+  Mean Accuracy: 83.78% ± 0.44%
+  Mean Macro-F1: 80.54% ± 0.62%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on DryBean
+============================================================
+
+Run 1/5
+  Accuracy: 90.67%
+  Macro-F1: 91.64%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 91.75%
+  Macro-F1: 92.43%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 91.65%
+  Macro-F1: 92.68%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 90.60%
+  Macro-F1: 91.63%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 90.77%
+  Macro-F1: 91.66%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_DryBean.csv
+
+Summary for DryBean [ExtraTrees]:
+  Mean Accuracy: 91.09% ± 0.56%
+  Mean Macro-F1: 92.01% ± 0.51%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on CredictCard
+============================================================
+
+Run 1/5
+  Accuracy: 80.99%
+  Macro-F1: 62.62%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 81.12%
+  Macro-F1: 62.97%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 81.31%
+  Macro-F1: 64.39%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 80.63%
+  Macro-F1: 62.31%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 80.64%
+  Macro-F1: 62.05%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_CredictCard.csv
+
+Summary for CredictCard [ExtraTrees]:
+  Mean Accuracy: 80.94% ± 0.30%
+  Mean Macro-F1: 62.87% ± 0.92%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on BankMarketing
+============================================================
+
+Run 1/5
+  Accuracy: 89.48%
+  Macro-F1: 61.15%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 89.34%
+  Macro-F1: 60.43%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 89.45%
+  Macro-F1: 60.93%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 89.35%
+  Macro-F1: 60.36%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 89.61%
+  Macro-F1: 61.46%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_BankMarketing.csv
+
+Summary for BankMarketing [ExtraTrees]:
+  Mean Accuracy: 89.45% ± 0.11%
+  Mean Macro-F1: 60.86% ± 0.47%
+  Mean Training Time: 0.06s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Adult
+============================================================
+
+Run 1/5
+  Accuracy: 84.86%
+  Macro-F1: 76.17%
+  Training Time: 0.08s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 85.39%
+  Macro-F1: 77.02%
+  Training Time: 0.08s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 84.74%
+  Macro-F1: 76.10%
+  Training Time: 0.08s
+  Testing Time: 0.02s
+
+Run 4/5
+  Accuracy: 84.98%
+  Macro-F1: 76.59%
+  Training Time: 0.09s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 84.92%
+  Macro-F1: 76.37%
+  Training Time: 0.09s
+  Testing Time: 0.02s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Adult.csv
+
+Summary for Adult [ExtraTrees]:
+  Mean Accuracy: 84.98% ± 0.25%
+  Mean Macro-F1: 76.45% ± 0.37%
+  Mean Training Time: 0.08s
+  Mean Testing Time: 0.02s
+
+============================================================
+[ExtraTrees] Running experiments on Diabetes
+============================================================
+
+Run 1/5
+  Accuracy: 86.30%
+  Macro-F1: 49.42%
+  Training Time: 0.29s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 86.30%
+  Macro-F1: 49.82%
+  Training Time: 0.25s
+  Testing Time: 0.02s
+
+Run 3/5
+  Accuracy: 86.26%
+  Macro-F1: 49.45%
+  Training Time: 0.25s
+  Testing Time: 0.02s
+
+Run 4/5
+  Accuracy: 86.30%
+  Macro-F1: 49.39%
+  Training Time: 0.26s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 86.25%
+  Macro-F1: 49.21%
+  Training Time: 0.27s
+  Testing Time: 0.02s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Diabetes.csv
+
+Summary for Diabetes [ExtraTrees]:
+  Mean Accuracy: 86.28% ± 0.02%
+  Mean Macro-F1: 49.46% ± 0.22%
+  Mean Training Time: 0.26s
+  Mean Testing Time: 0.03s
+
+============================================================
+[ExtraTrees] Running experiments on HTRU2
+============================================================
+
+Run 1/5
+  Accuracy: 97.58%
+  Macro-F1: 92.18%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 97.90%
+  Macro-F1: 93.13%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 97.41%
+  Macro-F1: 91.68%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 97.67%
+  Macro-F1: 92.46%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 97.77%
+  Macro-F1: 92.88%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_HTRU2.csv
+
+Summary for HTRU2 [ExtraTrees]:
+  Mean Accuracy: 97.66% ± 0.18%
+  Mean Macro-F1: 92.47% ± 0.57%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Rice
+============================================================
+
+Run 1/5
+  Accuracy: 92.39%
+  Macro-F1: 92.20%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 92.30%
+  Macro-F1: 92.14%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 92.21%
+  Macro-F1: 92.04%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 92.13%
+  Macro-F1: 91.91%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 93.70%
+  Macro-F1: 93.56%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Rice.csv
+
+Summary for Rice [ExtraTrees]:
+  Mean Accuracy: 92.55% ± 0.65%
+  Mean Macro-F1: 92.37% ± 0.67%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Mushroom
+============================================================
+
+Run 1/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Mushroom.csv
+
+Summary for Mushroom [ExtraTrees]:
+  Mean Accuracy: 100.00% ± 0.00%
+  Mean Macro-F1: 100.00% ± 0.00%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Websites
+============================================================
+
+Run 1/5
+  Accuracy: 95.90%
+  Macro-F1: 95.83%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 94.45%
+  Macro-F1: 94.35%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 94.57%
+  Macro-F1: 94.48%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 95.27%
+  Macro-F1: 95.19%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 95.21%
+  Macro-F1: 95.13%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Websites.csv
+
+Summary for Websites [ExtraTrees]:
+  Mean Accuracy: 95.08% ± 0.59%
+  Mean Macro-F1: 95.00% ± 0.60%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Letter
+============================================================
+
+Run 1/5
+  Accuracy: 86.13%
+  Macro-F1: 86.09%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 86.18%
+  Macro-F1: 86.18%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 86.00%
+  Macro-F1: 86.09%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 85.98%
+  Macro-F1: 86.02%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 85.88%
+  Macro-F1: 85.88%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Letter.csv
+
+Summary for Letter [ExtraTrees]:
+  Mean Accuracy: 86.04% ± 0.12%
+  Mean Macro-F1: 86.05% ± 0.11%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Car
+============================================================
+
+Run 1/5
+  Accuracy: 94.80%
+  Macro-F1: 89.42%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 97.11%
+  Macro-F1: 89.44%
+  Training Time: 0.03s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 95.57%
+  Macro-F1: 85.47%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 95.38%
+  Macro-F1: 84.95%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 95.38%
+  Macro-F1: 89.05%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Car.csv
+
+Summary for Car [ExtraTrees]:
+  Mean Accuracy: 95.65% ± 0.87%
+  Mean Macro-F1: 87.67% ± 2.26%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Maternal
+============================================================
+
+Run 1/5
+  Accuracy: 80.98%
+  Macro-F1: 81.02%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 78.69%
+  Macro-F1: 78.84%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 79.67%
+  Macro-F1: 79.48%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 77.05%
+  Macro-F1: 76.93%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 82.62%
+  Macro-F1: 82.76%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Maternal.csv
+
+Summary for Maternal [ExtraTrees]:
+  Mean Accuracy: 79.80% ± 2.13%
+  Mean Macro-F1: 79.81% ± 2.21%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Student
+============================================================
+
+Run 1/5
+  Accuracy: 74.17%
+  Macro-F1: 60.63%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 75.23%
+  Macro-F1: 63.46%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 74.17%
+  Macro-F1: 61.18%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 74.70%
+  Macro-F1: 61.42%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 75.75%
+  Macro-F1: 64.09%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Student.csv
+
+Summary for Student [ExtraTrees]:
+  Mean Accuracy: 74.80% ± 0.69%
+  Mean Macro-F1: 62.15% ± 1.52%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on HeartDisease
+============================================================
+
+Run 1/5
+  Accuracy: 58.89%
+  Macro-F1: 31.20%
+  Training Time: 0.03s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 55.56%
+  Macro-F1: 27.69%
+  Training Time: 0.03s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 56.67%
+  Macro-F1: 29.52%
+  Training Time: 0.04s
+  Testing Time: 0.04s
+
+Run 4/5
+  Accuracy: 46.67%
+  Macro-F1: 21.81%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 58.89%
+  Macro-F1: 35.95%
+  Training Time: 0.03s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_HeartDisease.csv
+
+Summary for HeartDisease [ExtraTrees]:
+  Mean Accuracy: 55.33% ± 5.06%
+  Mean Macro-F1: 29.24% ± 5.16%
+  Mean Training Time: 0.03s
+  Mean Testing Time: 0.02s
+
+============================================================
+[ExtraTrees] Running experiments on Covertype
+============================================================
+
+Run 1/5
+  Accuracy: 67.98%
+  Macro-F1: 40.38%
+  Training Time: 1.89s
+  Testing Time: 0.10s
+
+Run 2/5
+  Accuracy: 66.57%
+  Macro-F1: 38.77%
+  Training Time: 1.84s
+  Testing Time: 0.09s
+
+Run 3/5
+  Accuracy: 67.05%
+  Macro-F1: 40.49%
+  Training Time: 1.67s
+  Testing Time: 0.11s
+
+Run 4/5
+  Accuracy: 66.68%
+  Macro-F1: 40.63%
+  Training Time: 1.80s
+  Testing Time: 0.10s
+
+Run 5/5
+  Accuracy: 68.23%
+  Macro-F1: 35.66%
+  Training Time: 1.83s
+  Testing Time: 0.10s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Covertype.csv
+
+Summary for Covertype [ExtraTrees]:
+  Mean Accuracy: 67.30% ± 0.76%
+  Mean Macro-F1: 39.19% ± 2.11%
+  Mean Training Time: 1.81s
+  Mean Testing Time: 0.10s
+
+[ExtraTrees] Successful datasets: ['Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes', 'HTRU2', 'Rice', 'Mushroom', 'Websites', 'Letter', 'Car', 'Maternal', 'Student', 'HeartDisease', 'Covertype']
+
+############################################################
+# Model: XGBoost
+############################################################
+
+============================================================
+[XGBoost] Running experiments on Gamma
+============================================================
+
+Run 1/5
+  Accuracy: 88.10%
+  Macro-F1: 86.57%
+  Training Time: 26.07s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 87.87%
+  Macro-F1: 86.27%
+  Training Time: 25.96s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 87.43%
+  Macro-F1: 85.84%
+  Training Time: 25.83s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 88.05%
+  Macro-F1: 86.53%
+  Training Time: 25.71s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 87.45%
+  Macro-F1: 85.73%
+  Training Time: 26.19s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Gamma.csv
+
+Summary for Gamma [XGBoost]:
+  Mean Accuracy: 87.78% ± 0.32%
+  Mean Macro-F1: 86.19% ± 0.39%
+  Mean Training Time: 25.95s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on DryBean
+============================================================
+
+Run 1/5
+  Accuracy: 92.48%
+  Macro-F1: 93.77%
+  Training Time: 166.54s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 92.83%
+  Macro-F1: 93.88%
+  Training Time: 158.19s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 93.14%
+  Macro-F1: 94.37%
+  Training Time: 165.56s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 92.02%
+  Macro-F1: 93.34%
+  Training Time: 164.62s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 92.78%
+  Macro-F1: 93.91%
+  Training Time: 163.90s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_DryBean.csv
+
+Summary for DryBean [XGBoost]:
+  Mean Accuracy: 92.65% ± 0.42%
+  Mean Macro-F1: 93.86% ± 0.37%
+  Mean Training Time: 163.76s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on CredictCard
+============================================================
+
+Run 1/5
+  Accuracy: 81.67%
+  Macro-F1: 67.43%
+  Training Time: 25.02s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 81.61%
+  Macro-F1: 67.86%
+  Training Time: 26.15s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 81.91%
+  Macro-F1: 67.93%
+  Training Time: 26.38s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 81.74%
+  Macro-F1: 67.85%
+  Training Time: 26.31s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 81.56%
+  Macro-F1: 67.29%
+  Training Time: 28.37s
+  Testing Time: 0.04s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_CredictCard.csv
+
+Summary for CredictCard [XGBoost]:
+  Mean Accuracy: 81.70% ± 0.14%
+  Mean Macro-F1: 67.67% ± 0.29%
+  Mean Training Time: 26.45s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on BankMarketing
+============================================================
+
+Run 1/5
+  Accuracy: 90.74%
+  Macro-F1: 75.08%
+  Training Time: 25.42s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 90.88%
+  Macro-F1: 74.95%
+  Training Time: 25.79s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 90.74%
+  Macro-F1: 74.57%
+  Training Time: 25.79s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 90.44%
+  Macro-F1: 74.34%
+  Training Time: 26.60s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 90.73%
+  Macro-F1: 74.69%
+  Training Time: 26.01s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_BankMarketing.csv
+
+Summary for BankMarketing [XGBoost]:
+  Mean Accuracy: 90.71% ± 0.16%
+  Mean Macro-F1: 74.73% ± 0.30%
+  Mean Training Time: 25.92s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on Adult
+============================================================
+
+Run 1/5
+  Accuracy: 85.80%
+  Macro-F1: 79.11%
+  Training Time: 26.10s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 85.87%
+  Macro-F1: 79.35%
+  Training Time: 26.42s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 85.70%
+  Macro-F1: 78.96%
+  Training Time: 26.28s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 85.44%
+  Macro-F1: 78.65%
+  Training Time: 26.31s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 85.63%
+  Macro-F1: 78.90%
+  Training Time: 25.96s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Adult.csv
+
+Summary for Adult [XGBoost]:
+  Mean Accuracy: 85.69% ± 0.16%
+  Mean Macro-F1: 78.99% ± 0.26%
+  Mean Training Time: 26.21s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on Diabetes
+============================================================
+
+Run 1/5
+  Accuracy: 86.59%
+  Macro-F1: 58.98%
+  Training Time: 26.15s
+  Testing Time: 0.04s
+
+Run 2/5
+  Accuracy: 86.69%
+  Macro-F1: 58.90%
+  Training Time: 26.57s
+  Testing Time: 0.04s
+
+Run 3/5
+  Accuracy: 86.46%
+  Macro-F1: 58.47%
+  Training Time: 26.16s
+  Testing Time: 0.04s
+
+Run 4/5
+  Accuracy: 86.61%
+  Macro-F1: 58.62%
+  Training Time: 26.24s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 86.62%
+  Macro-F1: 58.85%
+  Training Time: 26.62s
+  Testing Time: 0.04s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Diabetes.csv
+
+Summary for Diabetes [XGBoost]:
+  Mean Accuracy: 86.59% ± 0.08%
+  Mean Macro-F1: 58.76% ± 0.21%
+  Mean Training Time: 26.35s
+  Mean Testing Time: 0.04s
+
+============================================================
+[XGBoost] Running experiments on HTRU2
+============================================================
+
+Run 1/5
+  Accuracy: 97.93%
+  Macro-F1: 93.52%
+  Training Time: 26.14s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 98.10%
+  Macro-F1: 94.04%
+  Training Time: 22.84s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 97.86%
+  Macro-F1: 93.37%
+  Training Time: 25.85s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 98.04%
+  Macro-F1: 93.97%
+  Training Time: 25.26s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 98.03%
+  Macro-F1: 94.00%
+  Training Time: 27.88s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_HTRU2.csv
+
+Summary for HTRU2 [XGBoost]:
+  Mean Accuracy: 97.99% ± 0.10%
+  Mean Macro-F1: 93.78% ± 0.31%
+  Mean Training Time: 25.59s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on Rice
+============================================================
+
+Run 1/5
+  Accuracy: 90.99%
+  Macro-F1: 90.79%
+  Training Time: 25.77s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 92.04%
+  Macro-F1: 91.87%
+  Training Time: 25.72s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 91.86%
+  Macro-F1: 91.65%
+  Training Time: 26.29s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 91.60%
+  Macro-F1: 91.40%
+  Training Time: 26.15s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 92.48%
+  Macro-F1: 92.31%
+  Training Time: 26.20s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Rice.csv
+
+Summary for Rice [XGBoost]:
+  Mean Accuracy: 91.79% ± 0.55%
+  Mean Macro-F1: 91.60% ± 0.57%
+  Mean Training Time: 26.02s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on Mushroom
+============================================================
+
+Run 1/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 13.10s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 15.62s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 15.46s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 15.43s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 15.34s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Mushroom.csv
+
+Summary for Mushroom [XGBoost]:
+  Mean Accuracy: 100.00% ± 0.00%
+  Mean Macro-F1: 100.00% ± 0.00%
+  Mean Training Time: 14.99s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on Websites
+============================================================
+
+Run 1/5
+  Accuracy: 96.89%
+  Macro-F1: 96.85%
+  Training Time: 26.45s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 96.11%
+  Macro-F1: 96.05%
+  Training Time: 26.12s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 96.26%
+  Macro-F1: 96.21%
+  Training Time: 25.98s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 96.14%
+  Macro-F1: 96.09%
+  Training Time: 17.79s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 96.23%
+  Macro-F1: 96.18%
+  Training Time: 22.48s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Websites.csv
+
+Summary for Websites [XGBoost]:
+  Mean Accuracy: 96.33% ± 0.32%
+  Mean Macro-F1: 96.28% ± 0.33%
+  Mean Training Time: 23.76s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on Letter
+============================================================
+
+Run 1/5
+  Accuracy: 94.63%
+  Macro-F1: 94.63%
+  Training Time: 667.78s
+  Testing Time: 0.04s
+
+Run 2/5
+  Accuracy: 94.15%
+  Macro-F1: 94.13%
+  Training Time: 630.87s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 93.78%
+  Macro-F1: 93.78%
+  Training Time: 664.25s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 94.03%
+  Macro-F1: 94.01%
+  Training Time: 797.29s
+  Testing Time: 0.05s
+
+Run 5/5
+  Accuracy: 94.17%
+  Macro-F1: 94.17%
+  Training Time: 787.86s
+  Testing Time: 0.02s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Letter.csv
+
+Summary for Letter [XGBoost]:
+  Mean Accuracy: 94.15% ± 0.31%
+  Mean Macro-F1: 94.14% ± 0.31%
+  Mean Training Time: 709.61s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on Car
+============================================================
+
+Run 1/5
+  Accuracy: 98.84%
+  Macro-F1: 98.00%
+  Training Time: 94.71s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 98.84%
+  Macro-F1: 95.97%
+  Training Time: 90.82s
+  Testing Time: 0.05s
+
+Run 3/5
+  Accuracy: 98.65%
+  Macro-F1: 97.33%
+  Training Time: 82.37s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 98.46%
+  Macro-F1: 96.17%
+  Training Time: 95.27s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 97.88%
+  Macro-F1: 95.81%
+  Training Time: 87.35s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Car.csv
+
+Summary for Car [XGBoost]:
+  Mean Accuracy: 98.54% ± 0.40%
+  Mean Macro-F1: 96.66% ± 0.96%
+  Mean Training Time: 90.10s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on Maternal
+============================================================
+
+Run 1/5
+  Accuracy: 86.89%
+  Macro-F1: 87.10%
+  Training Time: 63.90s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 85.90%
+  Macro-F1: 86.32%
+  Training Time: 77.80s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 82.62%
+  Macro-F1: 82.62%
+  Training Time: 66.62s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 87.21%
+  Macro-F1: 87.45%
+  Training Time: 79.54s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 83.28%
+  Macro-F1: 83.69%
+  Training Time: 76.96s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Maternal.csv
+
+Summary for Maternal [XGBoost]:
+  Mean Accuracy: 85.18% ± 2.10%
+  Mean Macro-F1: 85.44% ± 2.16%
+  Mean Training Time: 72.96s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on Student
+============================================================
+
+Run 1/5
+  Accuracy: 75.38%
+  Macro-F1: 67.81%
+  Training Time: 78.43s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 77.26%
+  Macro-F1: 70.27%
+  Training Time: 78.88s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 78.01%
+  Macro-F1: 71.48%
+  Training Time: 78.90s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 75.98%
+  Macro-F1: 68.95%
+  Training Time: 78.36s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 76.73%
+  Macro-F1: 69.76%
+  Training Time: 78.86s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Student.csv
+
+Summary for Student [XGBoost]:
+  Mean Accuracy: 76.67% ± 1.04%
+  Mean Macro-F1: 69.65% ± 1.38%
+  Mean Training Time: 78.68s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on HeartDisease
+============================================================
+
+Run 1/5
+  Accuracy: 54.44%
+  Macro-F1: 27.29%
+  Training Time: 40.29s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 57.78%
+  Macro-F1: 28.75%
+  Training Time: 54.89s
+  Testing Time: 0.00s
+
+Run 3/5
+  Accuracy: 55.56%
+  Macro-F1: 29.67%
+  Training Time: 48.12s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 54.44%
+  Macro-F1: 30.99%
+  Training Time: 37.64s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 56.67%
+  Macro-F1: 30.77%
+  Training Time: 50.91s
+  Testing Time: 0.00s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_HeartDisease.csv
+
+Summary for HeartDisease [XGBoost]:
+  Mean Accuracy: 55.78% ± 1.45%
+  Mean Macro-F1: 29.49% ± 1.52%
+  Mean Training Time: 46.37s
+  Mean Testing Time: 0.02s
+
+============================================================
+[XGBoost] Running experiments on Covertype
+============================================================
+
+Run 1/5
+  Accuracy: 88.09%
+  Macro-F1: 84.37%
+  Training Time: 260.46s
+  Testing Time: 0.10s
+
+Run 2/5
+  Accuracy: 88.15%
+  Macro-F1: 84.64%
+  Training Time: 256.83s
+  Testing Time: 0.17s
+
+Run 3/5
+  Accuracy: 88.27%
+  Macro-F1: 84.21%
+  Training Time: 256.75s
+  Testing Time: 0.15s
+
+Run 4/5
+  Accuracy: 88.06%
+  Macro-F1: 83.65%
+  Training Time: 256.89s
+  Testing Time: 0.19s
+
+Run 5/5
+  Accuracy: 88.08%
+  Macro-F1: 84.33%
+  Training Time: 208.41s
+  Testing Time: 0.09s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Covertype.csv
+
+Summary for Covertype [XGBoost]:
+  Mean Accuracy: 88.13% ± 0.08%
+  Mean Macro-F1: 84.24% ± 0.37%
+  Mean Training Time: 247.87s
+  Mean Testing Time: 0.14s
+
+[XGBoost] Successful datasets: ['Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes', 'HTRU2', 'Rice', 'Mushroom', 'Websites', 'Letter', 'Car', 'Maternal', 'Student', 'HeartDisease', 'Covertype']
+
+############################################################
+# Model: TabNet
+############################################################
+
+============================================================
+[TabNet] Running experiments on Gamma
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 88 with best_epoch = 68 and best_val_0_auc = 0.93407
+  Accuracy: 87.89%
+  Macro-F1: 86.31%
+  Training Time: 23.50s
+  Testing Time: 0.03s
+
+Run 2/5
+
+Early stopping occurred at epoch 106 with best_epoch = 86 and best_val_0_auc = 0.93644
+  Accuracy: 87.57%
+  Macro-F1: 85.95%
+  Training Time: 33.83s
+  Testing Time: 0.03s
+
+Run 3/5
+
+Early stopping occurred at epoch 88 with best_epoch = 68 and best_val_0_auc = 0.93313
+  Accuracy: 87.59%
+  Macro-F1: 85.93%
+  Training Time: 30.72s
+  Testing Time: 0.07s
+
+Run 4/5
+
+Early stopping occurred at epoch 114 with best_epoch = 94 and best_val_0_auc = 0.94033
+  Accuracy: 88.33%
+  Macro-F1: 86.69%
+  Training Time: 37.50s
+  Testing Time: 0.07s
+
+Run 5/5
+
+Early stopping occurred at epoch 83 with best_epoch = 63 and best_val_0_auc = 0.93427
+  Accuracy: 87.70%
+  Macro-F1: 85.71%
+  Training Time: 25.62s
+  Testing Time: 0.40s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Gamma.csv
+
+Summary for Gamma [TabNet]:
+  Mean Accuracy: 87.82% ± 0.31%
+  Mean Macro-F1: 86.12% ± 0.38%
+  Mean Training Time: 30.24s
+  Mean Testing Time: 0.12s
+
+============================================================
+[TabNet] Running experiments on DryBean
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 62 with best_epoch = 42 and best_val_0_accuracy = 0.93144
+  Accuracy: 93.14%
+  Macro-F1: 94.20%
+  Training Time: 15.94s
+  Testing Time: 0.05s
+
+Run 2/5
+
+Early stopping occurred at epoch 75 with best_epoch = 55 and best_val_0_accuracy = 0.93585
+  Accuracy: 93.58%
+  Macro-F1: 94.51%
+  Training Time: 19.17s
+  Testing Time: 0.02s
+
+Run 3/5
+
+Early stopping occurred at epoch 47 with best_epoch = 27 and best_val_0_accuracy = 0.93683
+  Accuracy: 93.68%
+  Macro-F1: 94.86%
+  Training Time: 11.93s
+  Testing Time: 0.05s
+
+Run 4/5
+
+Early stopping occurred at epoch 56 with best_epoch = 36 and best_val_0_accuracy = 0.92777
+  Accuracy: 92.78%
+  Macro-F1: 93.98%
+  Training Time: 10.70s
+  Testing Time: 0.02s
+
+Run 5/5
+
+Early stopping occurred at epoch 90 with best_epoch = 70 and best_val_0_accuracy = 0.93364
+  Accuracy: 93.36%
+  Macro-F1: 94.52%
+  Training Time: 18.25s
+  Testing Time: 0.02s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_DryBean.csv
+
+Summary for DryBean [TabNet]:
+  Mean Accuracy: 93.31% ± 0.36%
+  Mean Macro-F1: 94.42% ± 0.34%
+  Mean Training Time: 15.20s
+  Mean Testing Time: 0.03s
+
+============================================================
+[TabNet] Running experiments on CredictCard
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 85 with best_epoch = 65 and best_val_0_auc = 0.76962
+  Accuracy: 82.19%
+  Macro-F1: 68.27%
+  Training Time: 46.05s
+  Testing Time: 0.12s
+
+Run 2/5
+
+Early stopping occurred at epoch 90 with best_epoch = 70 and best_val_0_auc = 0.77859
+  Accuracy: 82.07%
+  Macro-F1: 67.63%
+  Training Time: 47.89s
+  Testing Time: 0.06s
+
+Run 3/5
+
+Early stopping occurred at epoch 48 with best_epoch = 28 and best_val_0_auc = 0.7725
+  Accuracy: 81.69%
+  Macro-F1: 67.44%
+  Training Time: 27.61s
+  Testing Time: 0.12s
+
+Run 4/5
+
+Early stopping occurred at epoch 66 with best_epoch = 46 and best_val_0_auc = 0.76736
+  Accuracy: 81.59%
+  Macro-F1: 68.35%
+  Training Time: 37.56s
+  Testing Time: 0.06s
+
+Run 5/5
+
+Early stopping occurred at epoch 78 with best_epoch = 58 and best_val_0_auc = 0.76307
+  Accuracy: 81.71%
+  Macro-F1: 67.43%
+  Training Time: 43.21s
+  Testing Time: 0.12s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_CredictCard.csv
+
+Summary for CredictCard [TabNet]:
+  Mean Accuracy: 81.85% ± 0.26%
+  Mean Macro-F1: 67.82% ± 0.45%
+  Mean Training Time: 40.46s
+  Mean Testing Time: 0.09s
+
+============================================================
+[TabNet] Running experiments on BankMarketing
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 62 with best_epoch = 42 and best_val_0_auc = 0.91068
+  Accuracy: 90.10%
+  Macro-F1: 73.11%
+  Training Time: 51.96s
+  Testing Time: 0.10s
+
+Run 2/5
+
+Early stopping occurred at epoch 52 with best_epoch = 32 and best_val_0_auc = 0.91375
+  Accuracy: 90.08%
+  Macro-F1: 71.59%
+  Training Time: 43.22s
+  Testing Time: 0.10s
+
+Run 3/5
+
+Early stopping occurred at epoch 102 with best_epoch = 82 and best_val_0_auc = 0.91967
+  Accuracy: 90.50%
+  Macro-F1: 75.24%
+  Training Time: 81.01s
+  Testing Time: 0.09s
+
+Run 4/5
+
+Early stopping occurred at epoch 108 with best_epoch = 88 and best_val_0_auc = 0.91507
+  Accuracy: 90.14%
+  Macro-F1: 73.87%
+  Training Time: 94.27s
+  Testing Time: 0.19s
+
+Run 5/5
+
+Early stopping occurred at epoch 92 with best_epoch = 72 and best_val_0_auc = 0.92317
+  Accuracy: 90.49%
+  Macro-F1: 73.80%
+  Training Time: 78.54s
+  Testing Time: 0.10s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_BankMarketing.csv
+
+Summary for BankMarketing [TabNet]:
+  Mean Accuracy: 90.26% ± 0.21%
+  Mean Macro-F1: 73.52% ± 1.33%
+  Mean Training Time: 69.80s
+  Mean Testing Time: 0.11s
+
+============================================================
+[TabNet] Running experiments on Adult
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 41 with best_epoch = 21 and best_val_0_auc = 0.9083
+  Accuracy: 85.68%
+  Macro-F1: 78.67%
+  Training Time: 48.01s
+  Testing Time: 0.14s
+
+Run 2/5
+
+Early stopping occurred at epoch 60 with best_epoch = 40 and best_val_0_auc = 0.91252
+  Accuracy: 85.90%
+  Macro-F1: 78.81%
+  Training Time: 56.56s
+  Testing Time: 0.13s
+
+Run 3/5
+
+Early stopping occurred at epoch 54 with best_epoch = 34 and best_val_0_auc = 0.90924
+  Accuracy: 85.53%
+  Macro-F1: 79.34%
+  Training Time: 59.58s
+  Testing Time: 0.13s
+
+Run 4/5
+
+Early stopping occurred at epoch 55 with best_epoch = 35 and best_val_0_auc = 0.90718
+  Accuracy: 85.22%
+  Macro-F1: 78.64%
+  Training Time: 51.60s
+  Testing Time: 0.13s
+
+Run 5/5
+
+Early stopping occurred at epoch 53 with best_epoch = 33 and best_val_0_auc = 0.90563
+  Accuracy: 85.13%
+  Macro-F1: 78.80%
+  Training Time: 47.72s
+  Testing Time: 0.13s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Adult.csv
+
+Summary for Adult [TabNet]:
+  Mean Accuracy: 85.49% ± 0.32%
+  Mean Macro-F1: 78.85% ± 0.28%
+  Mean Training Time: 52.69s
+  Mean Testing Time: 0.13s
+
+============================================================
+[TabNet] Running experiments on Diabetes
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 64 with best_epoch = 44 and best_val_0_auc = 0.82879
+  Accuracy: 86.76%
+  Macro-F1: 58.75%
+  Training Time: 276.72s
+  Testing Time: 0.44s
+
+Run 2/5
+
+Early stopping occurred at epoch 56 with best_epoch = 36 and best_val_0_auc = 0.83033
+  Accuracy: 86.72%
+  Macro-F1: 57.14%
+  Training Time: 265.04s
+  Testing Time: 0.45s
+
+Run 3/5
+
+Early stopping occurred at epoch 45 with best_epoch = 25 and best_val_0_auc = 0.82748
+  Accuracy: 86.60%
+  Macro-F1: 59.31%
+  Training Time: 213.46s
+  Testing Time: 1.00s
+
+Run 4/5
+
+Early stopping occurred at epoch 44 with best_epoch = 24 and best_val_0_auc = 0.82983
+  Accuracy: 86.67%
+  Macro-F1: 58.51%
+  Training Time: 207.79s
+  Testing Time: 0.45s
+
+Run 5/5
+
+Early stopping occurred at epoch 52 with best_epoch = 32 and best_val_0_auc = 0.83094
+  Accuracy: 86.69%
+  Macro-F1: 58.22%
+  Training Time: 209.66s
+  Testing Time: 0.45s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Diabetes.csv
+
+Summary for Diabetes [TabNet]:
+  Mean Accuracy: 86.69% ± 0.06%
+  Mean Macro-F1: 58.39% ± 0.80%
+  Mean Training Time: 234.53s
+  Mean Testing Time: 0.56s
+
+============================================================
+[TabNet] Running experiments on HTRU2
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 49 with best_epoch = 29 and best_val_0_auc = 0.98361
+  Accuracy: 97.82%
+  Macro-F1: 93.04%
+  Training Time: 11.45s
+  Testing Time: 0.03s
+
+Run 2/5
+
+Early stopping occurred at epoch 27 with best_epoch = 7 and best_val_0_auc = 0.97858
+  Accuracy: 97.90%
+  Macro-F1: 93.33%
+  Training Time: 5.80s
+  Testing Time: 0.03s
+
+Run 3/5
+
+Early stopping occurred at epoch 62 with best_epoch = 42 and best_val_0_auc = 0.97787
+  Accuracy: 97.64%
+  Macro-F1: 92.60%
+  Training Time: 17.95s
+  Testing Time: 0.06s
+
+Run 4/5
+
+Early stopping occurred at epoch 56 with best_epoch = 36 and best_val_0_auc = 0.98205
+  Accuracy: 98.08%
+  Macro-F1: 94.07%
+  Training Time: 14.27s
+  Testing Time: 0.03s
+
+Run 5/5
+
+Early stopping occurred at epoch 66 with best_epoch = 46 and best_val_0_auc = 0.98274
+  Accuracy: 97.84%
+  Macro-F1: 93.38%
+  Training Time: 13.91s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_HTRU2.csv
+
+Summary for HTRU2 [TabNet]:
+  Mean Accuracy: 97.85% ± 0.16%
+  Mean Macro-F1: 93.28% ± 0.54%
+  Mean Training Time: 12.68s
+  Mean Testing Time: 0.04s
+
+============================================================
+[TabNet] Running experiments on Rice
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 48 with best_epoch = 28 and best_val_0_auc = 0.9764
+  Accuracy: 92.48%
+  Macro-F1: 92.27%
+  Training Time: 1.86s
+  Testing Time: 0.01s
+
+Run 2/5
+
+Early stopping occurred at epoch 44 with best_epoch = 24 and best_val_0_auc = 0.97108
+  Accuracy: 92.21%
+  Macro-F1: 92.06%
+  Training Time: 1.79s
+  Testing Time: 0.01s
+
+Run 3/5
+
+Early stopping occurred at epoch 26 with best_epoch = 6 and best_val_0_auc = 0.97601
+  Accuracy: 92.30%
+  Macro-F1: 92.15%
+  Training Time: 1.42s
+  Testing Time: 0.02s
+
+Run 4/5
+
+Early stopping occurred at epoch 46 with best_epoch = 26 and best_val_0_auc = 0.97857
+  Accuracy: 92.83%
+  Macro-F1: 92.65%
+  Training Time: 1.91s
+  Testing Time: 0.01s
+
+Run 5/5
+
+Early stopping occurred at epoch 39 with best_epoch = 19 and best_val_0_auc = 0.97677
+  Accuracy: 92.91%
+  Macro-F1: 92.74%
+  Training Time: 1.61s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Rice.csv
+
+Summary for Rice [TabNet]:
+  Mean Accuracy: 92.55% ± 0.31%
+  Mean Macro-F1: 92.38% ± 0.30%
+  Mean Training Time: 1.72s
+  Mean Testing Time: 0.01s
+
+============================================================
+[TabNet] Running experiments on Mushroom
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 39 with best_epoch = 19 and best_val_0_auc = 1.0
+  Accuracy: 99.88%
+  Macro-F1: 99.88%
+  Training Time: 5.11s
+  Testing Time: 0.02s
+
+Run 2/5
+
+Early stopping occurred at epoch 44 with best_epoch = 24 and best_val_0_auc = 1.0
+  Accuracy: 99.96%
+  Macro-F1: 99.96%
+  Training Time: 5.92s
+  Testing Time: 0.02s
+
+Run 3/5
+
+Early stopping occurred at epoch 32 with best_epoch = 12 and best_val_0_auc = 1.0
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 5.00s
+  Testing Time: 0.02s
+
+Run 4/5
+
+Early stopping occurred at epoch 30 with best_epoch = 10 and best_val_0_auc = 1.0
+  Accuracy: 100.00%
+  Macro-F1: 100.00%
+  Training Time: 3.81s
+  Testing Time: 0.02s
+
+Run 5/5
+
+Early stopping occurred at epoch 31 with best_epoch = 11 and best_val_0_auc = 0.99921
+  Accuracy: 99.59%
+  Macro-F1: 99.59%
+  Training Time: 4.51s
+  Testing Time: 0.02s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Mushroom.csv
+
+Summary for Mushroom [TabNet]:
+  Mean Accuracy: 99.89% ± 0.17%
+  Mean Macro-F1: 99.88% ± 0.17%
+  Mean Training Time: 4.87s
+  Mean Testing Time: 0.02s
+
+============================================================
+[TabNet] Running experiments on Websites
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 87 with best_epoch = 67 and best_val_0_auc = 0.99401
+  Accuracy: 95.84%
+  Macro-F1: 95.78%
+  Training Time: 18.83s
+  Testing Time: 0.02s
+
+Run 2/5
+
+Early stopping occurred at epoch 73 with best_epoch = 53 and best_val_0_auc = 0.99234
+  Accuracy: 95.36%
+  Macro-F1: 95.30%
+  Training Time: 12.67s
+  Testing Time: 0.02s
+
+Run 3/5
+
+Early stopping occurred at epoch 92 with best_epoch = 72 and best_val_0_auc = 0.99333
+  Accuracy: 95.93%
+  Macro-F1: 95.88%
+  Training Time: 19.27s
+  Testing Time: 0.03s
+
+Run 4/5
+
+Early stopping occurred at epoch 115 with best_epoch = 95 and best_val_0_auc = 0.99375
+  Accuracy: 96.20%
+  Macro-F1: 96.14%
+  Training Time: 21.15s
+  Testing Time: 0.02s
+
+Run 5/5
+
+Early stopping occurred at epoch 185 with best_epoch = 165 and best_val_0_auc = 0.99521
+  Accuracy: 96.74%
+  Macro-F1: 96.71%
+  Training Time: 37.19s
+  Testing Time: 0.02s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Websites.csv
+
+Summary for Websites [TabNet]:
+  Mean Accuracy: 96.01% ± 0.51%
+  Mean Macro-F1: 95.96% ± 0.51%
+  Mean Training Time: 21.82s
+  Mean Testing Time: 0.02s
+
+============================================================
+[TabNet] Running experiments on Letter
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 119 with best_epoch = 99 and best_val_0_accuracy = 0.94867
+  Accuracy: 94.87%
+  Macro-F1: 94.87%
+  Training Time: 42.77s
+  Testing Time: 0.07s
+
+Run 2/5
+
+Early stopping occurred at epoch 134 with best_epoch = 114 and best_val_0_accuracy = 0.95383
+  Accuracy: 95.38%
+  Macro-F1: 95.37%
+  Training Time: 46.45s
+  Testing Time: 0.03s
+
+Run 3/5
+
+Early stopping occurred at epoch 144 with best_epoch = 124 and best_val_0_accuracy = 0.95267
+  Accuracy: 95.27%
+  Macro-F1: 95.25%
+  Training Time: 46.89s
+  Testing Time: 0.03s
+
+Run 4/5
+
+Early stopping occurred at epoch 133 with best_epoch = 113 and best_val_0_accuracy = 0.95583
+  Accuracy: 95.58%
+  Macro-F1: 95.58%
+  Training Time: 46.25s
+  Testing Time: 0.07s
+
+Run 5/5
+
+Early stopping occurred at epoch 140 with best_epoch = 120 and best_val_0_accuracy = 0.95767
+  Accuracy: 95.77%
+  Macro-F1: 95.76%
+  Training Time: 48.47s
+  Testing Time: 0.08s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Letter.csv
+
+Summary for Letter [TabNet]:
+  Mean Accuracy: 95.37% ± 0.34%
+  Mean Macro-F1: 95.36% ± 0.34%
+  Mean Training Time: 46.17s
+  Mean Testing Time: 0.06s
+
+============================================================
+[TabNet] Running experiments on Car
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 114 with best_epoch = 94 and best_val_0_accuracy = 0.94798
+  Accuracy: 94.80%
+  Macro-F1: 87.19%
+  Training Time: 2.80s
+  Testing Time: 0.00s
+
+Run 2/5
+
+Early stopping occurred at epoch 97 with best_epoch = 77 and best_val_0_accuracy = 0.96532
+  Accuracy: 96.53%
+  Macro-F1: 88.75%
+  Training Time: 2.07s
+  Testing Time: 0.00s
+
+Run 3/5
+
+Early stopping occurred at epoch 143 with best_epoch = 123 and best_val_0_accuracy = 0.99229
+  Accuracy: 99.23%
+  Macro-F1: 98.28%
+  Training Time: 4.07s
+  Testing Time: 0.00s
+
+Run 4/5
+
+Early stopping occurred at epoch 125 with best_epoch = 105 and best_val_0_accuracy = 0.96532
+  Accuracy: 96.53%
+  Macro-F1: 90.30%
+  Training Time: 3.77s
+  Testing Time: 0.00s
+
+Run 5/5
+
+Early stopping occurred at epoch 133 with best_epoch = 113 and best_val_0_accuracy = 0.98459
+  Accuracy: 98.46%
+  Macro-F1: 95.05%
+  Training Time: 3.38s
+  Testing Time: 0.00s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Car.csv
+
+Summary for Car [TabNet]:
+  Mean Accuracy: 97.11% ± 1.76%
+  Mean Macro-F1: 91.91% ± 4.62%
+  Mean Training Time: 3.22s
+  Mean Testing Time: 0.00s
+
+============================================================
+[TabNet] Running experiments on Maternal
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.34098
+  Accuracy: 34.10%
+  Macro-F1: 29.34%
+  Training Time: 0.09s
+  Testing Time: 0.00s
+
+Run 2/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.33443
+  Accuracy: 33.44%
+  Macro-F1: 31.44%
+  Training Time: 0.22s
+  Testing Time: 0.01s
+
+Run 3/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.44262
+  Accuracy: 44.26%
+  Macro-F1: 32.17%
+  Training Time: 0.09s
+  Testing Time: 0.00s
+
+Run 4/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.34426
+  Accuracy: 34.43%
+  Macro-F1: 34.15%
+  Training Time: 0.09s
+  Testing Time: 0.00s
+
+Run 5/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.38033
+  Accuracy: 38.03%
+  Macro-F1: 38.03%
+  Training Time: 0.09s
+  Testing Time: 0.00s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Maternal.csv
+
+Summary for Maternal [TabNet]:
+  Mean Accuracy: 36.85% ± 4.51%
+  Mean Macro-F1: 33.03% ± 3.28%
+  Mean Training Time: 0.11s
+  Mean Testing Time: 0.00s
+
+============================================================
+[TabNet] Running experiments on Student
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 69 with best_epoch = 49 and best_val_0_accuracy = 0.75226
+  Accuracy: 75.23%
+  Macro-F1: 66.13%
+  Training Time: 6.04s
+  Testing Time: 0.01s
+
+Run 2/5
+
+Early stopping occurred at epoch 34 with best_epoch = 14 and best_val_0_accuracy = 0.74247
+  Accuracy: 74.25%
+  Macro-F1: 63.20%
+  Training Time: 2.19s
+  Testing Time: 0.01s
+
+Run 3/5
+
+Early stopping occurred at epoch 73 with best_epoch = 53 and best_val_0_accuracy = 0.76431
+  Accuracy: 76.43%
+  Macro-F1: 69.76%
+  Training Time: 5.66s
+  Testing Time: 0.01s
+
+Run 4/5
+
+Early stopping occurred at epoch 58 with best_epoch = 38 and best_val_0_accuracy = 0.75075
+  Accuracy: 75.08%
+  Macro-F1: 66.45%
+  Training Time: 4.36s
+  Testing Time: 0.01s
+
+Run 5/5
+
+Early stopping occurred at epoch 68 with best_epoch = 48 and best_val_0_accuracy = 0.74849
+  Accuracy: 74.85%
+  Macro-F1: 66.73%
+  Training Time: 5.45s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Student.csv
+
+Summary for Student [TabNet]:
+  Mean Accuracy: 75.17% ± 0.80%
+  Mean Macro-F1: 66.45% ± 2.33%
+  Mean Training Time: 4.74s
+  Mean Testing Time: 0.01s
+
+============================================================
+[TabNet] Running experiments on HeartDisease
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.46667
+  Accuracy: 46.67%
+  Macro-F1: 27.84%
+  Training Time: 0.06s
+  Testing Time: 0.00s
+
+Run 2/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.17778
+  Accuracy: 17.78%
+  Macro-F1: 13.96%
+  Training Time: 0.06s
+  Testing Time: 0.00s
+
+Run 3/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.17778
+  Accuracy: 17.78%
+  Macro-F1: 17.22%
+  Training Time: 0.06s
+  Testing Time: 0.00s
+
+Run 4/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.21111
+  Accuracy: 21.11%
+  Macro-F1: 14.50%
+  Training Time: 0.06s
+  Testing Time: 0.00s
+
+Run 5/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.13333
+  Accuracy: 13.33%
+  Macro-F1: 11.10%
+  Training Time: 0.06s
+  Testing Time: 0.00s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_HeartDisease.csv
+
+Summary for HeartDisease [TabNet]:
+  Mean Accuracy: 23.33% ± 13.33%
+  Mean Macro-F1: 16.92% ± 6.48%
+  Mean Training Time: 0.06s
+  Mean Testing Time: 0.00s
+
+============================================================
+[TabNet] Running experiments on Covertype
+============================================================
+
+Run 1/5
+Stop training because you reached max_epochs = 200 with best_epoch = 187 and best_val_0_accuracy = 0.9148
+  Accuracy: 91.48%
+  Macro-F1: 86.83%
+  Training Time: 2282.24s
+  Testing Time: 1.68s
+
+Run 2/5
+
+Early stopping occurred at epoch 193 with best_epoch = 173 and best_val_0_accuracy = 0.91584
+  Accuracy: 91.58%
+  Macro-F1: 87.04%
+  Training Time: 2290.10s
+  Testing Time: 2.15s
+
+Run 3/5
+
+Early stopping occurred at epoch 78 with best_epoch = 58 and best_val_0_accuracy = 0.90159
+  Accuracy: 90.16%
+  Macro-F1: 83.81%
+  Training Time: 885.01s
+  Testing Time: 2.31s
+
+Run 4/5
+
+Early stopping occurred at epoch 156 with best_epoch = 136 and best_val_0_accuracy = 0.91527
+  Accuracy: 91.53%
+  Macro-F1: 85.90%
+  Training Time: 1809.51s
+  Testing Time: 1.48s
+
+Run 5/5
+Stop training because you reached max_epochs = 200 with best_epoch = 188 and best_val_0_accuracy = 0.91722
+  Accuracy: 91.72%
+  Macro-F1: 86.84%
+  Training Time: 2283.20s
+  Testing Time: 1.38s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Covertype.csv
+
+Summary for Covertype [TabNet]:
+  Mean Accuracy: 91.29% ± 0.64%
+  Mean Macro-F1: 86.08% ± 1.35%
+  Mean Training Time: 1910.01s
+  Mean Testing Time: 1.80s
+
+[TabNet] Successful datasets: ['Gamma', 'DryBean', 'CredictCard', 'BankMarketing', 'Adult', 'Diabetes', 'HTRU2', 'Rice', 'Mushroom', 'Websites', 'Letter', 'Car', 'Maternal', 'Student', 'HeartDisease', 'Covertype']
