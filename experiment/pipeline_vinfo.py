@@ -23,6 +23,10 @@ DATASETS = [
     'Maternal', 'Student', 'HeartDisease', 'Covertype'
 ]
 
+DATASETS = [
+    'DNA','Pendigits','Satimage','Segment','USPS','Vehicle'
+]
+
 # CascadeForestVinfo configuration
 VINFO_CONFIG = {
     'num_estimator': 100,   # 100 trees per forest

@@ -19,8 +19,8 @@ root = get_dir_in_root("result")
 # Each entry: (result_dir_name, method_file_prefix, display_name)
 # method_file_prefix is used to match files: {prefix}_{dataset}_*.csv
 METHOD_CONFIG = [
-    ("DF",        "gcForest",            "Deepforest"),
     ("DF_Vinfo",  "CascadeForestVinfo",  "VIDF"),
+    ("DF",        "gcForest",            "Deepforest"),
     ("RF",        "RF",                  "Random Forest"),
     ("ExtraTrees","ExtraTrees",          "Extra Trees"),
     ("XGBoost",   "XGBoost",             "XGBoost"),
@@ -28,7 +28,7 @@ METHOD_CONFIG = [
 ]
 
 # Metric to compare (column name in csv files)
-query = "accuracy"   # or "macro_f1"
+query = "macro_f1"   # or "macro_f1"
 
 # Name of our proposed method (display_name in METHOD_CONFIG)
 # Significance markers are added to OTHER methods' cells,
@@ -58,7 +58,7 @@ if not dataset_list:
 
 column_names = [cfg[2] for cfg in METHOD_CONFIG]
 
-dataset_list = ["Adult", "BankMarketing", "Diabetes", "Gamma", "Student", "Websites"]
+dataset_list = ["Adult", "BankMarketing", "Diabetes", "Gamma", "Student", "Websites",'DNA','Pendigits','Satimage','Segment','Vehicle']
 # =====================================================================
 # Read all results
 # =====================================================================

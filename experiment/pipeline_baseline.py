@@ -28,6 +28,10 @@ DATASETS = [
     'Maternal', 'Student', 'HeartDisease', 'Covertype'
 ]
 
+DATASETS = [
+    'DNA','Pendigits','Satimage','Segment','USPS','Vehicle'
+]
+
 # Model names to run
 MODELS = ['RF', 'ExtraTrees', 'XGBoost', 'TabNet']
 

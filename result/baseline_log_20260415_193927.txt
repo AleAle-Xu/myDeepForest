@@ -1,0 +1,1097 @@
+Baseline experiment started at 20260415_193927
+Log file: /home/xjl/pythoncode/myDeepForest/result/baseline_log_20260415_193927.txt
+
+Models: ['RF', 'ExtraTrees', 'XGBoost', 'TabNet']
+Datasets: ['DNA', 'Pendigits', 'Satimage', 'Segment', 'USPS', 'Vehicle']
+
+
+############################################################
+# Model: RF
+############################################################
+
+============================================================
+[RF] Running experiments on DNA
+============================================================
+
+Run 1/5
+  Accuracy: 93.04%
+  Macro-F1: 92.02%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 94.07%
+  Macro-F1: 93.39%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 94.72%
+  Macro-F1: 93.92%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 93.43%
+  Macro-F1: 92.46%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 93.04%
+  Macro-F1: 92.20%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_DNA.csv
+
+Summary for DNA [RF]:
+  Mean Accuracy: 93.66% ± 0.73%
+  Mean Macro-F1: 92.80% ± 0.82%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Pendigits
+============================================================
+
+Run 1/5
+  Accuracy: 98.61%
+  Macro-F1: 98.62%
+  Training Time: 0.10s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 98.45%
+  Macro-F1: 98.47%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 98.27%
+  Macro-F1: 98.29%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 98.73%
+  Macro-F1: 98.74%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 98.64%
+  Macro-F1: 98.65%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Pendigits.csv
+
+Summary for Pendigits [RF]:
+  Mean Accuracy: 98.54% ± 0.18%
+  Mean Macro-F1: 98.56% ± 0.18%
+  Mean Training Time: 0.07s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Satimage
+============================================================
+
+Run 1/5
+  Accuracy: 90.11%
+  Macro-F1: 87.45%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 89.33%
+  Macro-F1: 86.90%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 90.42%
+  Macro-F1: 88.16%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 90.73%
+  Macro-F1: 88.98%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 90.47%
+  Macro-F1: 88.34%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Satimage.csv
+
+Summary for Satimage [RF]:
+  Mean Accuracy: 90.21% ± 0.54%
+  Mean Macro-F1: 87.96% ± 0.81%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Segment
+============================================================
+
+Run 1/5
+  Accuracy: 96.83%
+  Macro-F1: 96.80%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 96.97%
+  Macro-F1: 96.98%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 97.98%
+  Macro-F1: 97.97%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 97.26%
+  Macro-F1: 97.25%
+  Training Time: 0.06s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 95.96%
+  Macro-F1: 95.97%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Segment.csv
+
+Summary for Segment [RF]:
+  Mean Accuracy: 97.00% ± 0.73%
+  Mean Macro-F1: 96.99% ± 0.73%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on USPS
+============================================================
+
+Run 1/5
+  Accuracy: 95.13%
+  Macro-F1: 94.57%
+  Training Time: 0.16s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 94.62%
+  Macro-F1: 94.06%
+  Training Time: 0.15s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 95.48%
+  Macro-F1: 95.03%
+  Training Time: 0.19s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 94.87%
+  Macro-F1: 94.37%
+  Training Time: 0.17s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 95.09%
+  Macro-F1: 94.64%
+  Training Time: 0.15s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_USPS.csv
+
+Summary for USPS [RF]:
+  Mean Accuracy: 95.04% ± 0.32%
+  Mean Macro-F1: 94.54% ± 0.35%
+  Mean Training Time: 0.16s
+  Mean Testing Time: 0.01s
+
+============================================================
+[RF] Running experiments on Vehicle
+============================================================
+
+Run 1/5
+  Accuracy: 75.59%
+  Macro-F1: 75.00%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 74.80%
+  Macro-F1: 74.12%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 76.38%
+  Macro-F1: 75.90%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 74.41%
+  Macro-F1: 73.87%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 73.23%
+  Macro-F1: 72.76%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/RF/RF_Vehicle.csv
+
+Summary for Vehicle [RF]:
+  Mean Accuracy: 74.88% ± 1.19%
+  Mean Macro-F1: 74.33% ± 1.19%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+[RF] Successful datasets: ['DNA', 'Pendigits', 'Satimage', 'Segment', 'USPS', 'Vehicle']
+
+############################################################
+# Model: ExtraTrees
+############################################################
+
+============================================================
+[ExtraTrees] Running experiments on DNA
+============================================================
+
+Run 1/5
+  Accuracy: 95.49%
+  Macro-F1: 94.82%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 93.81%
+  Macro-F1: 93.20%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 94.72%
+  Macro-F1: 94.00%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 93.56%
+  Macro-F1: 92.77%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 92.91%
+  Macro-F1: 91.96%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_DNA.csv
+
+Summary for DNA [ExtraTrees]:
+  Mean Accuracy: 94.10% ± 1.01%
+  Mean Macro-F1: 93.35% ± 1.10%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Pendigits
+============================================================
+
+Run 1/5
+  Accuracy: 97.85%
+  Macro-F1: 97.88%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 97.88%
+  Macro-F1: 97.89%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 97.85%
+  Macro-F1: 97.87%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 98.12%
+  Macro-F1: 98.14%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 97.79%
+  Macro-F1: 97.81%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Pendigits.csv
+
+Summary for Pendigits [ExtraTrees]:
+  Mean Accuracy: 97.90% ± 0.13%
+  Mean Macro-F1: 97.92% ± 0.13%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Satimage
+============================================================
+
+Run 1/5
+  Accuracy: 89.33%
+  Macro-F1: 86.37%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 88.87%
+  Macro-F1: 86.02%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 89.33%
+  Macro-F1: 86.88%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 89.44%
+  Macro-F1: 87.21%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 89.44%
+  Macro-F1: 86.78%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Satimage.csv
+
+Summary for Satimage [ExtraTrees]:
+  Mean Accuracy: 89.28% ± 0.24%
+  Mean Macro-F1: 86.65% ± 0.46%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Segment
+============================================================
+
+Run 1/5
+  Accuracy: 94.81%
+  Macro-F1: 94.74%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 96.54%
+  Macro-F1: 96.55%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 97.11%
+  Macro-F1: 97.12%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 96.54%
+  Macro-F1: 96.52%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 95.67%
+  Macro-F1: 95.72%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Segment.csv
+
+Summary for Segment [ExtraTrees]:
+  Mean Accuracy: 96.13% ± 0.90%
+  Mean Macro-F1: 96.13% ± 0.93%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on USPS
+============================================================
+
+Run 1/5
+  Accuracy: 95.77%
+  Macro-F1: 95.30%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 95.30%
+  Macro-F1: 94.79%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 96.27%
+  Macro-F1: 95.90%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 95.52%
+  Macro-F1: 95.05%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 96.09%
+  Macro-F1: 95.70%
+  Training Time: 0.05s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_USPS.csv
+
+Summary for USPS [ExtraTrees]:
+  Mean Accuracy: 95.79% ± 0.40%
+  Mean Macro-F1: 95.35% ± 0.45%
+  Mean Training Time: 0.05s
+  Mean Testing Time: 0.01s
+
+============================================================
+[ExtraTrees] Running experiments on Vehicle
+============================================================
+
+Run 1/5
+  Accuracy: 75.98%
+  Macro-F1: 75.28%
+  Training Time: 0.03s
+  Testing Time: 0.01s
+
+Run 2/5
+  Accuracy: 71.65%
+  Macro-F1: 70.59%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 3/5
+  Accuracy: 74.02%
+  Macro-F1: 73.00%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 4/5
+  Accuracy: 73.23%
+  Macro-F1: 72.68%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Run 5/5
+  Accuracy: 74.41%
+  Macro-F1: 73.60%
+  Training Time: 0.04s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/ExtraTrees/ExtraTrees_Vehicle.csv
+
+Summary for Vehicle [ExtraTrees]:
+  Mean Accuracy: 73.86% ± 1.59%
+  Mean Macro-F1: 73.03% ± 1.69%
+  Mean Training Time: 0.04s
+  Mean Testing Time: 0.01s
+
+[ExtraTrees] Successful datasets: ['DNA', 'Pendigits', 'Satimage', 'Segment', 'USPS', 'Vehicle']
+
+############################################################
+# Model: XGBoost
+############################################################
+
+============================================================
+[XGBoost] Running experiments on DNA
+============================================================
+
+Run 1/5
+  Accuracy: 94.72%
+  Macro-F1: 93.98%
+  Training Time: 73.31s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 93.81%
+  Macro-F1: 93.28%
+  Training Time: 73.08s
+  Testing Time: 0.06s
+
+Run 3/5
+  Accuracy: 94.97%
+  Macro-F1: 94.18%
+  Training Time: 77.59s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 93.94%
+  Macro-F1: 93.32%
+  Training Time: 76.63s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 94.07%
+  Macro-F1: 93.48%
+  Training Time: 77.60s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_DNA.csv
+
+Summary for DNA [XGBoost]:
+  Mean Accuracy: 94.30% ± 0.51%
+  Mean Macro-F1: 93.65% ± 0.41%
+  Mean Training Time: 75.64s
+  Mean Testing Time: 0.04s
+
+============================================================
+[XGBoost] Running experiments on Pendigits
+============================================================
+
+Run 1/5
+  Accuracy: 98.39%
+  Macro-F1: 98.40%
+  Training Time: 233.59s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 98.45%
+  Macro-F1: 98.47%
+  Training Time: 221.43s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 98.27%
+  Macro-F1: 98.27%
+  Training Time: 234.55s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 98.73%
+  Macro-F1: 98.74%
+  Training Time: 232.49s
+  Testing Time: 0.04s
+
+Run 5/5
+  Accuracy: 98.70%
+  Macro-F1: 98.69%
+  Training Time: 234.28s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Pendigits.csv
+
+Summary for Pendigits [XGBoost]:
+  Mean Accuracy: 98.51% ± 0.20%
+  Mean Macro-F1: 98.51% ± 0.20%
+  Mean Training Time: 231.27s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on Satimage
+============================================================
+
+Run 1/5
+  Accuracy: 90.57%
+  Macro-F1: 88.06%
+  Training Time: 153.75s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 89.95%
+  Macro-F1: 87.49%
+  Training Time: 154.40s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 91.92%
+  Macro-F1: 90.16%
+  Training Time: 150.44s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 90.78%
+  Macro-F1: 89.00%
+  Training Time: 152.11s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 90.83%
+  Macro-F1: 88.94%
+  Training Time: 153.15s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Satimage.csv
+
+Summary for Satimage [XGBoost]:
+  Mean Accuracy: 90.81% ± 0.71%
+  Mean Macro-F1: 88.73% ± 1.02%
+  Mean Training Time: 152.77s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on Segment
+============================================================
+
+Run 1/5
+  Accuracy: 97.26%
+  Macro-F1: 97.24%
+  Training Time: 104.09s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 97.55%
+  Macro-F1: 97.56%
+  Training Time: 105.81s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 98.12%
+  Macro-F1: 98.12%
+  Training Time: 108.14s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 98.12%
+  Macro-F1: 98.12%
+  Training Time: 109.63s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 96.10%
+  Macro-F1: 96.09%
+  Training Time: 107.47s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Segment.csv
+
+Summary for Segment [XGBoost]:
+  Mean Accuracy: 97.43% ± 0.83%
+  Mean Macro-F1: 97.43% ± 0.84%
+  Mean Training Time: 107.03s
+  Mean Testing Time: 0.03s
+
+============================================================
+[XGBoost] Running experiments on USPS
+============================================================
+
+Run 1/5
+  Accuracy: 94.98%
+  Macro-F1: 94.43%
+  Training Time: 248.62s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 94.77%
+  Macro-F1: 94.33%
+  Training Time: 248.31s
+  Testing Time: 0.02s
+
+Run 3/5
+  Accuracy: 95.48%
+  Macro-F1: 94.95%
+  Training Time: 247.81s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 95.77%
+  Macro-F1: 95.34%
+  Training Time: 245.85s
+  Testing Time: 0.04s
+
+Run 5/5
+  Accuracy: 95.63%
+  Macro-F1: 95.20%
+  Training Time: 246.82s
+  Testing Time: 0.13s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_USPS.csv
+
+Summary for USPS [XGBoost]:
+  Mean Accuracy: 95.33% ± 0.43%
+  Mean Macro-F1: 94.85% ± 0.45%
+  Mean Training Time: 247.48s
+  Mean Testing Time: 0.05s
+
+============================================================
+[XGBoost] Running experiments on Vehicle
+============================================================
+
+Run 1/5
+  Accuracy: 74.02%
+  Macro-F1: 73.89%
+  Training Time: 93.59s
+  Testing Time: 0.03s
+
+Run 2/5
+  Accuracy: 74.41%
+  Macro-F1: 74.07%
+  Training Time: 94.10s
+  Testing Time: 0.03s
+
+Run 3/5
+  Accuracy: 76.77%
+  Macro-F1: 76.08%
+  Training Time: 94.77s
+  Testing Time: 0.03s
+
+Run 4/5
+  Accuracy: 75.98%
+  Macro-F1: 75.56%
+  Training Time: 95.80s
+  Testing Time: 0.03s
+
+Run 5/5
+  Accuracy: 74.02%
+  Macro-F1: 73.74%
+  Training Time: 92.08s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/XGBoost/XGBoost_Vehicle.csv
+
+Summary for Vehicle [XGBoost]:
+  Mean Accuracy: 75.04% ± 1.26%
+  Mean Macro-F1: 74.67% ± 1.07%
+  Mean Training Time: 94.07s
+  Mean Testing Time: 0.03s
+
+[XGBoost] Successful datasets: ['DNA', 'Pendigits', 'Satimage', 'Segment', 'USPS', 'Vehicle']
+
+############################################################
+# Model: TabNet
+############################################################
+
+============================================================
+[TabNet] Running experiments on DNA
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 120 with best_epoch = 100 and best_val_0_accuracy = 0.8518
+  Accuracy: 85.18%
+  Macro-F1: 83.19%
+  Training Time: 9.10s
+  Testing Time: 0.02s
+
+Run 2/5
+
+Early stopping occurred at epoch 182 with best_epoch = 162 and best_val_0_accuracy = 0.85438
+  Accuracy: 85.44%
+  Macro-F1: 84.54%
+  Training Time: 8.80s
+  Testing Time: 0.01s
+
+Run 3/5
+
+Early stopping occurred at epoch 165 with best_epoch = 145 and best_val_0_accuracy = 0.85696
+  Accuracy: 85.70%
+  Macro-F1: 84.73%
+  Training Time: 14.50s
+  Testing Time: 0.01s
+
+Run 4/5
+Stop training because you reached max_epochs = 200 with best_epoch = 193 and best_val_0_accuracy = 0.85309
+  Accuracy: 85.31%
+  Macro-F1: 84.34%
+  Training Time: 20.11s
+  Testing Time: 0.01s
+
+Run 5/5
+
+Early stopping occurred at epoch 126 with best_epoch = 106 and best_val_0_accuracy = 0.84923
+  Accuracy: 84.92%
+  Macro-F1: 83.46%
+  Training Time: 7.83s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_DNA.csv
+
+Summary for DNA [TabNet]:
+  Mean Accuracy: 85.31% ± 0.29%
+  Mean Macro-F1: 84.05% ± 0.68%
+  Mean Training Time: 12.07s
+  Mean Testing Time: 0.01s
+
+============================================================
+[TabNet] Running experiments on Pendigits
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 71 with best_epoch = 51 and best_val_0_accuracy = 0.99333
+  Accuracy: 99.33%
+  Macro-F1: 99.33%
+  Training Time: 26.75s
+  Testing Time: 0.02s
+
+Run 2/5
+
+Early stopping occurred at epoch 46 with best_epoch = 26 and best_val_0_accuracy = 0.98727
+  Accuracy: 98.73%
+  Macro-F1: 98.72%
+  Training Time: 15.75s
+  Testing Time: 0.02s
+
+Run 3/5
+
+Early stopping occurred at epoch 103 with best_epoch = 83 and best_val_0_accuracy = 0.99454
+  Accuracy: 99.45%
+  Macro-F1: 99.45%
+  Training Time: 28.08s
+  Testing Time: 0.02s
+
+Run 4/5
+
+Early stopping occurred at epoch 65 with best_epoch = 45 and best_val_0_accuracy = 0.99303
+  Accuracy: 99.30%
+  Macro-F1: 99.31%
+  Training Time: 28.01s
+  Testing Time: 0.02s
+
+Run 5/5
+
+Early stopping occurred at epoch 81 with best_epoch = 61 and best_val_0_accuracy = 0.99272
+  Accuracy: 99.27%
+  Macro-F1: 99.27%
+  Training Time: 39.32s
+  Testing Time: 0.03s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Pendigits.csv
+
+Summary for Pendigits [TabNet]:
+  Mean Accuracy: 99.22% ± 0.28%
+  Mean Macro-F1: 99.22% ± 0.28%
+  Mean Training Time: 27.58s
+  Mean Testing Time: 0.02s
+
+============================================================
+[TabNet] Running experiments on Satimage
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 114 with best_epoch = 94 and best_val_0_accuracy = 0.91352
+  Accuracy: 91.35%
+  Macro-F1: 89.26%
+  Training Time: 22.84s
+  Testing Time: 0.03s
+
+Run 2/5
+
+Early stopping occurred at epoch 106 with best_epoch = 86 and best_val_0_accuracy = 0.90109
+  Accuracy: 90.11%
+  Macro-F1: 88.00%
+  Training Time: 27.32s
+  Testing Time: 0.02s
+
+Run 3/5
+
+Early stopping occurred at epoch 118 with best_epoch = 98 and best_val_0_accuracy = 0.89798
+  Accuracy: 89.80%
+  Macro-F1: 87.92%
+  Training Time: 23.59s
+  Testing Time: 0.02s
+
+Run 4/5
+
+Early stopping occurred at epoch 94 with best_epoch = 74 and best_val_0_accuracy = 0.89798
+  Accuracy: 89.80%
+  Macro-F1: 88.01%
+  Training Time: 25.11s
+  Testing Time: 0.01s
+
+Run 5/5
+
+Early stopping occurred at epoch 114 with best_epoch = 94 and best_val_0_accuracy = 0.90057
+  Accuracy: 90.06%
+  Macro-F1: 87.89%
+  Training Time: 22.02s
+  Testing Time: 0.04s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Satimage.csv
+
+Summary for Satimage [TabNet]:
+  Mean Accuracy: 90.22% ± 0.65%
+  Mean Macro-F1: 88.22% ± 0.58%
+  Mean Training Time: 24.18s
+  Mean Testing Time: 0.02s
+
+============================================================
+[TabNet] Running experiments on Segment
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 111 with best_epoch = 91 and best_val_0_accuracy = 0.9697
+  Accuracy: 96.97%
+  Macro-F1: 96.98%
+  Training Time: 6.82s
+  Testing Time: 0.01s
+
+Run 2/5
+
+Early stopping occurred at epoch 71 with best_epoch = 51 and best_val_0_accuracy = 0.95815
+  Accuracy: 95.82%
+  Macro-F1: 95.80%
+  Training Time: 5.45s
+  Testing Time: 0.01s
+
+Run 3/5
+
+Early stopping occurred at epoch 76 with best_epoch = 56 and best_val_0_accuracy = 0.95815
+  Accuracy: 95.82%
+  Macro-F1: 95.79%
+  Training Time: 3.22s
+  Testing Time: 0.01s
+
+Run 4/5
+
+Early stopping occurred at epoch 89 with best_epoch = 69 and best_val_0_accuracy = 0.96537
+  Accuracy: 96.54%
+  Macro-F1: 96.54%
+  Training Time: 5.67s
+  Testing Time: 0.01s
+
+Run 5/5
+
+Early stopping occurred at epoch 89 with best_epoch = 69 and best_val_0_accuracy = 0.95671
+  Accuracy: 95.67%
+  Macro-F1: 95.66%
+  Training Time: 11.94s
+  Testing Time: 0.01s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Segment.csv
+
+Summary for Segment [TabNet]:
+  Mean Accuracy: 96.16% ± 0.56%
+  Mean Macro-F1: 96.15% ± 0.58%
+  Mean Training Time: 6.62s
+  Mean Testing Time: 0.01s
+
+============================================================
+[TabNet] Running experiments on USPS
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 105 with best_epoch = 85 and best_val_0_accuracy = 0.96487
+  Accuracy: 96.49%
+  Macro-F1: 96.14%
+  Training Time: 40.83s
+  Testing Time: 0.04s
+
+Run 2/5
+
+Early stopping occurred at epoch 141 with best_epoch = 121 and best_val_0_accuracy = 0.96846
+  Accuracy: 96.85%
+  Macro-F1: 96.58%
+  Training Time: 53.19s
+  Testing Time: 0.04s
+
+Run 3/5
+
+Early stopping occurred at epoch 70 with best_epoch = 50 and best_val_0_accuracy = 0.95806
+  Accuracy: 95.81%
+  Macro-F1: 95.40%
+  Training Time: 30.02s
+  Testing Time: 0.03s
+
+Run 4/5
+
+Early stopping occurred at epoch 107 with best_epoch = 87 and best_val_0_accuracy = 0.96201
+  Accuracy: 96.20%
+  Macro-F1: 95.82%
+  Training Time: 40.68s
+  Testing Time: 0.03s
+
+Run 5/5
+
+Early stopping occurred at epoch 82 with best_epoch = 62 and best_val_0_accuracy = 0.95878
+  Accuracy: 95.88%
+  Macro-F1: 95.51%
+  Training Time: 34.41s
+  Testing Time: 0.04s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_USPS.csv
+
+Summary for USPS [TabNet]:
+  Mean Accuracy: 96.24% ± 0.43%
+  Mean Macro-F1: 95.89% ± 0.48%
+  Mean Training Time: 39.83s
+  Mean Testing Time: 0.04s
+
+============================================================
+[TabNet] Running experiments on Vehicle
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.25591
+  Accuracy: 25.59%
+  Macro-F1: 19.56%
+  Training Time: 0.09s
+  Testing Time: 0.00s
+
+Run 2/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.25591
+  Accuracy: 25.59%
+  Macro-F1: 11.50%
+  Training Time: 0.11s
+  Testing Time: 0.00s
+
+Run 3/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.23228
+  Accuracy: 23.23%
+  Macro-F1: 20.99%
+  Training Time: 0.11s
+  Testing Time: 0.00s
+
+Run 4/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.20079
+  Accuracy: 20.08%
+  Macro-F1: 17.10%
+  Training Time: 0.11s
+  Testing Time: 0.00s
+
+Run 5/5
+
+Early stopping occurred at epoch 20 with best_epoch = 0 and best_val_0_accuracy = 0.25984
+  Accuracy: 25.98%
+  Macro-F1: 22.03%
+  Training Time: 0.11s
+  Testing Time: 0.00s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Vehicle.csv
+
+Summary for Vehicle [TabNet]:
+  Mean Accuracy: 24.09% ± 2.50%
+  Mean Macro-F1: 18.23% ± 4.19%
+  Mean Training Time: 0.11s
+  Mean Testing Time: 0.00s
+
+[TabNet] Successful datasets: ['DNA', 'Pendigits', 'Satimage', 'Segment', 'USPS', 'Vehicle']

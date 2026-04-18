@@ -20,6 +20,10 @@ DATASETS = [
     'Maternal', 'Student', 'HeartDisease', 'Covertype'
 ]
 
+DATASETS = [
+    'DNA','Pendigits','Satimage','Segment','USPS','Vehicle'
+]
+
 # gcForest configuration
 GCFOREST_CONFIG = {
     'num_estimator': 50,

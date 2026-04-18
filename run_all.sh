@@ -2,7 +2,7 @@
 # Run all three experiment pipelines sequentially.
 # Usage: bash run_all.sh
 
-PYTHON=/home/xujiale/anaconda3/envs/vinfo/bin/python3.10
+PYTHON=/home/xjl/anaconda3/envs/vinfo/bin/python
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "============================================================"

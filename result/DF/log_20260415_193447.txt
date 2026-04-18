@@ -1,0 +1,445 @@
+Experiment started at 20260415_193447
+Log file: /home/xjl/pythoncode/myDeepForest/result/DF/log_20260415_193447.txt
+
+
+============================================================
+Running experiments on DNA
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 96.13%
+  Macro-F1: 95.49%
+  Best Layer: 7
+  Training Time (total): 7.03s
+  Training Time (early-stop): 7.03s
+  Testing Time: 1.54s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 94.72%
+  Macro-F1: 94.14%
+  Best Layer: 6
+  Training Time (total): 7.02s
+  Training Time (early-stop): 7.02s
+  Testing Time: 1.54s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 95.88%
+  Macro-F1: 95.35%
+  Best Layer: 9
+  Training Time (total): 6.99s
+  Training Time (early-stop): 6.99s
+  Testing Time: 1.57s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 95.23%
+  Macro-F1: 94.74%
+  Best Layer: 6
+  Training Time (total): 7.03s
+  Training Time (early-stop): 7.03s
+  Testing Time: 1.55s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 94.59%
+  Macro-F1: 93.97%
+  Best Layer: 2
+  Training Time (total): 7.02s
+  Training Time (early-stop): 4.92s
+  Testing Time: 1.53s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_DNA_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for DNA:
+  Mean Accuracy: 95.31% ± 0.69%
+  Mean Macro-F1: 94.74% ± 0.69%
+  Mean Best Layer: 6.00
+  Mean Training Time: 7.02s
+  Mean Testing Time: 1.55s
+
+============================================================
+Running experiments on Pendigits
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 98.88%
+  Macro-F1: 98.89%
+  Best Layer: 2
+  Training Time (total): 7.92s
+  Training Time (early-stop): 5.49s
+  Testing Time: 1.58s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 98.61%
+  Macro-F1: 98.63%
+  Best Layer: 2
+  Training Time (total): 7.84s
+  Training Time (early-stop): 5.48s
+  Testing Time: 1.56s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 98.57%
+  Macro-F1: 98.60%
+  Best Layer: 1
+  Training Time (total): 7.86s
+  Training Time (early-stop): 4.67s
+  Testing Time: 1.58s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 98.88%
+  Macro-F1: 98.90%
+  Best Layer: 1
+  Training Time (total): 7.88s
+  Training Time (early-stop): 4.69s
+  Testing Time: 1.56s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 99.12%
+  Macro-F1: 99.13%
+  Best Layer: 6
+  Training Time (total): 7.81s
+  Training Time (early-stop): 4.66s
+  Testing Time: 1.58s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Pendigits_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Pendigits:
+  Mean Accuracy: 98.81% ± 0.23%
+  Mean Macro-F1: 98.83% ± 0.22%
+  Mean Best Layer: 2.40
+  Mean Training Time: 7.86s
+  Mean Testing Time: 1.57s
+
+============================================================
+Running experiments on Satimage
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 91.30%
+  Macro-F1: 88.93%
+  Best Layer: 2
+  Training Time (total): 7.18s
+  Training Time (early-stop): 5.01s
+  Testing Time: 1.57s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 90.68%
+  Macro-F1: 88.14%
+  Best Layer: 3
+  Training Time (total): 7.22s
+  Training Time (early-stop): 5.76s
+  Testing Time: 1.55s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 91.71%
+  Macro-F1: 89.45%
+  Best Layer: 2
+  Training Time (total): 7.24s
+  Training Time (early-stop): 5.04s
+  Testing Time: 1.54s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 91.35%
+  Macro-F1: 89.35%
+  Best Layer: 2
+  Training Time (total): 7.26s
+  Training Time (early-stop): 5.11s
+  Testing Time: 1.56s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 91.56%
+  Macro-F1: 89.31%
+  Best Layer: 2
+  Training Time (total): 7.18s
+  Training Time (early-stop): 5.03s
+  Testing Time: 1.55s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Satimage_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Satimage:
+  Mean Accuracy: 91.32% ± 0.40%
+  Mean Macro-F1: 89.04% ± 0.54%
+  Mean Best Layer: 2.20
+  Mean Training Time: 7.22s
+  Mean Testing Time: 1.55s
+
+============================================================
+Running experiments on Segment
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 96.83%
+  Macro-F1: 96.78%
+  Best Layer: 5
+  Training Time (total): 6.94s
+  Training Time (early-stop): 6.94s
+  Testing Time: 1.54s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 96.97%
+  Macro-F1: 96.98%
+  Best Layer: 1
+  Training Time (total): 7.03s
+  Training Time (early-stop): 4.19s
+  Testing Time: 1.53s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 97.98%
+  Macro-F1: 97.98%
+  Best Layer: 1
+  Training Time (total): 6.90s
+  Training Time (early-stop): 4.15s
+  Testing Time: 1.53s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 97.69%
+  Macro-F1: 97.69%
+  Best Layer: 3
+  Training Time (total): 7.00s
+  Training Time (early-stop): 5.57s
+  Testing Time: 1.53s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 96.10%
+  Macro-F1: 96.13%
+  Best Layer: 1
+  Training Time (total): 6.95s
+  Training Time (early-stop): 4.15s
+  Testing Time: 1.54s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Segment_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Segment:
+  Mean Accuracy: 97.11% ± 0.74%
+  Mean Macro-F1: 97.11% ± 0.74%
+  Mean Best Layer: 2.20
+  Mean Training Time: 6.96s
+  Mean Testing Time: 1.53s
+
+============================================================
+Running experiments on USPS
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 95.84%
+  Macro-F1: 95.41%
+  Best Layer: 8
+  Training Time (total): 10.81s
+  Training Time (early-stop): 7.59s
+  Testing Time: 1.63s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 95.41%
+  Macro-F1: 94.98%
+  Best Layer: 7
+  Training Time (total): 10.96s
+  Training Time (early-stop): 10.96s
+  Testing Time: 1.60s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 96.34%
+  Macro-F1: 95.99%
+  Best Layer: 4
+  Training Time (total): 10.89s
+  Training Time (early-stop): 9.81s
+  Testing Time: 1.61s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 96.02%
+  Macro-F1: 95.63%
+  Best Layer: 7
+  Training Time (total): 10.84s
+  Training Time (early-stop): 10.84s
+  Testing Time: 1.60s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 95.66%
+  Macro-F1: 95.26%
+  Best Layer: 9
+  Training Time (total): 10.84s
+  Training Time (early-stop): 10.84s
+  Testing Time: 1.62s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_USPS_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for USPS:
+  Mean Accuracy: 95.86% ± 0.35%
+  Mean Macro-F1: 95.45% ± 0.38%
+  Mean Best Layer: 7.00
+  Mean Training Time: 10.87s
+  Mean Testing Time: 1.61s
+
+============================================================
+Running experiments on Vehicle
+============================================================
+
+Run 1/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 77.56%
+  Macro-F1: 77.37%
+  Best Layer: 1
+  Training Time (total): 6.27s
+  Training Time (early-stop): 3.70s
+  Testing Time: 1.53s
+
+Run 2/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 75.59%
+  Macro-F1: 75.57%
+  Best Layer: 1
+  Training Time (total): 6.27s
+  Training Time (early-stop): 3.76s
+  Testing Time: 1.55s
+
+Run 3/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 74.80%
+  Macro-F1: 74.61%
+  Best Layer: 8
+  Training Time (total): 6.20s
+  Training Time (early-stop): 3.70s
+  Testing Time: 1.53s
+
+Run 4/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 78.35%
+  Macro-F1: 77.86%
+  Best Layer: 1
+  Training Time (total): 6.23s
+  Training Time (early-stop): 3.73s
+  Testing Time: 1.52s
+
+Run 5/5
+start training
+training finished
+start testing
+testing finished
+  Accuracy: 75.20%
+  Macro-F1: 74.33%
+  Best Layer: 1
+  Training Time (total): 6.17s
+  Training Time (early-stop): 3.73s
+  Testing Time: 1.53s
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/DF/gcForest_Vehicle_num_estimator50_num_forests4_max_layer10_max_depth10_n_fold3_tolerance3.csv
+
+Summary for Vehicle:
+  Mean Accuracy: 76.30% ± 1.56%
+  Mean Macro-F1: 75.95% ± 1.60%
+  Mean Best Layer: 2.40
+  Mean Training Time: 6.23s
+  Mean Testing Time: 1.53s
+
+============================================================
+Successful datasets: ['DNA', 'Pendigits', 'Satimage', 'Segment', 'USPS', 'Vehicle']
+============================================================
