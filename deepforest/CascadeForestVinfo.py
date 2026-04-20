@@ -29,11 +29,10 @@ class CascadeForestVinfo:
         self.pop_size = pop_size
         self.max_gen = max_gen
         self.target_size = target_size
-        
+
         # Metrics storage
         self.val_acc_list = []
         self.v_info_dict = {'v_info': [], 'hv_empty': [], 'hv_cond': []}
-        self.early_stop_training_time = None  # wall-clock seconds until early stopping would have triggered
 
     def train(self, train_data, train_label):
         """
@@ -46,12 +45,10 @@ class CascadeForestVinfo:
         best_v_info = -np.inf
         bad_count = 0
         layer_index = 0
-        self.early_stop_training_time = None  # reset each call
-        _train_start = time.time()
 
         while layer_index < self.max_layer:
             print(f"\n=== Layer {layer_index} ===")
-            
+
             layer = LayerVinfo(
                 num_forests=self.num_forests,
                 n_estimators=self.num_estimator,
@@ -64,22 +61,22 @@ class CascadeForestVinfo:
                 max_gen=self.max_gen,
                 target_size=self.target_size
             )
-            
+
             val_avg, feature_new, layer_v_info, layer_hv_empty, layer_hv_cond = layer.train(X_train, train_label)
             self.layer_list.append(layer)
-            
+
             # Store metrics
             self.v_info_dict['v_info'].append(layer_v_info)
             self.v_info_dict['hv_empty'].append(layer_hv_empty)
             self.v_info_dict['hv_cond'].append(layer_hv_cond)
-            
+
             # Calculate accuracy
             val_pred = np.argmax(val_avg, axis=1)
             val_acc = accuracy_score(train_label, val_pred) * 100
             self.val_acc_list.append(val_acc)
-            
+
             print(f"Layer {layer_index}: Val Acc = {val_acc:.2f}%, V-info = {layer_v_info:.4f}")
-            
+
             # Early stopping based on V-information
             if layer_v_info > best_v_info:
                 best_v_info = layer_v_info
@@ -87,20 +84,16 @@ class CascadeForestVinfo:
                 bad_count = 0
             else:
                 bad_count += 1
-            
+
             if bad_count >= self.tolerance:
-                if self.early_stop_training_time is None:
-                    self.early_stop_training_time = time.time() - _train_start
-                print(f"Early stopping triggered at layer {layer_index}: V-info not improving for {self.tolerance} layers, but continuing to max_layer")
+                print(f"Early stopping at layer {layer_index}: V-info not improving for {self.tolerance} layers")
+                break
 
             # Prepare features for next layer
             X_train = np.concatenate([X_train_raw, feature_new], axis=1)
             layer_index += 1
 
         print(f"\nTraining completed. Best layer: {self.best_layer}")
-        # If early stopping never triggered, early_stop_training_time = total training time
-        if self.early_stop_training_time is None:
-            self.early_stop_training_time = time.time() - _train_start
         return self.best_layer
 
     def test(self, test_data, test_label):
@@ -114,9 +107,7 @@ class CascadeForestVinfo:
         test_acc_list = []
         test_v_info_dict = {'v_info': [], 'hv_empty': [], 'hv_cond': []}
         best_layer_pred = None
-        self.best_layer_testing_time = None  # time to test up to and including best_layer
 
-        _test_start = time.time()
         for layer_index, layer in enumerate(self.layer_list):
             result = layer.predict(X_test, test_label)
 
@@ -135,10 +126,9 @@ class CascadeForestVinfo:
                 test_acc_list.append(test_acc)
                 print(f"Layer {layer_index}: Test Acc = {test_acc:.2f}%")
 
-            # Save best layer prediction and record elapsed time
+            # Save best layer prediction
             if layer_index == self.best_layer:
                 best_layer_pred = test_pred.copy()
-                self.best_layer_testing_time = time.time() - _test_start
 
             # Prepare features for next layer
             X_test = np.concatenate([X_test_raw, test_feature_new], axis=1)

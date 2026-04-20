@@ -136,14 +136,12 @@ def run_experiment(dataset_name, model_name, run_id, random_state):
         )
     else:
         model.fit(X_train, y_train)
-    train_end = time.time()
-    training_time = train_end - train_start
+    training_time = time.time() - train_start
 
     # Test
     test_start = time.time()
     y_pred = model.predict(X_test)
-    test_end = time.time()
-    testing_time = test_end - test_start
+    testing_time = time.time() - test_start
 
     accuracy = accuracy_score(y_test, y_pred) * 100
     macro_f1 = f1_score(y_test, y_pred, average='macro') * 100
@@ -174,8 +172,6 @@ def run_experiments_on_dataset(dataset_name, model_name):
 
         print(f"  Accuracy: {result['accuracy']:.2f}%")
         print(f"  Macro-F1: {result['macro_f1']:.2f}%")
-        print(f"  Training Time: {result['training_time']:.2f}s")
-        print(f"  Testing Time: {result['testing_time']:.2f}s")
 
     return pd.DataFrame(results)
 

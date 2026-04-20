@@ -21,7 +21,9 @@
       "Bash(ls /home/xujiale/pythoncode/myDeepForest/dataset_pre_transform/*.py)",
       "Bash(ls /home/xujiale/pythoncode/myDeepForest/experiment/*.py)",
       "Bash(chmod +x /home/xujiale/pythoncode/myDeepForest/run_all.sh)",
-      "Bash(find /home/xjl/pythoncode/myDeepForest/result -name \"*.csv\" -exec grep -l \"CredictCard\" {} \\\\;)"
+      "Bash(find /home/xjl/pythoncode/myDeepForest/result -name \"*.csv\" -exec grep -l \"CredictCard\" {} \\\\;)",
+      "Bash(python3 -c ' *)",
+      "Bash(python experiment/fix_best_layer.py)"
     ]
   }
 }

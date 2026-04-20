@@ -111,9 +111,7 @@ def run_experiment(dataset_name, run_id, random_state):
     # Train
     train_start = time.time()
     best_layer = model.train(X_train, y_train)
-    train_end = time.time()
-    training_time = train_end - train_start
-    early_stop_training_time = model.early_stop_training_time
+    training_time = time.time() - train_start
 
     # Compute per-layer avg ensemble size
     layer_avg_sizes = [get_layer_avg_ensemble_size(layer) for layer in model.layer_list]
@@ -122,7 +120,6 @@ def run_experiment(dataset_name, run_id, random_state):
     test_start = time.time()
     test_acc, test_acc_list, test_v_info_dict = model.test(X_test, y_test)
     testing_time = time.time() - test_start
-    best_layer_testing_time = model.best_layer_testing_time
 
     # Compute per-layer macro-F1 by replaying layer predictions on test set
     X_test_tmp = X_test.copy()
@@ -148,9 +145,7 @@ def run_experiment(dataset_name, run_id, random_state):
         'macro_f1': macro_f1,
         'best_layer': best_layer,
         'training_time': training_time,
-        'early_stop_training_time': early_stop_training_time,
         'testing_time': testing_time,
-        'best_layer_testing_time': best_layer_testing_time,
         'train_layer_accuracy': str(model.val_acc_list),
         'test_layer_accuracy': str(test_acc_list),
         'test_layer_macro_f1': str(test_layer_macro_f1),
@@ -178,8 +173,7 @@ def run_experiments_on_dataset(dataset_name):
         print(f"  Accuracy: {result['accuracy']:.2f}%")
         print(f"  Macro-F1: {result['macro_f1']:.2f}%")
         print(f"  Best Layer: {result['best_layer']}")
-        print(f"  Training Time (total): {result['training_time']:.2f}s")
-        print(f"  Training Time (early-stop): {result['early_stop_training_time']:.2f}s")
+        print(f"  Training Time: {result['training_time']:.2f}s")
         print(f"  Testing Time: {result['testing_time']:.2f}s")
         print(f"  Layer Avg Ensemble Sizes: {result['layer_avg_ensemble_size']}")
 
