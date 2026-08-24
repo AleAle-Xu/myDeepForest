@@ -11,7 +11,7 @@ sys.path.insert(0, project_root)
 
 from deepforest.utils import get_dir_in_root
 
-root = get_dir_in_root("result")
+root = get_dir_in_root("result_10")
 
 # =====================================================================
 # Configuration
@@ -27,8 +27,16 @@ METHOD_CONFIG = [
     ("TabNet",    "TabNet",              "TabNet"),
 ]
 
+
+METHOD_CONFIG = [
+    
+    ("DF",        "gcForest",            "Deepforest"),
+    ("VIDF_wo_es",  "CascadeForestVinfo",   "VIDF w/o es"),
+    ("VIDF_wo_vs",  "CascadeForestVinfo",  "VIDF w/o vs"),
+    ("DF_Vinfo",  "CascadeForestVinfo",  "VIDF"),
+]
 # Metric to compare (column name in csv files)
-query = "macro_f1"   # or "macro_f1"
+query = "accuracy"   # accuracy or "macro_f1"
 
 # Name of our proposed method (display_name in METHOD_CONFIG)
 # Significance markers are added to OTHER methods' cells,
@@ -39,7 +47,7 @@ OUR_METHOD_NAME = "VIDF"
 ENABLE_SIGNIFICANCE_TEST = True
 
 # Significance level
-ALPHA = 0.5
+ALPHA = 0.05
 
 # =====================================================================
 # Discover datasets from DF results (reference method)

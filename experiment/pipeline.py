@@ -20,9 +20,8 @@ DATASETS = [
     'Maternal', 'Student', 'HeartDisease', 'Covertype'
 ]
 
-DATASETS = [
-    'DNA','Pendigits','Satimage','Segment','USPS','Vehicle'
-]
+DATASETS = ["Adult", "BankMarketing", "Diabetes", "Gamma", "Student", 
+            "Websites",'DNA','Pendigits','Satimage','Segment','Vehicle']
 
 # gcForest configuration
 GCFOREST_CONFIG = {
@@ -35,7 +34,7 @@ GCFOREST_CONFIG = {
 }
 
 # Experiment configuration
-NUM_RUNS = 5
+NUM_RUNS = 10
 TEST_SIZE = 0.3
 
 # Model class name
@@ -144,7 +143,7 @@ def run_experiments_on_dataset(dataset_name):
 def main():
     """Main function to run all experiments."""
     # Create results directory
-    results_dir = os.path.join(project_root, 'result', 'DF')
+    results_dir = os.path.join(project_root, 'result_10', 'DF')
     os.makedirs(results_dir, exist_ok=True)
 
     # Setup logging to file with timestamp

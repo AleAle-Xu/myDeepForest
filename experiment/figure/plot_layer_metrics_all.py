@@ -55,7 +55,7 @@ METRICS = {
 # =====================================================================
 # Load results
 # =====================================================================
-result_dir = get_dir_in_root("result/DF_Vinfo")
+result_dir = get_dir_in_root("result_10/DF_Vinfo")
 csv_files = glob.glob(f"{result_dir}/CascadeForestVinfo_*.csv")
 
 if not csv_files:

@@ -28,12 +28,10 @@ DATASETS = [
     'Maternal', 'Student', 'HeartDisease', 'Covertype'
 ]
 
-DATASETS = [
-    'DNA','Pendigits','Satimage','Segment','USPS','Vehicle'
-]
-
+DATASETS = ["Adult", "BankMarketing", "Diabetes", "Gamma", "Student", 
+            "Websites",'DNA','Pendigits','Satimage','Segment','Vehicle']
 # Model names to run
-MODELS = ['RF', 'ExtraTrees', 'XGBoost', 'TabNet']
+MODELS = ['TabNet']
 
 # Model hyperparameters
 MODEL_CONFIGS = {
@@ -69,8 +67,10 @@ MODEL_CONFIGS = {
 }
 
 # Experiment configuration
-NUM_RUNS = 5
+NUM_RUNS = 10
 TEST_SIZE = 0.3
+# TabNet uses a fixed, common training budget without early stopping.
+TABNET_MAX_EPOCHS = 60
 
 
 def load_dataset(dataset_name):
@@ -126,13 +126,15 @@ def run_experiment(dataset_name, model_name, run_id, random_state):
     # Train
     train_start = time.time()
     if model_name == 'TabNet':
+        batch_size, virtual_batch_size = (
+            (128, 32) if dataset_name == 'Vehicle' else (1024, 128)
+        )
         model.fit(
             X_train, y_train,
-            eval_set=[(X_test, y_test)],
-            patience=20,
-            max_epochs=200,
-            batch_size=1024,
-            virtual_batch_size=128,
+            max_epochs=TABNET_MAX_EPOCHS,
+            batch_size=batch_size,
+            virtual_batch_size=virtual_batch_size,
+            drop_last=False,
         )
     else:
         model.fit(X_train, y_train)
@@ -194,7 +196,7 @@ def get_df_successful_datasets(results_base_dir):
 
 def main():
     """Main function to run all baseline experiments."""
-    results_base_dir = os.path.join(project_root, 'result')
+    results_base_dir = os.path.join(project_root, 'result_10')
 
     # Try to use only datasets where DF succeeded
     df_datasets = get_df_successful_datasets(results_base_dir)

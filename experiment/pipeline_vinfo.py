@@ -23,13 +23,12 @@ DATASETS = [
     'Maternal', 'Student', 'HeartDisease', 'Covertype'
 ]
 
-DATASETS = [
-    'DNA','Pendigits','Satimage','Segment','USPS','Vehicle'
-]
+DATASETS = ["Adult", "BankMarketing", "Diabetes", "Gamma", "Student", 
+            "Websites",'DNA','Pendigits','Satimage','Segment','Vehicle']
 
 # CascadeForestVinfo configuration
 VINFO_CONFIG = {
-    'num_estimator': 100,   # 100 trees per forest
+    'num_estimator': 50,   # 100 trees per forest
     'num_forests': 4,       # 4 forests per layer
     'max_layer': 10,
     'max_depth': 10,
@@ -37,15 +36,19 @@ VINFO_CONFIG = {
     'tolerance': 3,
     'pop_size': 100,        # EA population size
     'max_gen': 100,         # EA generations
-    'target_size': 50       # select 50 trees from 100
+    'target_size': 50,      # select 50 trees from 100
+    'use_vs': True,         # VS: V-information-guided stopping
+    'use_es': False,         # ES: Evolutionary Selection
 }
 
 # Experiment configuration
-NUM_RUNS = 5
+NUM_RUNS = 10
 TEST_SIZE = 0.3
 
-# Model class name
+# Model class name (used in result filenames)
 MODEL_NAME = 'CascadeForestVinfo'
+# Result directory name under result/
+EXPERIMENT_NAME = 'vidf_wo_es'
 
 
 def generate_result_filename(model_name, dataset_name, config):
@@ -105,7 +108,9 @@ def run_experiment(dataset_name, run_id, random_state):
         tolerance=VINFO_CONFIG['tolerance'],
         pop_size=VINFO_CONFIG['pop_size'],
         max_gen=VINFO_CONFIG['max_gen'],
-        target_size=VINFO_CONFIG['target_size']
+        target_size=VINFO_CONFIG['target_size'],
+        use_vs=VINFO_CONFIG['use_vs'],
+        use_es=VINFO_CONFIG['use_es'],
     )
 
     # Train
@@ -183,7 +188,7 @@ def run_experiments_on_dataset(dataset_name):
 def main():
     """Main function to run all experiments."""
     # Create results directory
-    results_dir = os.path.join(project_root, 'result', 'DF_Vinfo')
+    results_dir = os.path.join(project_root, 'result_10', EXPERIMENT_NAME)
     os.makedirs(results_dir, exist_ok=True)
 
     # Setup logging to file with timestamp

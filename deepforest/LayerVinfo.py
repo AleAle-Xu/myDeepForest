@@ -71,7 +71,7 @@ class LayerVinfo:
     """
     def __init__(self, num_forests, n_estimators, num_classes,
                  n_fold, layer_index, max_depth=100, min_samples_leaf=1,
-                 pop_size=100, max_gen=100, target_size=60):
+                 pop_size=100, max_gen=100, target_size=60, use_es=True):
         self.num_forests = num_forests
         self.n_estimators = n_estimators
         self.num_classes = num_classes
@@ -84,6 +84,7 @@ class LayerVinfo:
         self.pop_size = pop_size
         self.max_gen = max_gen
         self.target_size = target_size
+        self.use_es = use_es
 
     def _generate_base_learners(self, X_train, y_train, forest_index):
         """Generate base learners (trees) for a forest."""
@@ -194,25 +195,30 @@ class LayerVinfo:
 
                 # Generate base learners
                 base_trees = self._generate_base_learners(train_data_k, train_label_k, forest_index)
-                
+
                 # Evolutionary selection
-                selected_trees, fold_v_info = self._select_estimators(
-                    base_trees, train_label_k, val_data_k, val_label_k
-                )
-                
+                if self.use_es:
+                    selected_trees, fold_v_info = self._select_estimators(
+                        base_trees, train_label_k, val_data_k, val_label_k
+                    )
+                    print(f"  Forest {forest_index}, Fold: selected {len(selected_trees)}/{len(base_trees)} trees, V-info: {fold_v_info:.4f}")
+                else:
+                    selected_trees = base_trees
+
                 fold_tree_list.append(selected_trees)
-                
+
                 # Get predictions from selected trees
                 val_predict_proba = self._predict_proba_from_trees(selected_trees, val_data_k)
                 val_forest[val_index, :] = val_predict_proba
-                
+
                 # Calculate v-info metrics
                 v_info, hv_empty, hv_cond = calculate_v_information(train_label_k, val_label_k, val_predict_proba)
                 fold_v_info_list.append(v_info)
                 fold_hv_empty_list.append(hv_empty)
                 fold_hv_cond_list.append(hv_cond)
-                
-                print(f"  Forest {forest_index}, Fold: selected {len(selected_trees)}/{len(base_trees)} trees, V-info: {v_info:.4f}")
+
+                if not self.use_es:
+                    print(f"  Forest {forest_index}, Fold: {len(selected_trees)} trees, V-info: {v_info:.4f}")
 
             self.forest_list.append(fold_tree_list)
             val_prob[forest_index, :] = val_forest

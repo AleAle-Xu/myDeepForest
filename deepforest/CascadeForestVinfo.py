@@ -15,7 +15,8 @@ class CascadeForestVinfo:
     """
     def __init__(self, num_estimator=100, num_forests=4, num_classes=2,
                  max_layer=100, max_depth=31, n_fold=3, tolerance=3,
-                 pop_size=100, max_gen=100, target_size=60):
+                 pop_size=100, max_gen=100, target_size=60,
+                 use_vs=True, use_es=True):
         self.num_estimator = num_estimator
         self.num_forests = num_forests
         self.n_fold = n_fold
@@ -29,6 +30,8 @@ class CascadeForestVinfo:
         self.pop_size = pop_size
         self.max_gen = max_gen
         self.target_size = target_size
+        self.use_vs = use_vs
+        self.use_es = use_es
 
         # Metrics storage
         self.val_acc_list = []
@@ -42,7 +45,7 @@ class CascadeForestVinfo:
         X_train = train_data.copy()
         X_train_raw = train_data.copy()
 
-        best_v_info = -np.inf
+        best_metric = -np.inf
         bad_count = 0
         layer_index = 0
 
@@ -59,7 +62,8 @@ class CascadeForestVinfo:
                 min_samples_leaf=self.min_samples_leaf,
                 pop_size=self.pop_size,
                 max_gen=self.max_gen,
-                target_size=self.target_size
+                target_size=self.target_size,
+                use_es=self.use_es
             )
 
             val_avg, feature_new, layer_v_info, layer_hv_empty, layer_hv_cond = layer.train(X_train, train_label)
@@ -77,16 +81,19 @@ class CascadeForestVinfo:
 
             print(f"Layer {layer_index}: Val Acc = {val_acc:.2f}%, V-info = {layer_v_info:.4f}")
 
-            # Early stopping based on V-information
-            if layer_v_info > best_v_info:
-                best_v_info = layer_v_info
+            # Early stopping: VS uses V-info, otherwise uses val accuracy
+            metric = layer_v_info if self.use_vs else val_acc
+
+            if metric > best_metric:
+                best_metric = metric
                 self.best_layer = layer_index
                 bad_count = 0
             else:
                 bad_count += 1
 
             if bad_count >= self.tolerance:
-                print(f"Early stopping at layer {layer_index}: V-info not improving for {self.tolerance} layers")
+                stop_metric = "V-info" if self.use_vs else "val accuracy"
+                print(f"Early stopping at layer {layer_index}: {stop_metric} not improving for {self.tolerance} layers")
                 break
 
             # Prepare features for next layer

@@ -1,0 +1,584 @@
+Baseline experiment started at 20260815_180640
+Log file: /home/xjl/pythoncode/myDeepForest/result_10/baseline_log_20260815_180640.txt
+
+Models: ['TabNet']
+Datasets: ['Adult', 'BankMarketing', 'Diabetes', 'Gamma', 'Student', 'Websites', 'DNA', 'Pendigits', 'Satimage', 'Segment', 'Vehicle']
+
+
+############################################################
+# Model: TabNet
+############################################################
+
+============================================================
+[TabNet] Running experiments on Adult
+============================================================
+
+Run 1/10
+  Accuracy: 85.10%
+  Macro-F1: 78.71%
+
+Run 2/10
+  Accuracy: 85.42%
+  Macro-F1: 78.56%
+
+Run 3/10
+  Accuracy: 85.20%
+  Macro-F1: 78.26%
+
+Run 4/10
+  Accuracy: 84.76%
+  Macro-F1: 77.90%
+
+Run 5/10
+  Accuracy: 84.90%
+  Macro-F1: 78.27%
+
+Run 6/10
+  Accuracy: 84.53%
+  Macro-F1: 77.04%
+
+Run 7/10
+  Accuracy: 84.62%
+  Macro-F1: 77.92%
+
+Run 8/10
+  Accuracy: 85.36%
+  Macro-F1: 78.83%
+
+Run 9/10
+  Accuracy: 85.02%
+  Macro-F1: 77.78%
+
+Run 10/10
+  Accuracy: 84.32%
+  Macro-F1: 78.14%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result_10/TabNet/TabNet_Adult.csv
+
+Summary for Adult [TabNet]:
+  Mean Accuracy: 84.92% ± 0.36%
+  Mean Macro-F1: 78.14% ± 0.52%
+  Mean Training Time: 24.21s
+  Mean Testing Time: 0.09s
+
+============================================================
+[TabNet] Running experiments on BankMarketing
+============================================================
+
+Run 1/10
+  Accuracy: 89.38%
+  Macro-F1: 74.59%
+
+Run 2/10
+  Accuracy: 90.29%
+  Macro-F1: 72.53%
+
+Run 3/10
+  Accuracy: 90.11%
+  Macro-F1: 69.35%
+
+Run 4/10
+  Accuracy: 90.00%
+  Macro-F1: 72.55%
+
+Run 5/10
+  Accuracy: 90.33%
+  Macro-F1: 74.54%
+
+Run 6/10
+  Accuracy: 90.22%
+  Macro-F1: 74.96%
+
+Run 7/10
+  Accuracy: 89.82%
+  Macro-F1: 73.68%
+
+Run 8/10
+  Accuracy: 90.28%
+  Macro-F1: 73.81%
+
+Run 9/10
+  Accuracy: 90.08%
+  Macro-F1: 74.20%
+
+Run 10/10
+  Accuracy: 90.54%
+  Macro-F1: 73.22%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result_10/TabNet/TabNet_BankMarketing.csv
+
+Summary for BankMarketing [TabNet]:
+  Mean Accuracy: 90.11% ± 0.32%
+  Mean Macro-F1: 73.34% ± 1.63%
+  Mean Training Time: 21.71s
+  Mean Testing Time: 0.08s
+
+============================================================
+[TabNet] Running experiments on Diabetes
+============================================================
+
+Run 1/10
+  Accuracy: 86.65%
+  Macro-F1: 58.31%
+
+Run 2/10
+  Accuracy: 86.66%
+  Macro-F1: 60.94%
+
+Run 3/10
+  Accuracy: 86.49%
+  Macro-F1: 55.20%
+
+Run 4/10
+  Accuracy: 86.58%
+  Macro-F1: 58.83%
+
+Run 5/10
+  Accuracy: 86.57%
+  Macro-F1: 61.27%
+
+Run 6/10
+  Accuracy: 86.47%
+  Macro-F1: 57.57%
+
+Run 7/10
+  Accuracy: 86.41%
+  Macro-F1: 61.96%
+
+Run 8/10
+  Accuracy: 86.62%
+  Macro-F1: 58.31%
+
+Run 9/10
+  Accuracy: 86.73%
+  Macro-F1: 59.28%
+
+Run 10/10
+  Accuracy: 86.50%
+  Macro-F1: 60.01%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result_10/TabNet/TabNet_Diabetes.csv
+
+Summary for Diabetes [TabNet]:
+  Mean Accuracy: 86.57% ± 0.10%
+  Mean Macro-F1: 59.17% ± 2.00%
+  Mean Training Time: 118.22s
+  Mean Testing Time: 0.40s
+
+============================================================
+[TabNet] Running experiments on Gamma
+============================================================
+
+Run 1/10
+  Accuracy: 87.78%
+  Macro-F1: 86.20%
+
+Run 2/10
+  Accuracy: 86.66%
+  Macro-F1: 84.96%
+
+Run 3/10
+  Accuracy: 87.05%
+  Macro-F1: 85.11%
+
+Run 4/10
+  Accuracy: 86.70%
+  Macro-F1: 84.29%
+
+Run 5/10
+  Accuracy: 87.82%
+  Macro-F1: 86.19%
+
+Run 6/10
+  Accuracy: 87.75%
+  Macro-F1: 86.06%
+
+Run 7/10
+  Accuracy: 87.82%
+  Macro-F1: 86.45%
+
+Run 8/10
+  Accuracy: 87.22%
+  Macro-F1: 85.25%
+
+Run 9/10
+  Accuracy: 88.07%
+  Macro-F1: 86.40%
+
+Run 10/10
+  Accuracy: 87.07%
+  Macro-F1: 84.78%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result_10/TabNet/TabNet_Gamma.csv
+
+Summary for Gamma [TabNet]:
+  Mean Accuracy: 87.39% ± 0.51%
+  Mean Macro-F1: 85.57% ± 0.78%
+  Mean Training Time: 9.06s
+  Mean Testing Time: 0.03s
+
+============================================================
+[TabNet] Running experiments on Student
+============================================================
+
+Run 1/10
+  Accuracy: 73.04%
+  Macro-F1: 60.92%
+
+Run 2/10
+  Accuracy: 73.72%
+  Macro-F1: 62.61%
+
+Run 3/10
+  Accuracy: 74.10%
+  Macro-F1: 67.02%
+
+Run 4/10
+  Accuracy: 74.10%
+  Macro-F1: 61.75%
+
+Run 5/10
+  Accuracy: 73.95%
+  Macro-F1: 64.35%
+
+Run 6/10
+  Accuracy: 72.82%
+  Macro-F1: 63.68%
+
+Run 7/10
+  Accuracy: 73.42%
+  Macro-F1: 64.63%
+
+Run 8/10
+  Accuracy: 72.52%
+  Macro-F1: 62.82%
+
+Run 9/10
+  Accuracy: 72.29%
+  Macro-F1: 58.04%
+
+Run 10/10
+  Accuracy: 74.17%
+  Macro-F1: 67.02%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result_10/TabNet/TabNet_Student.csv
+
+Summary for Student [TabNet]:
+  Mean Accuracy: 73.41% ± 0.70%
+  Mean Macro-F1: 63.28% ± 2.73%
+  Mean Training Time: 2.42s
+  Mean Testing Time: 0.01s
+
+============================================================
+[TabNet] Running experiments on Websites
+============================================================
+
+Run 1/10
+  Accuracy: 95.75%
+  Macro-F1: 95.69%
+
+Run 2/10
+  Accuracy: 95.51%
+  Macro-F1: 95.45%
+
+Run 3/10
+  Accuracy: 96.02%
+  Macro-F1: 95.97%
+
+Run 4/10
+  Accuracy: 95.96%
+  Macro-F1: 95.90%
+
+Run 5/10
+  Accuracy: 95.93%
+  Macro-F1: 95.88%
+
+Run 6/10
+  Accuracy: 95.99%
+  Macro-F1: 95.93%
+
+Run 7/10
+  Accuracy: 95.03%
+  Macro-F1: 94.93%
+
+Run 8/10
+  Accuracy: 96.23%
+  Macro-F1: 96.18%
+
+Run 9/10
+  Accuracy: 96.44%
+  Macro-F1: 96.40%
+
+Run 10/10
+  Accuracy: 95.51%
+  Macro-F1: 95.44%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result_10/TabNet/TabNet_Websites.csv
+
+Summary for Websites [TabNet]:
+  Mean Accuracy: 95.84% ± 0.41%
+  Mean Macro-F1: 95.78% ± 0.42%
+  Mean Training Time: 5.26s
+  Mean Testing Time: 0.02s
+
+============================================================
+[TabNet] Running experiments on DNA
+============================================================
+
+Run 1/10
+  Accuracy: 82.35%
+  Macro-F1: 79.95%
+
+Run 2/10
+  Accuracy: 79.38%
+  Macro-F1: 77.25%
+
+Run 3/10
+  Accuracy: 88.66%
+  Macro-F1: 87.16%
+
+Run 4/10
+  Accuracy: 84.79%
+  Macro-F1: 84.01%
+
+Run 5/10
+  Accuracy: 84.54%
+  Macro-F1: 83.58%
+
+Run 6/10
+  Accuracy: 86.47%
+  Macro-F1: 85.04%
+
+Run 7/10
+  Accuracy: 83.25%
+  Macro-F1: 82.06%
+
+Run 8/10
+  Accuracy: 83.38%
+  Macro-F1: 81.64%
+
+Run 9/10
+  Accuracy: 85.57%
+  Macro-F1: 84.30%
+
+Run 10/10
+  Accuracy: 85.70%
+  Macro-F1: 84.48%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result_10/TabNet/TabNet_DNA.csv
+
+Summary for DNA [TabNet]:
+  Mean Accuracy: 84.41% ± 2.53%
+  Mean Macro-F1: 82.95% ± 2.82%
+  Mean Training Time: 1.40s
+  Mean Testing Time: 0.01s
+
+============================================================
+[TabNet] Running experiments on Pendigits
+============================================================
+
+Run 1/10
+  Accuracy: 98.76%
+  Macro-F1: 98.75%
+
+Run 2/10
+  Accuracy: 98.70%
+  Macro-F1: 98.71%
+
+Run 3/10
+  Accuracy: 99.27%
+  Macro-F1: 99.27%
+
+Run 4/10
+  Accuracy: 99.24%
+  Macro-F1: 99.26%
+
+Run 5/10
+  Accuracy: 98.79%
+  Macro-F1: 98.79%
+
+Run 6/10
+  Accuracy: 98.94%
+  Macro-F1: 98.93%
+
+Run 7/10
+  Accuracy: 98.64%
+  Macro-F1: 98.65%
+
+Run 8/10
+  Accuracy: 99.18%
+  Macro-F1: 99.18%
+
+Run 9/10
+  Accuracy: 99.15%
+  Macro-F1: 99.15%
+
+Run 10/10
+  Accuracy: 98.88%
+  Macro-F1: 98.88%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result_10/TabNet/TabNet_Pendigits.csv
+
+Summary for Pendigits [TabNet]:
+  Mean Accuracy: 98.95% ± 0.24%
+  Mean Macro-F1: 98.96% ± 0.24%
+  Mean Training Time: 5.24s
+  Mean Testing Time: 0.02s
+
+============================================================
+[TabNet] Running experiments on Satimage
+============================================================
+
+Run 1/10
+  Accuracy: 90.32%
+  Macro-F1: 88.47%
+
+Run 2/10
+  Accuracy: 87.57%
+  Macro-F1: 85.36%
+
+Run 3/10
+  Accuracy: 89.02%
+  Macro-F1: 86.28%
+
+Run 4/10
+  Accuracy: 89.54%
+  Macro-F1: 87.73%
+
+Run 5/10
+  Accuracy: 89.12%
+  Macro-F1: 86.82%
+
+Run 6/10
+  Accuracy: 89.33%
+  Macro-F1: 86.90%
+
+Run 7/10
+  Accuracy: 90.37%
+  Macro-F1: 88.07%
+
+Run 8/10
+  Accuracy: 89.12%
+  Macro-F1: 87.72%
+
+Run 9/10
+  Accuracy: 90.16%
+  Macro-F1: 87.78%
+
+Run 10/10
+  Accuracy: 88.19%
+  Macro-F1: 85.17%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result_10/TabNet/TabNet_Satimage.csv
+
+Summary for Satimage [TabNet]:
+  Mean Accuracy: 89.27% ± 0.90%
+  Mean Macro-F1: 87.03% ± 1.13%
+  Mean Training Time: 3.30s
+  Mean Testing Time: 0.01s
+
+============================================================
+[TabNet] Running experiments on Segment
+============================================================
+
+Run 1/10
+  Accuracy: 95.53%
+  Macro-F1: 95.52%
+
+Run 2/10
+  Accuracy: 94.95%
+  Macro-F1: 94.94%
+
+Run 3/10
+  Accuracy: 95.53%
+  Macro-F1: 95.50%
+
+Run 4/10
+  Accuracy: 96.10%
+  Macro-F1: 96.11%
+
+Run 5/10
+  Accuracy: 94.66%
+  Macro-F1: 94.68%
+
+Run 6/10
+  Accuracy: 94.66%
+  Macro-F1: 94.62%
+
+Run 7/10
+  Accuracy: 97.26%
+  Macro-F1: 97.25%
+
+Run 8/10
+  Accuracy: 95.38%
+  Macro-F1: 95.32%
+
+Run 9/10
+  Accuracy: 95.53%
+  Macro-F1: 95.51%
+
+Run 10/10
+  Accuracy: 94.37%
+  Macro-F1: 94.37%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result_10/TabNet/TabNet_Segment.csv
+
+Summary for Segment [TabNet]:
+  Mean Accuracy: 95.40% ± 0.84%
+  Mean Macro-F1: 95.38% ± 0.84%
+  Mean Training Time: 1.21s
+  Mean Testing Time: 0.00s
+
+============================================================
+[TabNet] Running experiments on Vehicle
+============================================================
+
+Run 1/10
+  Accuracy: 77.95%
+  Macro-F1: 77.84%
+
+Run 2/10
+  Accuracy: 75.20%
+  Macro-F1: 74.63%
+
+Run 3/10
+  Accuracy: 76.38%
+  Macro-F1: 75.83%
+
+Run 4/10
+  Accuracy: 72.05%
+  Macro-F1: 71.32%
+
+Run 5/10
+  Accuracy: 72.83%
+  Macro-F1: 71.87%
+
+Run 6/10
+  Accuracy: 75.59%
+  Macro-F1: 74.71%
+
+Run 7/10
+  Accuracy: 77.17%
+  Macro-F1: 76.61%
+
+Run 8/10
+  Accuracy: 75.59%
+  Macro-F1: 76.15%
+
+Run 9/10
+  Accuracy: 77.95%
+  Macro-F1: 77.65%
+
+Run 10/10
+  Accuracy: 74.02%
+  Macro-F1: 72.95%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result_10/TabNet/TabNet_Vehicle.csv
+
+Summary for Vehicle [TabNet]:
+  Mean Accuracy: 75.47% ± 2.02%
+  Mean Macro-F1: 74.96% ± 2.30%
+  Mean Training Time: 2.22s
+  Mean Testing Time: 0.01s
+
+[TabNet] Successful datasets: ['Adult', 'BankMarketing', 'Diabetes', 'Gamma', 'Student', 'Websites', 'DNA', 'Pendigits', 'Satimage', 'Segment', 'Vehicle']

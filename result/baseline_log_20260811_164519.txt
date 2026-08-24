@@ -1,0 +1,54 @@
+Baseline experiment started at 20260811_164519
+Log file: /home/xjl/pythoncode/myDeepForest/result/baseline_log_20260811_164519.txt
+
+Models: ['TabNet']
+Datasets: ['Vehicle']
+
+
+############################################################
+# Model: TabNet
+############################################################
+
+============================================================
+[TabNet] Running experiments on Vehicle
+============================================================
+
+Run 1/5
+
+Early stopping occurred at epoch 78 with best_epoch = 58 and best_val_0_accuracy = 0.7874
+  Accuracy: 78.74%
+  Macro-F1: 77.80%
+
+Run 2/5
+
+Early stopping occurred at epoch 112 with best_epoch = 92 and best_val_0_accuracy = 0.79528
+  Accuracy: 79.53%
+  Macro-F1: 78.71%
+
+Run 3/5
+
+Early stopping occurred at epoch 148 with best_epoch = 128 and best_val_0_accuracy = 0.83858
+  Accuracy: 83.86%
+  Macro-F1: 83.82%
+
+Run 4/5
+
+Early stopping occurred at epoch 95 with best_epoch = 75 and best_val_0_accuracy = 0.82677
+  Accuracy: 82.68%
+  Macro-F1: 82.66%
+
+Run 5/5
+
+Early stopping occurred at epoch 136 with best_epoch = 116 and best_val_0_accuracy = 0.81496
+  Accuracy: 81.50%
+  Macro-F1: 81.84%
+
+Results saved to /home/xjl/pythoncode/myDeepForest/result/TabNet/TabNet_Vehicle.csv
+
+Summary for Vehicle [TabNet]:
+  Mean Accuracy: 81.26% ± 2.13%
+  Mean Macro-F1: 80.97% ± 2.59%
+  Mean Training Time: 4.60s
+  Mean Testing Time: 0.01s
+
+[TabNet] Successful datasets: ['Vehicle']
